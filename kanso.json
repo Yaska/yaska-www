@@ -1,0 +1,27 @@
+{
+    "name": "yaska",
+    "version": "0.0.1",
+    "description": "The simplest possible app",
+    "attachments": ["index.html", "static", "scripts", "templates"],
+	"modules": ["lib"],
+	"load": "lib/app",
+	"dust":{
+		"templates": "templates"
+	},
+	"duality":{
+		"base_template": "base.html"
+	},
+    "dependencies": {
+        "attachments": null,
+		"modules": null,
+		"properties": null,
+		"settings": null,
+		"db": null,
+		"jquery": null,
+		"session": null,
+		"users": null,
+		"dust": null,
+		"duality": null,
+		"duality-dust": null
+    }
+}
