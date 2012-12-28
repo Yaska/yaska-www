@@ -1,11 +1,10 @@
 <h1>Blog</h1>
 {#posts}
-	{id}<br />
-	{key}<br />
-	{value}<br />
-	{value.title}<br />
-	{value.slug}<br />
-	{value.body}
+	<hgroup>
+		<h2>{value.title}</h2>
+		<h3>By {value.author} - {value.created}</h3>
+	</hgroup>
+	<p>{value.body}</p>
 	<hr>
 {/posts}
 <h2>Stringified:</h2>

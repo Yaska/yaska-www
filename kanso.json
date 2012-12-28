@@ -2,7 +2,7 @@
     "name": "yaska",
     "version": "0.0.1",
     "description": "The simplest possible app",
-    "attachments": ["static", "templates"],
+    "attachments": ["static"],
 	"modules": ["lib", "packages/jquery/jquery"],
 	"load": "lib/app",
 	"dust":{
@@ -21,6 +21,7 @@
 		"session": null,
 		"users": null,
 		"dust": null,
+		"couchtypes": null,
 		"duality": null,
 		"duality-dust": null,
 		"duality-contrib-session": null
