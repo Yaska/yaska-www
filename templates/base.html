@@ -7,58 +7,65 @@
   </head> 
   <body>
   	<div id="container">
-		<div id="header" role="banner" class="">
-			<div>
-				<div id="logo">Yaska logo</div>
-				<ul id="nav" role="navigation">
-					<li><a href="services">Services</a></li>
-					<li><a href="blog">Blog</a></li>
-					<li><a href="store">Store</a></li>
-					<li><a href="contact">Contact</a></li>
-					<li><a href="about">About</a></li>
-				</ul>
+		<header role="banner" class="">
+			<div class="insideContainer">
+				<div>
+					<div id="logo"><a href="/{baseURL}"><img src="{baseURL}/static/img/logo.png" alt="logo" /></a></div>
+					<nav>
+						<ul id="nav" role="navigation">
+							<li><a href="services"><img src="{baseURL}/static/img/nav_services.png" alt=""/><span>services</span></a></li>
+							<li><a href="blog"><img src="{baseURL}/static/img/nav_blog.png" alt=""/><span>blog</span></a></li>
+							<li><a href="store"><img src="{baseURL}/static/img/nav_store.png" alt=""/><span>store</span></a></li>
+							<li><a href="contact"><img src="{baseURL}/static/img/nav_contact.png" alt=""/><span>contact</span></a></li>
+							<li><a href="about"><img src="{baseURL}/static/img/nav_about.png" alt=""/><span>contact</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				{#userCtx}
+				<div id="session" class="{?name}loggedin{:else}loggedout{/name}">
+				  {?name}
+				    <span class="username">{name}</span>
+				  {/name}
+				  <span class="actions">
+				    {?name}
+				      <a href="#" class="logout">Logout</a>
+				      <!--<li class="signup"><a href="#">Signup</a></li>-->
+				    {:else}
+				      <a href="#" class="login">Login</a>
+				    {/name}
+				  </span>
+				  <div id="login_dropdown" style="display: none">
+				    <form id="login_form" action="" method="POST">
+				      <div class="general_errors"></div>
+				      <div class="username field">
+				        <label for="login_form_name">Username</label>
+				        <input id="login_form_name" name="name" type="text" />
+				        <div class="errors"></div>
+				      </div>
+				      <div class="password field">
+				        <label for="login_form_password">Password</label>
+				        <input id="login_form_password" name="password" type="password" />
+				        <div class="errors"></div>
+				      </div>
+				      <div class="clear spinner" style="display: none;"></div>
+				      <div class="actions">
+				        <input type="submit" id="login_form_login" value="Login" />
+				        <input type="button" id="login_form_cancel" value="Cancel" />
+				      </div>
+				      <div class="clear"></div>
+				    </form>
+				  </div>
+				</div>
+				{/userCtx}
 			</div>
-			{#userCtx}
-			<div id="session" class="{?name}loggedin{:else}loggedout{/name}">
-			  {?name}
-			    <span class="username">{name}</span>
-			  {/name}
-			  <span class="actions">
-			    {?name}
-			      <a href="#" class="logout">Logout</a>
-			      <!--<li class="signup"><a href="#">Signup</a></li>-->
-			    {:else}
-			      <a href="#" class="login">Login</a>
-			    {/name}
-			  </span>
-			  <div id="login_dropdown" style="display: none">
-			    <form id="login_form" action="" method="POST">
-			      <div class="general_errors"></div>
-			      <div class="username field">
-			        <label for="login_form_name">Username</label>
-			        <input id="login_form_name" name="name" type="text" />
-			        <div class="errors"></div>
-			      </div>
-			      <div class="password field">
-			        <label for="login_form_password">Password</label>
-			        <input id="login_form_password" name="password" type="password" />
-			        <div class="errors"></div>
-			      </div>
-			      <div class="clear spinner" style="display: none;"></div>
-			      <div class="actions">
-			        <input type="submit" id="login_form_login" value="Login" />
-			        <input type="button" id="login_form_cancel" value="Cancel" />
-			      </div>
-			      <div class="clear"></div>
-			    </form>
-			  </div>
-			</div>
-			{/userCtx}
-		</div>
+		</header>
 		<span class="clear"></span>
-	    <div id="content">
+	    <div id="content" role="main">
 	      {content|s}
 	    </div>
+	    <footer id="footer" role="contentinfo">
+	    	
+	    </footer>
   	</div>
 	<script src="{baseURL}/modules.js"></script>
 	<script src="{baseURL}/static/scripts/script.js"></script>

@@ -11,13 +11,13 @@ exports.clearErrors = function (form) {
 
 exports.showDropDown = function () {
     $('#session .login').addClass('active');
-    $('#login_dropdown').show();
+    $('#login_dropdown').slideDown();
     $('#login_dropdown input[name="name"]').focus().select();
 };
 
 exports.hideDropDown = function () {
     $('#session .login').removeClass('active');
-    $('#login_dropdown').hide();
+    $('#login_dropdown').slideUp();
     exports.clearErrors();
 };
 

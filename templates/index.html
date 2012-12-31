@@ -1,35 +1,68 @@
-<div>
-	<hgroup>
-		<h1>Super interesting meaningful slogan</h1>
-		<h2>Unlike the “by URI” and “by File Upload” modes, the “Direct Input” mode of the validator provides validated content in the form of characters pasted or typed in the validator's form field.</h2>
-	</hgroup>
+<div id="pic">
 </div>
-<div>
-	<span>Introducing</span>
-	<h2>Service Level Agreement</h2>
-	<div class="button">See Plans and pricing</div>
-	<div class="slas">
-		<h3>Quick Response</h3>
-		<p>Guaranteed response time!</p>
+<div id="intro" class="section">
+	<div class="insideContainer">
+		<hgroup>
+			<h1>Super interesting meaningful slogan</h1>
+			<h2>Unlike the “by URI” and “by File Upload” modes, the “Direct Input” mode of the validator provides validated content in the form of characters pasted or typed in the validator's form field.</h2>
+		</hgroup>
 	</div>
-	<div class="slas">
-		<h3>Monthly Reporting</h3>
-		<p>Explanation about monthly reporting.</p>
+</div>
+<div id="sla" class="section">
+	<div class="insideContainer">
+		<span class="leadIn">Introducing</span>
+		<h2 class="sectionHeader">Service Level Agreement</h2>
+		<div class="button" id="slaButton">See Plans and pricing</div>
+		<div class="slas clear">
+			<h3 class="quickResponse">Quick Response</h3>
+			<p>Guaranteed response time!</p>
+		</div>
+		<div class="slas">
+			<h3 class="monthlyReporting">Monthly Reporting</h3>
+			<p>Explanation about monthly reporting.</p>
+		</div>
+		<div class="slas">
+			<h3 class="monitoring">Monitoring</h3>
+			<p>Monitoring and pre-emptive work, every month.</p>
+		</div>
+		<div class="slas">
+			<h3 class="crashPlan">Crash Plan</h3>
+			<p>Crash Plan PROe is a program that will automatically back up all your valuable data, such as work documents or pictures.</p>
+		</div>
+		<div class="slas">
+			<h3 class="helpdeskAccess">Helpdesk Access</h3>
+			<p>Online Helpdesk access to report problems or to view the history of our activities</p>
+		</div>
+		<div class="slas">
+			<h3 class="kerioConnect">Kerio Connect</h3>
+			<p>Kerio Connect is an amazing piece of software that makes it possible to always have all your information with you, no matter where you are.</p>
+		</div>
 	</div>
-	<div class="slas">
-		<h3>Monitoring</h3>
-		<p>Monitoring and pre-emptive work, every month.</p>
+	<span class="clear"></span>
+</div>
+<div id="workshops" class="section">
+	<div class="insideContainer">
+		<span class="leadIn">Get starting with</span>
+		<h2 class="sectionHeader">Workshops</h2>
+		<div class="button" id="workshopsButton">Get started</div>
+		<img id="w_icons" src="{baseURL}/static/img/w_icons.png" />
+		<div>
+			<p>One of the great things about using CouchDB is that you get a user system ready to use from the start, letting you hit the ground running.</p>
+			<p>By default, user information is stored in the \_users database. This database is separate to your app database, and works just like any other, meaning you can restrict who can create, update or delete user documents. You can even replicate user databases between CouchDB instances and share logins, or backup users the same way you would any other data.</p>
+		</div>
 	</div>
-	<div class="slas">
-		<h3>Crash Plan</h3>
-		<p>Crash Plan PROe is a program that will automatically back up all your valuable data, such as work documents or pictures.</p>
-	</div>
-	<div class="slas">
-		<h3>Helpdesk Access</h3>
-		<p>Online Helpdesk access to report problems or to view the history of our activities</p>
-	</div>
-	<div class="slas">
-		<h3>Kerio Connect</h3>
-		<p>Kerio Connect is an amazing piece of software that makes it possible to always have all your information with you, no matter where you are.</p>
+	<span class="clear"></span>
+</div>
+<div id="development" class="section">
+	<div class="insideContainer">
+		<div id="devText">
+			<span class="leadIn">We also do</span>
+			<h2 class="sectionHeader">Development</h2>
+			<div class="button" id="developmentButton">Let's get coding</div>
+			<p>CouchDB, since 0.11.0, can map requests to different locations based on the Host header. This allows different virtual hosts on the same machine to map to different databases or design documents, etc. The most common use case is to map a virtual host to a Rewrite Handler, to provide full control over the application's URIs.To add a virtual host, add a CNAME pointer to the DNS for your domain name. For development and testing, it is sufficient to add an entry in the hosts file (/etc/hosts on Unix-like operating systems) pointing to 127.0.0.1. For example</p>
+			<p>Normally, the _users database is public. This means you shouldn't use it for storing private user data if your app is going to be publicly accessible. To store private data, you should either protect the _users database, or create new databases for storing only the private parts of a user's profile.</p>
+		</div>
+		<img id="d_devices" src="{baseURL}/static/img/d_devices.png" />
+		<span class="clear"></span>
 	</div>
 </div>
