@@ -15,5 +15,5 @@ $(document).ready(function() {
 
 session.on('change', function (userCtx) {
    	console.log('session.change');
-	window.location.reload();
+	//window.location.reload();
 });

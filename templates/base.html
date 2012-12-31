@@ -2,56 +2,65 @@
 <html lang="en"> 
   <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-    <title>{title}</title> 
+    <title>{title}</title>
+    <link rel="stylesheet" href="{baseURL}/static/stylesheets/stylesheet.css">
   </head> 
   <body>
-	<div id="header" role="header">
-		{#userCtx}
-		<div id="session" class="{?name}loggedin{:else}loggedout{/name}">
-		  {?name}
-		    <span class="username">{name}</span>
-		  {/name}
-		  <ul class="actions">
-		    {?name}
-		      <li class="logout"><a href="#">Logout</a></li>
-		      <!--<li class="signup"><a href="#">Signup</a></li>-->
-		    {:else}
-		      <li class="login"><a href="#">Login</a></li>
-		    {/name}
-		  </ul>
-		  <div id="login_dropdown" style="display: none">
-		    <form id="login_form" action="" method="POST">
-		      <div class="general_errors"></div>
-		      <div class="username field">
-		        <label for="login_form_name">Username</label>
-		        <input id="login_form_name" name="name" type="text" />
-		        <div class="errors"></div>
-		      </div>
-		      <div class="password field">
-		        <label for="login_form_password">Password</label>
-		        <input id="login_form_password" name="password" type="password" />
-		        <div class="errors"></div>
-		      </div>
-		      <div class="clear spinner" style="display: none;"></div>
-		      <div class="actions">
-		        <input type="submit" id="login_form_login" value="Login" />
-		        <input type="button" id="login_form_cancel" value="Cancel" />
-		      </div>
-		      <div class="clear"></div>
-		    </form>
-		  </div>
+  	<div id="container">
+		<div id="header" role="banner" class="">
+			<div>
+				<div id="logo">Yaska logo</div>
+				<ul id="nav" role="navigation">
+					<li><a href="services">Services</a></li>
+					<li><a href="blog">Blog</a></li>
+					<li><a href="store">Store</a></li>
+					<li><a href="contact">Contact</a></li>
+					<li><a href="about">About</a></li>
+				</ul>
+			</div>
+			{#userCtx}
+			<div id="session" class="{?name}loggedin{:else}loggedout{/name}">
+			  {?name}
+			    <span class="username">{name}</span>
+			  {/name}
+			  <span class="actions">
+			    {?name}
+			      <a href="#" class="logout">Logout</a>
+			      <!--<li class="signup"><a href="#">Signup</a></li>-->
+			    {:else}
+			      <a href="#" class="login">Login</a>
+			    {/name}
+			  </span>
+			  <div id="login_dropdown" style="display: none">
+			    <form id="login_form" action="" method="POST">
+			      <div class="general_errors"></div>
+			      <div class="username field">
+			        <label for="login_form_name">Username</label>
+			        <input id="login_form_name" name="name" type="text" />
+			        <div class="errors"></div>
+			      </div>
+			      <div class="password field">
+			        <label for="login_form_password">Password</label>
+			        <input id="login_form_password" name="password" type="password" />
+			        <div class="errors"></div>
+			      </div>
+			      <div class="clear spinner" style="display: none;"></div>
+			      <div class="actions">
+			        <input type="submit" id="login_form_login" value="Login" />
+			        <input type="button" id="login_form_cancel" value="Cancel" />
+			      </div>
+			      <div class="clear"></div>
+			    </form>
+			  </div>
+			</div>
+			{/userCtx}
 		</div>
-		{/userCtx}
-	</div>
-    <div id="content">
-      {content|s}
-    </div>
-    <!--<script src="{baseURL}/static/js/jquery-1.5.2.min.js"></script>
-    <script src="{baseURL}/static/js/json2.js"></script>
-    <script src="{baseURL}/kanso.js"></script>-->
-	
+		<span class="clear"></span>
+	    <div id="content">
+	      {content|s}
+	    </div>
+  	</div>
 	<script src="{baseURL}/modules.js"></script>
-	
 	<script src="{baseURL}/static/scripts/script.js"></script>
   </body>
 </html>

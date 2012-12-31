@@ -31,12 +31,12 @@ exports.toggleDropDown = function () {
 };
 
 exports.bind = function () {
-    $('#session .logout a').click(function (ev) {
+    $('#session .logout').click(function (ev) {
         ev.preventDefault();
         session.logout();
         return false;
     });
-    $('#session .login a').click(function (ev) {
+    $('#session .login').click(function (ev) {
         ev.preventDefault();
         exports.toggleDropDown();
         return false;

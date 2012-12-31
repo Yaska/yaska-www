@@ -1,16 +1,15 @@
 {#userCtx}
 <div id="session" class="{?name}loggedin{:else}loggedout{/name}">
   {?name}
-    <span class="username">{name}</span>
+    <span class="username">Hi there, {name}</span>
   {/name}
-  <ul class="actions">
+  <span class="actions">
     {?name}
-      <li class="logout"><a href="#">Logout</a></li>
-      <!--<li class="signup"><a href="#">Signup</a></li>-->
+      <a href="#" class="logout">Logout</a>
     {:else}
-      <li class="login"><a href="#">Login</a></li>
+      <a href="#" class="login">Login</a>
     {/name}
-  </ul>
+  </span>
   <div id="login_dropdown" style="display: none">
     <form id="login_form" action="" method="POST">
       <div class="general_errors"></div>

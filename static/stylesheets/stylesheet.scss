@@ -1,0 +1,182 @@
+/* ! vars */
+
+$whiteish: #FEFEFF;
+$greyish: #C1C8CD;
+
+
+/* ! Mixins */
+@mixin border_radius ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box_shadow ($params){
+	-moz-box-shadow: $params;
+	-webkit-box-shadow: $params;
+	box-shadow: $params;
+}
+@mixin box_shadow_inner ($params){
+	-moz-box-shadow: inset $params;
+    -webkit-box-shadow: inset $params;
+    box-shadow: inner $params;
+}
+
+@mixin text_shadow{
+	text-shadow: 2px 2px 0 rgba(0,0,0,.5);
+}
+
+@mixin linear_gradient($from, $to) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient($from, $to);
+
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient($from, $to);
+
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient($from, $to);
+}
+
+@mixin transition($properties, $duration, $easing){
+  -webkit-transition: $properties $duration $easing;  /* Safari 3.2+, Chrome */
+     -moz-transition: $properties $duration $easing;  /* Firefox 4-15 */
+       -o-transition: $properties $duration $easing;  /* Opera 10.5–12.00 */
+          transition: $properties $duration $easing;  /* Firefox 16+, Opera 12.50+ */
+}
+
+@mixin hidpi($path, $width: auto, $height: auto){
+	@media all and (min--moz-device-pixel-ratio: 1.5),
+		(o-min-device-pixel-ratio: 3/2),
+		(-webkit-min-device-pixel-ratio: 1.5),
+		(min-device-pixel-ratio: 1.5),
+		(min-resolution: 1.5dppx){
+		background-image: url($path);
+		background-size: $width $height;	
+	}
+}
+
+/* ! reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ! clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+.clear{
+	clear: both;
+}
+
+/* ! base */
+#container{
+	position: relative;
+}
+#header{
+	height: 3em;
+}
+
+#logo{
+	float: left;
+}
+#session{
+	padding: 0.5em;
+	width: 13em;
+	float: right;
+	margin-right: 1em;
+	background-color: $greyish;
+	@include border_radius(0 0 0.3em 0.3em);
+	a{
+		text-decoration: none;
+		color: $whiteish;
+	}
+}
+.field{
+	clear: right;
+	input{
+		float: right;
+	}
+}
+.actions{
+	clear: right;
+	text-align: right;
+}
+#nav{
+	float: left;
+	list-style-type: none;
+	li{
+		display: inline;
+	}
+}
+
+/* ! index */
