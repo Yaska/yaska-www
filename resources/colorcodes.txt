@@ -1,3 +1,5 @@
+Fake push
+
 MAIN
 ---
 background: $white
@@ -41,8 +43,8 @@ button: #4b575e
 FOOTER
 ---
 background: #293238
-font h2: #ffffff
-font p: #ffffff
+font h2: $white;
+font p: $white;
 font a: #8cc63f
 
 # SCSS Vars
