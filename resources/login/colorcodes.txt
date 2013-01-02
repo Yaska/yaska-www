@@ -1,0 +1,14 @@
+LOGIN
+---
+green: #8ECA40
+dark green: #7AAE37
+
+WRONG LOGIN
+---
+red: #FD6B52
+dark red: #CC4A35
+
+FORM
+---
+font-color: #878B89
+
