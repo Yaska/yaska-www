@@ -1,12 +1,57 @@
 /* ! vars */
 
-$whiteish: #FEFEFF;
+$white: #fff;
 $greyish: #C1C8CD;
 $darkGreyish: #384249;
 $lightgreyish: #E8EAEC;
 $greenish: #7BBE31;
 $blueish: #384248;
+MAIN
+---
+background: #ffffff
+border: #eceef0
+font h1: #293238
+font h2: #4b575e
+font p: #969696
 
+NAVIGATION
+---
+active: #8dc63f
+non active: #4b575e
+hover: #878b89
+
+FEATURE
+---
+h1: #4b575e
+p: #878b89
+
+SERVICE LEVEL AGREEMENT
+---
+leadin: #878b89
+h2: #293238
+p: #969696
+button: #8dc63f
+
+WORKSHOPS
+---
+leadin: #878b89
+h2: #293238
+p: #969696
+button: #878b89
+
+DEVELOPMENT
+---
+leadin: #878b89
+h2: #293238
+p: #969696
+button: #4b575e
+
+FOOTER
+---
+background: #293238
+font h2: #ffffff
+font p: #ffffff
+font a: #8cc63f
 
 /* ! Mixins */
 @mixin border_radius ($radius) {
@@ -277,12 +322,12 @@ footer{
 	position: relative;
 	width: 100%;
 	background-color: $blueish;
-	color: $whiteish;
+	color: $white;
 	div{
 		margin: 0.33em 0;
 	}
 	h3{
-		color: $whiteish;
+		color: $white;
 		font-size: 1em;
 	}
 	a{
