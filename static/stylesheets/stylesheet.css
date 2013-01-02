@@ -97,6 +97,10 @@ h3 {
 p {
   margin: 0.33em 0; }
 
+/* ! JS */
+.template {
+  display: none; }
+
 /* ! base */
 .button {
   width: 10em;
@@ -187,6 +191,33 @@ header {
     font-size: 0.854em;
     text-decoration: none;
     color: #384249; }
+
+footer {
+  padding: 1em 0;
+  position: relative;
+  width: 100%;
+  background-color: #384248;
+  color: #fefeff; }
+  footer div {
+    margin: 0.33em 0; }
+  footer h3 {
+    color: #fefeff;
+    font-size: 1em; }
+  footer a {
+    color: #7bbe31; }
+
+#contactAndLegalese {
+  position: relative;
+  float: left;
+  width: 33%; }
+
+#tweets {
+  position: relative;
+  float: left;
+  width: 66%; }
+
+.tweetTime {
+  color: #384249; }
 
 /* ! index */
 .section {

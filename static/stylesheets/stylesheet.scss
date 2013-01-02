@@ -173,7 +173,10 @@ h3{
 p{
 	margin: 0.33em 0;
 }
-
+/* ! JS */
+.template{
+	display: none;
+}
 /* ! base */
 .button{
 	width: 10em;
@@ -268,6 +271,37 @@ header{
 		text-decoration: none;
 		color: $darkGreyish;
 	}
+}
+footer{
+	padding: 1em 0;
+	position: relative;
+	width: 100%;
+	background-color: $blueish;
+	color: $whiteish;
+	div{
+		margin: 0.33em 0;
+	}
+	h3{
+		color: $whiteish;
+		font-size: 1em;
+	}
+	a{
+		color: $greenish;
+	}
+}
+#contactAndLegalese{
+	position: relative;
+	float: left;
+	width: 33%;
+}
+#tweets{
+	position: relative;
+	float: left;
+	width: 66%;
+}
+
+.tweetTime{
+	color: $darkGreyish;
 }
 
 /* ! index */

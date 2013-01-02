@@ -5,7 +5,7 @@
     <title>{title}</title>
     <link rel="stylesheet" href="{baseURL}/static/stylesheets/stylesheet.css">
   </head> 
-  <body>
+  <body id="{pageID}" class="no-js">
   	<div id="container">
 		<header role="banner" class="">
 			<div class="insideContainer">
@@ -35,7 +35,7 @@
 				    {/name}
 				  </span>
 				  <div id="login_dropdown" style="display: none">
-				    <form id="login_form" action="" method="POST">
+				    <form id="login_form" action="" method="POST" class="clearfix">
 				      <div class="general_errors"></div>
 				      <div class="username field">
 				        <label for="login_form_name">Username</label>
@@ -47,12 +47,12 @@
 				        <input id="login_form_password" name="password" type="password" />
 				        <div class="errors"></div>
 				      </div>
-				      <div class="clear spinner" style="display: none;"></div>
+				      <div class="spinner" style="display: none;"></div>
 				      <div class="actions">
 				        <input type="submit" id="login_form_login" value="Login" />
 				        <input type="button" id="login_form_cancel" value="Cancel" />
 				      </div>
-				      <div class="clear"></div>
+				      <!-- <div class="clear"></div> -->
 				    </form>
 				  </div>
 				</div>
@@ -63,8 +63,24 @@
 	    <div id="content" role="main">
 	      {content|s}
 	    </div>
-	    <footer id="footer" role="contentinfo">
-	    	
+	    <footer id="footer" role="contentinfo" class="clearfix">
+	    	<div class="insideContainer">
+		    	<div id="contactAndLegalese">
+			  		<h3>Contact us</h3>
+				  	<div>
+				  		<a href="#directions">Directions &gt;</a>
+				  	</div>
+				  	<div>T +32 (0)9 379 07 88</div>
+				  	<div>email: <a href="mailto:info@yaska.eu">info@yaska.eu</a></div>
+				  	<div id="social">
+				  		<a href="https://www.facebook.com/Yaska.eu?fref=ts" <img src="{baseURL}/static/img/f_fb.png" align=""
+				  	</div>
+				  	<div>&copy; Copyright {fullYear} Yaska.eu.</div>
+			  	</div>
+			  	<div id="tweets">
+			  		<h3>Twitter feed</h3>
+			  	</div>
+	    	</div>
 	    </footer>
   	</div>
 	<script src="{baseURL}/modules.js"></script>
