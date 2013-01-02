@@ -1,7 +1,7 @@
 MAIN
 ---
-background: #ffffff
-border: #eceef0
+background: $white
+border: $lightGrey
 font h1: #293238
 font h2: #4b575e
 font p: #969696
@@ -44,4 +44,15 @@ background: #293238
 font h2: #ffffff
 font p: #ffffff
 font a: #8cc63f
+
+# SCSS Vars
+
+$white: #ffffff;
+$lightGrey: #eceef0;
+$mediumLightGrey: #969696;
+$mediumDarkGrey: #878b89;
+
+$darkBlueGrey: #293238;
+$lightBlueGrey: #4b575e;
+$green: #8dc63f;
 
