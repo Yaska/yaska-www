@@ -1,57 +1,22 @@
 /* ! vars */
 
-$white: #fff;
+/*
 $greyish: #C1C8CD;
 $darkGreyish: #384249;
 $lightgreyish: #E8EAEC;
 $greenish: #7BBE31;
 $blueish: #384248;
-MAIN
----
-background: #ffffff
-border: #eceef0
-font h1: #293238
-font h2: #4b575e
-font p: #969696
+*/
 
-NAVIGATION
----
-active: #8dc63f
-non active: #4b575e
-hover: #878b89
+$white: #fff;
+$lightGrey: #eceef0;
+$mediumLightGrey: #969696;
+$mediumDarkGrey: #878b89;
 
-FEATURE
----
-h1: #4b575e
-p: #878b89
+$darkBlueGrey: #293238;
+$lightBlueGrey: #4b575e;
+$green: #8dc63f;
 
-SERVICE LEVEL AGREEMENT
----
-leadin: #878b89
-h2: #293238
-p: #969696
-button: #8dc63f
-
-WORKSHOPS
----
-leadin: #878b89
-h2: #293238
-p: #969696
-button: #878b89
-
-DEVELOPMENT
----
-leadin: #878b89
-h2: #293238
-p: #969696
-button: #4b575e
-
-FOOTER
----
-background: #293238
-font h2: #ffffff
-font p: #ffffff
-font a: #8cc63f
 
 /* ! Mixins */
 @mixin border_radius ($radius) {
@@ -194,11 +159,11 @@ body{
 	/* font-family: Georgia, serif; */
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	color: $greyish;
+	color: $mediumLightGrey;
 }
 h1, h2, h3, h4{
 	/* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-	color: $darkGreyish;
+	color: $darkBlueGrey;
 	margin: 0.33em 0;
 }
 h1{
@@ -232,18 +197,18 @@ p{
 	top: 2em;
 	right: 1.5em;
 	display: block;
-	background-color: $lightgreyish;
+	/* background-color: $lightgreyish; */
 	color: white;
 	@include border_radius(1px);
 }
 #slaButton{
-	background-color: $greenish;
+	background-color: green;
 }
 #workshopsButton{
-	background-color: $greyish;
+	background-color: $mediumDarkGrey;
 }
 #developmentButton{
-	background-color: $blueish;
+	background-color: $darkBlueGrey;
 }
 #container{
 	position: relative;
@@ -275,11 +240,11 @@ header{
 	padding: 0.5em;
 	width: 13em;
 	margin-right: 1em;
-	background-color: $lightgreyish;
+	background-color: $lightBlueGrey;
 	@include border_radius(0 0 0.3em 0.3em);
 	a{
 		text-decoration: none;
-		color: $darkGreyish;
+		color: $darkBlueGrey;
 	}
 }
 .field{
@@ -314,14 +279,20 @@ header{
 	a{
 		font-size: 0.854em;
 		text-decoration: none;
-		color: $darkGreyish;
+		color: $lightBlueGrey;
+		&:active{
+			color: $green;
+		}
+		&:hover{
+			color: $mediumDarkGrey;
+		}	
 	}
 }
 footer{
 	padding: 1em 0;
 	position: relative;
 	width: 100%;
-	background-color: $blueish;
+	background-color: $darkBlueGrey;
 	color: $white;
 	div{
 		margin: 0.33em 0;
@@ -331,7 +302,7 @@ footer{
 		font-size: 1em;
 	}
 	a{
-		color: $greenish;
+		color: $green;
 	}
 }
 #contactAndLegalese{
@@ -346,13 +317,13 @@ footer{
 }
 
 .tweetTime{
-	color: $darkGreyish;
+	color: $mediumLightGrey;
 }
 
 /* ! index */
 .section{
 	.leadIn{
-		 
+		 color: $mediumDarkGrey;
 	}
 	/*
 .sectionHeader{
@@ -363,13 +334,13 @@ footer{
 }
 #pic{
 	height: 18em;
-	background-color: $lightgreyish;
+	background-color: $lightGrey;
 	clear: both;
 }
 .section{
 	position: relative;
 	padding: 1em 3em;
-	border-bottom: 1px solid $greyish;
+	border-bottom: 1px solid $lightGrey;
 	clear: both;
 }
 #intro{
@@ -377,7 +348,7 @@ footer{
 	h2{
 		font-size: 1.921em;
 		font-weight: normal;
-		color: $greyish;
+		color: $lightBlueGrey;
 	}
 }
 #sla{
