@@ -264,42 +264,87 @@ header{
 	margin-top: 3.5em;
 	margin-right: 4em;
 	list-style-type: none;
-	li{
+	li{ 
 		display: block;
 		float: left;
 		text-align: center;
-		width: 50px;
-	}
-	img{
-		height: 25px;
-	}
-	span{
-		display: block;
+		width: 45px;
+		height: 45px;
+		margin: 0 0.4em;
 	}
 	a{
+		display: block;
+		padding-top: 36px;
 		font-size: 0.854em;
 		text-decoration: none;
 		color: $lightBlueGrey;
-		&:active{
-			color: $green;
-		}
 		&:hover{
 			color: $mediumDarkGrey;
 		}	
 	}
+	.active{
+		a{
+			color: $green;
+		}
+	}
 }
-.n_services{
-	background-image: 
+#n_services{
+	background: $white url('/static/img/nav/nav_services.png') no-repeat;
+	&:hover{
+		background-image: url('/static/img/nav/hover/nav_services.png');
+	}
+	&.active{
+		background-image: url('/static/img/nav/active/nav_services.png');
+	}
+	background-size: 26px 25px;
+	background-position: center 3px;
+}
+#n_blog{
+	background: $white url('/static/img/nav/nav_blog.png') no-repeat;
+	&:hover{
+		background-image: url('/static/img/nav/hover/nav_blog.png');
+	}
+	&.active{
+		background-image: url('/static/img/nav/active/nav_blog.png');
+	}
+	background-size: 23px 25px;
+	background-position: 13px 3px;
+}
+#n_store{
+	background: $white url('/static/img/nav/nav_store.png') no-repeat;
+	&:hover{
+		background-image: url('/static/img/nav/hover/nav_store.png');
+	}
+	&.active{
+		background-image: url('/static/img/nav/active/nav_store.png');
+	}
+	background-size: 26px 25px;
+	background-position: 8px 5px;
+}
+#n_contact{
+	background: $white url('/static/img/nav/nav_contact.png') no-repeat;
+	&:hover{
+		background-image: url('/static/img/nav/hover/nav_contact.png');
+	}
+	&.active{
+		background-image: url('/static/img/nav/active/nav_contact.png');
+	}
+	background-size: 29px 21px;
+	background-position: 7px 7px;
+}
+#n_about{
+	background: $white url('/static/img/nav/nav_about.png') no-repeat;
+	&:hover{
+		background-image: url('/static/img/nav/hover/nav_about.png');
+	}
+	&.active{
+		background-image: url('/static/img/nav/active/nav_about.png');
+	}
+	background-size: 32px 20px;
+	background-position: 7px 9px;
 }
 
-.n_blog
 
-.n_store
-
-.n_contact
-.n_about{
-	
-}
 footer{
 	padding: 1em 0;
 	position: relative;
