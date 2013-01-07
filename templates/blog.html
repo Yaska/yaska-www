@@ -1,11 +1,16 @@
-<h1>Blog</h1>
-{#posts}
-	<hgroup>
-		<h2>{value.title}</h2>
-		<h3>By {value.author} - {value.created}</h3>
-	</hgroup>
-	<p>{value.body}</p>
-	<hr>
-{/posts}
-<h2>Stringified:</h2>
-{stringyfied}
+<div id="blogPosts">
+	<h1>Blog</h1>
+	{#posts}
+		<hgroup>
+			<h2>{value.title}</h2>
+			<h3>By {value.author} - {value.created}</h3>
+		</hgroup>
+		{value.html|s}
+		<hr>
+	{/posts}
+	<h2>Stringified:</h2>
+	{stringyfied}
+</div>
+<div id="aside" role="complementary">
+
+</div>

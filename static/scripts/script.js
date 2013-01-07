@@ -1,9 +1,12 @@
-var $ = require('jquery/core');
-var session = require('session');
-var auth_controls = require('duality/contrib/session/controls');
+var $ = require('jquery/core'),
+	session = require('session'),
+	auth_controls = require('duality/contrib/session/controls'),
+	helpers = require('lib/helpers'),
+	session = require("session"),
+	markdown = require('lib/markdown');
+
 require('duality/contrib/session/events');
-var helpers = require('lib/helpers');
-var session = require("session");
+
 
 var JQTWEET = {
      
@@ -26,14 +29,14 @@ var JQTWEET = {
             },
             success: function(data, textStatus, xhr) {
  
-                 var html = '<div class="tweet">TWEET_TEXT time';
+                 var html = '<div class="tweet">TWEET_TEXT timeData';
          
                  // append tweets into page
                  for (var i = 0; i < data.length; i++) {
                     $(JQTWEET.appendTo).append(
                         html.replace('TWEET_TEXT', JQTWEET.ify.clean(data[i].text) )
                             .replace(/USER/g, data[i].user.screen_name)
-                            .replace('time', '<div class="tweetTime">' + JQTWEET.timeAgo(data[i].created_at) + '</div>' )
+                            .replace('timeData', '<div class="tweetTime">' + JQTWEET.timeAgo(data[i].created_at) + '</div>' )
                             .replace(/ID/g, data[i].id_str)
                     );
                  }                  
@@ -156,8 +159,25 @@ session.on('change', function (userCtx) {
 
 $(document).ready(function() {
 	console.log('doc.ready');
-	$('body').removeClass('no-js')
+	$('body').removeClass('no-js');
 	JQTWEET.loadTweets();
+	
 	//Auth
 	auth_controls.bind();
+	
+	$('td[data-checks="yes"]').html('<img src="/static/img/checks/yes.png" />');
+	$('td[data-checks="no"]').html('<img src="/static/img/checks/no.png" />');
+	for(var i = 0, ii = $('tr').length; i < ii; i++){
+		if(i % 2 !== 0){
+			$($('tr')[i]).addClass('odd');
+		} 
+	}
+	$('tr').css('border', 'none');
+	
+	$('.sideNavButton a').click(function(e){
+		$('.sideNavButton.active').removeClass('active');
+		$(this).parents('.sideNavButton').addClass('active');
+		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top - 50}, 500);
+		return false;
+	})
 });

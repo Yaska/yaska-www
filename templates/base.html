@@ -11,17 +11,18 @@
 			<div class="insideContainer">
 				<div>
 					<div id="logo"><a href="/{baseURL}"><img src="{baseURL}/static/img/logo.png" alt="logo" /></a></div>
-					<nav>
+					<nav class="clearfix">
 						<ul id="nav" role="navigation">
-							<li id="n_services" class="{n_services}"><a href="services">services</a></li>
+							<li id="n_services" class="{nav_services}"><a href="services">services</a></li>
 							<li id="n_blog" class="{nav_blog}"><a href="blog">blog</a></li>
-							<li id="n_store" class="{nav_store}"><a href="store">store</a></li>
+							<li id="n_store" class="{nav_store}"><a href="http://store.yaska.eu">store</a></li>
 							<li id="n_contact" class="{nav_contact}"><a href="contact">contact</a></li>
 							<li id="n_about" class="{nav_about}"><a href="about">about</a></li>
 						</ul>
 					</nav>
 				</div>
-				{#userCtx}
+				<!--
+{#userCtx}
 				<div id="session" class="{?name}loggedin{:else}loggedout{/name}">
 				  {?name}
 				    <span class="username">{name}</span>
@@ -29,7 +30,6 @@
 				  <span class="actions">
 				    {?name}
 				      <a href="#" class="logout">Logout</a>
-				      <!--<li class="signup"><a href="#">Signup</a></li>-->
 				    {:else}
 				      <a href="#" class="login">Login</a>
 				    {/name}
@@ -52,11 +52,11 @@
 				        <input type="submit" id="login_form_login" value="Login" />
 				        <input type="button" id="login_form_cancel" value="Cancel" />
 				      </div>
-				      <!-- <div class="clear"></div> -->
 				    </form>
 				  </div>
 				</div>
 				{/userCtx}
+-->
 			</div>
 		</header>
 		<span class="clear"></span>

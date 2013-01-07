@@ -1,13 +1,32 @@
-/* ! vars */
-/*
-$greyish: #C1C8CD;
-$darkGreyish: #384249;
-$lightgreyish: #E8EAEC;
-$greenish: #7BBE31;
-$blueish: #384248;
-*/
-/* ! Mixins */
-/* ! reset */
+/* ! VARS */
+#white {
+  backgrounColor: white; }
+
+#lightGrey {
+  background-color: #eceef0; }
+
+#mediumLightGrey {
+  background-color: #969696; }
+
+#mediumDarkGrey {
+  background-color: #878b89; }
+
+#darkBlueGrey {
+  background-color: #293238; }
+
+#lightBlueGrey {
+  background-color: #4b575e; }
+
+#green {
+  background-color: #8dc63f; }
+
+.color {
+  height: 100px;
+  width: 100px;
+  float: left; }
+
+/* ! MIXINS */
+/* ! RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,7 +74,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* ! clearfix */
+/* ! CLEARFIX */
 .clearfix:after {
   content: ".";
   display: block;
@@ -77,10 +96,10 @@ html[xmlns] .clearfix {
   display: block;
   clear: both; }
 
-/* ! Typography */
+/* ! TYPOGRAPHY */
 body {
   /* font-family: Georgia, serif; */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #969696; }
 
@@ -108,7 +127,7 @@ p {
 .template {
   display: none; }
 
-/* ! base */
+/* ! BASE */
 .button {
   width: 10em;
   padding: 0.5em;
@@ -136,10 +155,10 @@ p {
 #container {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  /* max-width: 960px; */ }
+  margin: 0 auto; }
 
 .insideContainer {
+  padding: 1em;
   position: relative;
   max-width: 960px;
   _width: 960px;
@@ -178,10 +197,12 @@ header {
   clear: right;
   text-align: right; }
 
+nav {
+  float: right; }
+
 #nav {
   position: relative;
-  width: 30%;
-  float: right;
+  /* float: right; */
   margin-top: 3.5em;
   margin-right: 4em;
   list-style-type: none; }
@@ -285,7 +306,11 @@ footer {
 .tweetTime {
   color: #969696; }
 
-/* ! index */
+/* ! LOGIN */
+#login login_dropdown {
+  display: block; }
+
+/* ! INDEX */
 #pic {
   height: 18em;
   background-color: #eceef0;
@@ -355,3 +380,143 @@ footer {
 #d_devices {
   width: 388px;
   margin-top: 7em; }
+
+/* ! SERVICES */
+#support {
+  background-color: #eceef0; }
+
+table {
+  width: 70%;
+  margin: 2em 15%;
+  background-color: white; }
+
+.odd {
+  background-color: #eceef0; }
+
+thead .title {
+  color: #293238;
+  font-size: 1.921em;
+  font-weight: bold;
+  padding: 0.5em auto; }
+
+td {
+  text-align: center; }
+  td img {
+    height: 20px;
+    margin-top: 0.5em; }
+
+tr {
+  border-bottom: 1px solid; }
+
+tr {
+  height: 2.5em; }
+
+th, td {
+  border-right: 1px solid #293238; }
+  th.last, td.last {
+    border-right: none; }
+
+#essential, #security {
+  width: 48%;
+  float: left; }
+
+#security {
+  margin-left: 4%; }
+
+#adhoc {
+  clear: left;
+  margin: 2em 0; }
+
+#gettingStarted {
+  background-color: #4b575e;
+  color: white; }
+  #gettingStarted tbody th {
+    color: #878b89; }
+  #gettingStarted h2 {
+    color: white; }
+
+#services #development {
+  background-color: #8dc63f; }
+  #services #development img {
+    float: none; }
+
+/* ! SIDEBAR */
+#sideNav {
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 1;
+  width: 75px;
+  height: 302px;
+  background-color: white;
+  -moz-border-radius: 2px 0 0 2px;
+  -webkit-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px; }
+
+.sideNavButton {
+  display: block;
+  float: left;
+  width: 75px;
+  height: 75px;
+  border-bottom: 1px solid #4b575e;
+  text-align: center;
+  -webkit-transition: all 0.8s ease;
+  /* Safari 3.2+, Chrome */
+  -moz-transition: all 0.8s ease;
+  /* Firefox 4-15 */
+  -o-transition: all 0.8s ease;
+  /* Opera 10.5–12.00 */
+  transition: all 0.8s ease;
+  /* Firefox 16+, Opera 12.50+ */ }
+  .sideNavButton.last {
+    border: none; }
+  .sideNavButton.active a {
+    color: white; }
+  .sideNavButton a {
+    -webkit-transition: all 0.8s ease;
+    /* Safari 3.2+, Chrome */
+    -moz-transition: all 0.8s ease;
+    /* Firefox 4-15 */
+    -o-transition: all 0.8s ease;
+    /* Opera 10.5–12.00 */
+    transition: all 0.8s ease;
+    /* Firefox 16+, Opera 12.50+ */
+    padding-top: 50px;
+    color: #4b575e;
+    text-decoration: none;
+    display: block;
+    clear: left; }
+
+#sn_support {
+  background: url("/static/img/sideNav/support.png") no-repeat;
+  background-size: 26px 21px;
+  background-position: 24px 22px; }
+  #sn_support.active {
+    background-color: #4b575e;
+    background-image: url("/static/img/sideNav/a_support.png"); }
+
+#sn_services {
+  background: url("/static/img/sideNav/service.png") no-repeat;
+  background-size: 21px 21px;
+  background-position: 26px 20px; }
+  #sn_services.active {
+    background-color: #4b575e;
+    background-image: url("/static/img/sideNav/a_service.png"); }
+
+#sn_workshops {
+  background: url("/static/img/sideNav/workshop.png") no-repeat;
+  background-size: 22px 21px;
+  background-position: 26px 20px; }
+  #sn_workshops.active {
+    background-color: #4b575e;
+    background-image: url("/static/img/sideNav/a_workshop.png"); }
+
+#sn_development {
+  background: url("/static/img/sideNav/develop.png") no-repeat;
+  background-size: 23px 21px;
+  background-position: 25px 21px; }
+  #sn_development.active {
+    background-color: #4b575e;
+    background-image: url("/static/img/sideNav/a_develop.png"); }
+
+/* ! MEDIA QUERIES */

@@ -1,12 +1,4 @@
-/* ! vars */
-
-/*
-$greyish: #C1C8CD;
-$darkGreyish: #384249;
-$lightgreyish: #E8EAEC;
-$greenish: #7BBE31;
-$blueish: #384248;
-*/
+/* ! VARS */
 
 $white: #fff;
 $lightGrey: #eceef0;
@@ -17,8 +9,34 @@ $darkBlueGrey: #293238;
 $lightBlueGrey: #4b575e;
 $green: #8dc63f;
 
+#white{
+	backgrounColor: $white;
+}
+#lightGrey{
+	background-color: $lightGrey;
+}
+#mediumLightGrey{
+	background-color: $mediumLightGrey;
+}
+#mediumDarkGrey{
+	background-color: $mediumDarkGrey;
+}
+#darkBlueGrey{
+	background-color: $darkBlueGrey;	
+}
+#lightBlueGrey{
+	background-color: $lightBlueGrey;
+}
+#green{
+	background-color: $green;	
+}
+.color{
+	height: 100px;
+	width: 100px;
+	float: left;
+}
 
-/* ! Mixins */
+/* ! MIXINS */
 @mixin border_radius ($radius) {
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
@@ -75,7 +93,7 @@ $green: #8dc63f;
 	}
 }
 
-/* ! reset */
+/* ! RESET */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -126,7 +144,7 @@ table {
 	border-spacing: 0;
 }
 
-/* ! clearfix */
+/* ! CLEARFIX */
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -153,11 +171,11 @@ html[xmlns] .clearfix {
 	clear: both;
 }
 
-/* ! Typography */
+/* ! TYPOGRAPHY */
 
 body{
 	/* font-family: Georgia, serif; */
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: $mediumLightGrey;
 }
@@ -187,7 +205,7 @@ p{
 .template{
 	display: none;
 }
-/* ! base */
+/* ! BASE */
 .button{
 	width: 10em;
 	padding: 0.5em;
@@ -214,9 +232,9 @@ p{
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
-	/* max-width: 960px; */
 }
 .insideContainer{
+	padding: 1em;
 	position: relative;
 	max-width: 960px;
 	_width: 960px;
@@ -257,10 +275,12 @@ header{
 	clear: right;
 	text-align: right;
 }
+nav{
+	float: right;
+}
 #nav{
 	position: relative;
-	width: 30%;
-	float: right;
+	/* float: right; */
 	margin-top: 3.5em;
 	margin-right: 4em;
 	list-style-type: none;
@@ -389,7 +409,14 @@ footer{
 	color: $mediumLightGrey;
 }
 
-/* ! index */
+/* ! LOGIN */
+#login{
+	login_dropdown{
+		display: block;
+	}
+}
+
+/* ! INDEX */
 
 #pic{
 	height: 18em;
@@ -471,3 +498,147 @@ footer{
 	width: 388px;
 	margin-top: 7em;
 }
+
+/* ! SERVICES */
+
+#support{
+	background-color: $lightGrey;
+}
+table{
+	width: 70%;
+	margin: 2em 15%;
+	background-color: $white;
+}
+.odd{
+	background-color: $lightGrey;
+}
+thead{
+	.title{
+		color: $darkBlueGrey;
+		font-size: 1.921em;
+		font-weight: bold;
+		padding: 0.5em auto;
+	}
+}
+td{
+	text-align: center;
+	img{
+		height: 20px;
+		margin-top: 0.5em;
+	}
+}
+tr{
+	border-bottom: 1px solid;
+}
+tr{
+	height: 2.5em;
+}
+th, td{
+	border-right: 1px solid $darkBlueGrey;
+	&.last{
+		border-right: none;
+	}
+}
+#essential, #security{
+	width: 48%;
+	float: left;
+}
+#security{
+	margin-left: 4%;
+}
+#adhoc{
+	clear: left;
+	margin: 2em 0;
+}
+
+#gettingStarted{
+	background-color: $lightBlueGrey;
+	color: $white;
+	tbody th{
+		color: $mediumDarkGrey;
+	}
+	h2{
+		color: $white;
+	}
+}
+#services #development{
+	background-color: $green;
+	img{
+		float: none;
+	}
+}
+
+/* ! SIDEBAR */
+#sideNav{
+	position: fixed;
+	right: 0;
+	top: 200px;
+	z-index: 1;
+	width: 75px;
+	height: 302px;
+	background-color: $white;
+	@include border_radius(2px 0 0 2px);
+}
+.sideNavButton{
+	display: block;
+	float: left;
+	width: 75px;
+	height: 75px;
+	border-bottom: 1px solid $lightBlueGrey;
+	text-align: center;
+	@include transition(all, 0.8s, ease);
+	&.last{
+		border: none;
+	}
+	&.active{
+		a{
+			color: $white;
+		}
+	}
+	a{
+		@include transition(all, 0.8s, ease);
+		padding-top: 50px;
+		color: $lightBlueGrey;
+		text-decoration: none;
+		display: block;
+		clear: left;
+	}
+}
+#sn_support{
+	background: url('/static/img/sideNav/support.png') no-repeat;
+	&.active{
+		background-color: $lightBlueGrey;
+		background-image: url('/static/img/sideNav/a_support.png');
+	}
+	background-size: 26px 21px;
+	background-position: 24px 22px;
+}
+#sn_services{
+	background: url('/static/img/sideNav/service.png') no-repeat;
+	&.active{
+		background-color: $lightBlueGrey;
+		background-image: url('/static/img/sideNav/a_service.png');
+	}
+	background-size: 21px 21px;
+	background-position: 26px 20px;
+
+}
+#sn_workshops{
+	background: url('/static/img/sideNav/workshop.png') no-repeat;
+	&.active{
+		background-color: $lightBlueGrey;
+		background-image: url('/static/img/sideNav/a_workshop.png');
+	}
+	background-size: 22px 21px;
+	background-position: 26px 20px;
+}
+#sn_development{
+	background: url('/static/img/sideNav/develop.png') no-repeat;
+	&.active{
+		background-color: $lightBlueGrey;
+		background-image: url('/static/img/sideNav/a_develop.png');
+	}
+	background-size: 23px 21px;
+	background-position: 25px 21px;
+}
+/* ! MEDIA QUERIES */
