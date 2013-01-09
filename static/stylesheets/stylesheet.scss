@@ -116,7 +116,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -128,17 +127,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -172,7 +161,7 @@ html[xmlns] .clearfix {
 }
 
 /* ! TYPOGRAPHY */
-
+$smaller: 0.854em;
 body{
 	/* font-family: Georgia, serif; */
 	font-family: Helvetica, Arial, sans-serif;
@@ -201,8 +190,14 @@ h3{
 p{
 	margin: 0.33em 0;
 }
+strong{
+	font-weight: bold;
+}
+em{
+	font-style: italic;
+}
 /* ! JS */
-.template{
+.template, .hidden{
 	display: none;
 }
 /* ! BASE */
@@ -265,12 +260,6 @@ header{
 		color: $darkBlueGrey;
 	}
 }
-.field{
-	clear: right;
-	input{
-		float: right;
-	}
-}
 .actions{
 	clear: right;
 	text-align: right;
@@ -295,7 +284,7 @@ nav{
 	a{
 		display: block;
 		padding-top: 36px;
-		font-size: 0.854em;
+		font-size: $smaller;
 		text-decoration: none;
 		color: $lightBlueGrey;
 		&:hover{
@@ -412,7 +401,7 @@ footer{
 /* ! LOGIN */
 #login{
 	login_dropdown{
-		display: block;
+		display: block !important;
 	}
 }
 
@@ -640,5 +629,25 @@ th, td{
 	}
 	background-size: 23px 21px;
 	background-position: 25px 21px;
+}
+
+/* ! BLOG */
+.blogPost{
+	position: relative;
+	img, video, iframe{
+		margin: 2em auto;
+	}
+}
+.metadata{
+	font-size: $smaller;
+}
+.pubDate{
+	
+}
+.author{
+	
+}
+.tags{
+	
 }
 /* ! MEDIA QUERIES */

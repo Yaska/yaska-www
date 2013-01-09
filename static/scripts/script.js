@@ -157,6 +157,18 @@ session.on('change', function (userCtx) {
 	//window.location.reload();
 });
 
+function login(usr, pwd, cb){
+		session.login(usr, pwd, function (err, res) {
+	    if (err) {
+	    	alert('Stupid, stupid. You entered a wrong username or password. Try again.')
+	    }
+	    else {
+		    console.log(res)
+		    cb();
+	    }
+	});
+}
+
 $(document).ready(function() {
 	console.log('doc.ready');
 	$('body').removeClass('no-js');
@@ -178,6 +190,16 @@ $(document).ready(function() {
 		$('.sideNavButton.active').removeClass('active');
 		$(this).parents('.sideNavButton').addClass('active');
 		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top - 50}, 500);
+		return false;
+	});
+	
+	$('#loginButton').click(function(e){
+		var usr = $('input[name="userName"]').val().replace(' ', '');
+		var pwd = $('input[name="password"]').val();
+		login(usr, pwd, function(){
+			console.log('cb works too');
+			window.location.replace('post');
+		});
 		return false;
 	})
 });

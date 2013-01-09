@@ -1,15 +1,23 @@
 <div id="blogPosts">
-	<h1>Blog</h1>
 	{#posts}
-		<hgroup>
-			<h2>{value.title}</h2>
-			<h3>By {value.author} - {value.created}</h3>
-		</hgroup>
-		{value.html|s}
-		<hr>
+	<article class="blogPost">
+		<h2>{value.title}</h2>
+		<div class="metadata">
+			<span class="pubDate">{value.dateString}</span>
+			<span class="author">{value.author}</span>
+			<span class="tags">
+				{#value.tags}
+					<span class="tag">{.}</span>
+				{/value.tags}
+			</span>
+		</div>
+		<div>{value.html|s}</div>	
+	</article>
 	{/posts}
-	<h2>Stringified:</h2>
+	<!--
+<h2>Stringified:</h2>
 	{stringyfied}
+-->
 </div>
 <div id="aside" role="complementary">
 

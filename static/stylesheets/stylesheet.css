@@ -47,7 +47,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
 
@@ -58,17 +57,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
 
 table {
   border-collapse: collapse;
@@ -123,8 +111,14 @@ h3 {
 p {
   margin: 0.33em 0; }
 
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
 /* ! JS */
-.template {
+.template, .hidden {
   display: none; }
 
 /* ! BASE */
@@ -187,11 +181,6 @@ header {
   #session a {
     text-decoration: none;
     color: #293238; }
-
-.field {
-  clear: right; }
-  .field input {
-    float: right; }
 
 .actions {
   clear: right;
@@ -308,7 +297,7 @@ footer {
 
 /* ! LOGIN */
 #login login_dropdown {
-  display: block; }
+  display: block !important; }
 
 /* ! INDEX */
 #pic {
@@ -518,5 +507,14 @@ th, td {
   #sn_development.active {
     background-color: #4b575e;
     background-image: url("/static/img/sideNav/a_develop.png"); }
+
+/* ! BLOG */
+.blogPost {
+  position: relative; }
+  .blogPost img, .blogPost video, .blogPost iframe {
+    margin: 2em auto; }
+
+.metadata {
+  font-size: 0.854em; }
 
 /* ! MEDIA QUERIES */
