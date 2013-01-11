@@ -632,6 +632,11 @@ th, td{
 }
 
 /* ! BLOG */
+#blogPosts{
+	position: relative;
+	width: 66%;
+	float: left;
+}
 .blogPost{
 	position: relative;
 	img, video, iframe{
@@ -640,14 +645,36 @@ th, td{
 }
 .metadata{
 	font-size: $smaller;
+	width: 100%;
+}
+.pubDate, .author, .tags{
+	line-height: 1.7;
+	height: 2em;
+	padding-left: 4%;
+	display: block;
+	float: left;
+	overflow: hidden;
 }
 .pubDate{
-	
+	background: url('/static/img/blog/date.png') no-repeat;
+	width: 29%;
 }
 .author{
-	
+	background: url('/static/img/blog/author.png') no-repeat;
+	width: 29%;
 }
 .tags{
-	
+	background: url('/static/img/blog/tag.png') no-repeat;
+	width: 30%;
 }
+#aside{
+	float: left;
+	width: 34%;
+}
+#blog_social{
+	img{
+		width: 24px;
+	}
+}
+
 /* ! MEDIA QUERIES */

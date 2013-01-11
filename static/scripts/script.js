@@ -169,6 +169,7 @@ function login(usr, pwd, cb){
 	});
 }
 
+
 $(document).ready(function() {
 	console.log('doc.ready');
 	$('body').removeClass('no-js');
@@ -198,8 +199,14 @@ $(document).ready(function() {
 		var pwd = $('input[name="password"]').val();
 		login(usr, pwd, function(){
 			console.log('cb works too');
-			window.location.replace('post');
+			if (window.history !== undefined){
+				window.history.back();
+			}
+			else{
+				window.location.replace('post');	
+			}
 		});
 		return false;
-	})
+	});
+	
 });
