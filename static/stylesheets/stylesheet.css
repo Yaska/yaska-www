@@ -550,4 +550,85 @@ th, td {
 #blog_social img {
   width: 24px; }
 
+#latestArticles a {
+  display: block;
+  color: #969696;
+  text-decoration: none;
+  margin-bottom: 0.3em;
+  font-size: 0.854em; }
+
+a.tagCloudTag {
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-size: 0.854em;
+  color: #4b575e;
+  margin: 0.2em;
+  padding: 0.3em;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #eceef0; }
+
+/* ! CONTACT */
+#contactForm {
+  background-color: #eceef0; }
+
+form {
+  position: relative;
+  width: 90%;
+  margin: auto 5%; }
+  form span {
+    color: #8dc63f; }
+  form .inputDiv {
+    position: relative;
+    width: 45%;
+    margin: auto 2.5%;
+    float: left; }
+  form label, form input {
+    float: left;
+    width: 100%; }
+  form label {
+    padding: 0.5em 0;
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #293238; }
+  form input {
+    height: 1.5em;
+    font-size: 1.2em; }
+  form textarea {
+    width: 95%;
+    height: 15em;
+    margin: auto 2.5%; }
+  form input, form textarea {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #969696; }
+  form #messageLabel {
+    display: block;
+    margin-left: 2.5%; }
+  form #submit {
+    float: none;
+    width: 7em;
+    background-color: #4b575e;
+    font-size: 0.854em;
+    color: white;
+    height: 3em;
+    margin: 2.5% 2em; }
+
+#maps {
+  margin: auto;
+  position: relative;
+  width: 90%; }
+
+.mapContainer {
+  position: relative;
+  width: 45%;
+  float: left;
+  margin: auto 2.5%; }
+  .mapContainer .map {
+    height: 300px; }
+
 /* ! MEDIA QUERIES */

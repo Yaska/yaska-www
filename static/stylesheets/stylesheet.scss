@@ -677,4 +677,95 @@ th, td{
 	}
 }
 
+#latestArticles{
+	a{
+		display: block;
+		color: $mediumLightGrey;
+		text-decoration: none;
+		margin-bottom: 0.3em;
+		font-size: $smaller;
+	}
+}
+a.tagCloudTag{
+	display: block;
+	float: left;
+	text-decoration: none;
+	font-size: $smaller;
+	color: $lightBlueGrey;
+	margin: 0.2em;
+	padding: 0.3em;
+	@include border_radius(2px);
+	background-color: $lightGrey;
+}
+
+
+/* ! CONTACT */
+#contactForm{
+	background-color: $lightGrey;
+}
+form{
+	span{
+		color: $green;
+	}
+	position: relative;
+	width: 90%;
+	margin: auto 5%;
+	.inputDiv{
+		position: relative;
+		width: 45%;
+		margin: auto 2.5%;
+		float: left;
+	}
+	label, input{
+		float: left;
+		width: 100%;
+	}
+	label{
+		padding: 0.5em 0;
+		margin-top: 2em;
+		font-weight: bold;
+		font-size: 1.2em;
+		color: $darkBlueGrey;
+	}
+	input{
+		height: 1.5em;
+		font-size: 1.2em;
+	}
+	textarea{
+		width: 95%;
+		height: 15em;
+		margin: auto 2.5%;
+	}
+	input, textarea{
+		@include border_radius(3px);
+		border: 1px solid $mediumLightGrey;
+	}
+	#messageLabel{
+		display: block;
+		margin-left: 2.5%;
+	}
+	#submit{
+		float: none;
+		width: 7em;
+		background-color: $lightBlueGrey;
+		font-size: $smaller;
+		color: $white;
+		height: 3em;
+		margin: 2.5% 2em;
+	}
+}
+#maps{
+	margin: auto;
+	position: relative;
+	width: 90%;
+}
+.mapContainer{
+	position: relative;
+	width: 45%;
+	float: left;
+	margin: auto 2.5%;
+	.map{
+		height: 300px;
+	}
+}
 /* ! MEDIA QUERIES */

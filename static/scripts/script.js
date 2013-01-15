@@ -170,13 +170,43 @@ function login(usr, pwd, cb){
 }
 
 
+/* ! GOOGLE MAPS */
+function initializeMap(positionAsArray, containerByID) {
+	//Map
+	var LatLng = new google.maps.LatLng(positionAsArray[0], positionAsArray[1]);
+	console.log(LatLng);
+	var mapOptions = {
+	  center: LatLng,
+	  zoom: 14,
+	  mapTypeId: google.maps.MapTypeId.ROADMAP,
+	  streetViewControl: false,
+	  panControl: false
+	};
+	
+	map = new google.maps.Map(document.getElementById(containerByID),
+	    mapOptions);
+	
+	var marker = new google.maps.Marker({
+	    position: LatLng,
+	    map: map
+	    /* ,title:"Hof ter Dampoort" */
+    })
+    
+    marker.setMap(map);
+};
+
+
 $(document).ready(function() {
 	console.log('doc.ready');
 	$('body').removeClass('no-js');
+	//Hack for ETAG-caching until i find a better solution 
+	if (document.location.href === 'http://yaska.couchdb:5984/post'){
+		document.location.href = 'http://yaska.couchdb:5984/post?' + Math.random();
+	}
 	JQTWEET.loadTweets();
 	
 	//Auth
-	auth_controls.bind();
+	//auth_controls.bind();
 	
 	$('td[data-checks="yes"]').html('<img src="/static/img/checks/yes.png" />');
 	$('td[data-checks="no"]').html('<img src="/static/img/checks/no.png" />');
@@ -208,5 +238,12 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+	
+	/* ! MAPS */
+	if(google !== undefined){
+		initializeMap([51.055799, 3.742372], 'BelgianMap');
+		initializeMap([52.182732, 20.99762], 'PolishMap');
+		console.log("did some mappin'");
+	}
 	
 });

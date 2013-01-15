@@ -3,6 +3,9 @@
   <head>
     <title>{title}</title>
     <link rel="stylesheet" href="{baseURL}/static/stylesheets/stylesheet.css">
+    {#extraScripts}
+    	{.|s}
+    {/extraScripts}
   </head> 
   <body id="{pageID}" class="no-js">
   	<div id="container">
