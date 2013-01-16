@@ -159,7 +159,7 @@ em {
   margin: auto; }
 
 header {
-  height: 8em; }
+  height: 9em; }
 
 #logo {
   float: left;
@@ -621,7 +621,14 @@ form {
 #maps {
   margin: auto;
   position: relative;
-  width: 90%; }
+  width: 90%;
+  margin-bottom: 5em; }
+  #maps .metadata {
+    display: block;
+    float: left;
+    height: 2em;
+    width: auto;
+    /* background-size: 9px 9px; */ }
 
 .mapContainer {
   position: relative;
@@ -629,6 +636,18 @@ form {
   float: left;
   margin: auto 2.5%; }
   .mapContainer .map {
-    height: 300px; }
+    height: 300px;
+    margin-bottom: 7em; }
+
+.address {
+  background: url("/static/img/pin.png") no-repeat;
+  background-size: 0.61em 1em;
+  padding-left: 1em; }
+
+.phone {
+  margin-left: 1.5em;
+  background: url("/static/img/tel.png") no-repeat;
+  background-size: 1em 1em;
+  padding-left: 1.5em; }
 
 /* ! MEDIA QUERIES */

@@ -236,7 +236,7 @@ em{
 	margin: auto;
 }
 header{
-	height: 8em;
+	height: 9em;
 }
 
 #logo{
@@ -758,6 +758,14 @@ form{
 	margin: auto;
 	position: relative;
 	width: 90%;
+	.metadata{
+		display: block;
+		float: left;
+		height: 2em;
+		width: auto;
+		/* background-size: 9px 9px; */
+	}
+	margin-bottom: 5em;
 }
 .mapContainer{
 	position: relative;
@@ -766,6 +774,18 @@ form{
 	margin: auto 2.5%;
 	.map{
 		height: 300px;
+		margin-bottom: 7em;
 	}
+}
+.address{
+	background: url('/static/img/pin.png') no-repeat;
+	background-size: 0.61em 1em;
+	padding-left: 1em;
+}
+.phone{
+	margin-left: 1.5em;
+	background: url('/static/img/tel.png') no-repeat;
+	background-size: 1em 1em;
+	padding-left: 1.5em;
 }
 /* ! MEDIA QUERIES */
