@@ -171,6 +171,7 @@ function login(usr, pwd, cb){
 
 
 /* ! GOOGLE MAPS */
+/*
 function initializeMap(positionAsArray, containerByID) {
 	//Map
 	var LatLng = new google.maps.LatLng(positionAsArray[0], positionAsArray[1]);
@@ -189,11 +190,11 @@ function initializeMap(positionAsArray, containerByID) {
 	var marker = new google.maps.Marker({
 	    position: LatLng,
 	    map: map
-	    /* ,title:"Hof ter Dampoort" */
     })
     
     marker.setMap(map);
 };
+*/
 
 
 $(document).ready(function() {
@@ -203,7 +204,12 @@ $(document).ready(function() {
 	if (document.location.href === 'http://yaska.couchdb:5984/post'){
 		document.location.href = 'http://yaska.couchdb:5984/post?' + Math.random();
 	}
-	JQTWEET.loadTweets();
+	
+	if(window.innerWidth > 480){
+		JQTWEET.loadTweets();
+		$('#contactAndLegalese').css('width', '33%');
+		$('#tweets').css('width', '66%');
+	}
 	
 	//Auth
 	//auth_controls.bind();
@@ -240,10 +246,19 @@ $(document).ready(function() {
 	});
 	
 	/* ! MAPS */
-	if(google !== undefined){
+	/*
+if(google !== undefined){
 		initializeMap([51.055799, 3.742372], 'BelgianMap');
 		initializeMap([52.182732, 20.99762], 'PolishMap');
 		console.log("did some mappin'");
 	}
+*/
+	
+	
+	/* ! Responsive shizzle */
+	$('#menuButton').click(function(){
+		
+		$('#nav').slideToggle();
+	})
 	
 });

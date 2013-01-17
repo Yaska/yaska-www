@@ -203,11 +203,11 @@ em{
 /* ! BASE */
 .button{
 	width: 10em;
-	padding: 0.5em;
+	padding: 0.8em 0.5em 0.5em;
 	text-align: center;
 	position: absolute;
 	height: 1.2em;
-	top: 2em;
+	top: 2.8em;
 	right: 1.5em;
 	display: block;
 	/* background-color: $lightgreyish; */
@@ -236,7 +236,7 @@ em{
 	margin: auto;
 }
 header{
-	height: 9em;
+	height: auto;
 }
 
 #logo{
@@ -266,6 +266,7 @@ header{
 }
 nav{
 	float: right;
+	margin-bottom: 2em;
 }
 #nav{
 	position: relative;
@@ -296,6 +297,9 @@ nav{
 			color: $green;
 		}
 	}
+}
+#menuButton{
+	display: none;
 }
 #n_services{
 	background: $white url('/static/img/nav/nav_services.png') no-repeat;
@@ -375,7 +379,8 @@ footer{
 #contactAndLegalese{
 	position: relative;
 	float: left;
-	width: 33%;
+	/* width: 33%; */
+	width: 100%;
 }
 #social{
 	width: 50%;
@@ -391,7 +396,7 @@ footer{
 #tweets{
 	position: relative;
 	float: left;
-	width: 66%;
+	/* width: 66%; */
 }
 
 .tweetTime{
@@ -434,10 +439,11 @@ footer{
 		padding-left: 1.2em;
 		background-repeat: no-repeat;
 		background-size: 1em;
+		font-size: 1.3em;
 	}
 }
 .slas{
-	width: 33%;
+	width: 30%;
 	float: left;
 	margin: 2em 0;
 }
@@ -467,6 +473,8 @@ footer{
 		display: block;
 		float: left;
 		clear: both;
+		margin-bottom: 1em;
+		margin-top: 2em;
 	}
 }
 #w_icons{
@@ -793,3 +801,179 @@ form{
 	padding-left: 1.5em;
 }
 /* ! MEDIA QUERIES */
+
+/* ! WIDE */
+#crashplan{
+	clear: left;
+}
+
+#quickresponse, #monthlyreporting, #crashplan, #helpdeskaccess{
+	margin-right: 5%;
+}
+
+@media all and (max-width: 1024px) {
+    /* styles for narrow desktop browsers and iPad landscape */
+    
+}
+@media all and (max-width: 920px) {
+	#devText{
+		width: 100%;
+	}
+	#development{
+		img{
+			float: none;
+			display: block;
+			margin: auto;
+			padding-top: 1.5em;
+		}
+	}
+}
+@media all and (max-width: 768px) {
+	.button{
+		right: 0;
+	}
+	.slas{
+		width: 48%;
+	}
+	#crashplan{
+		clear: none;
+	}
+	#monitoring, #helpdeskaccess{
+		clear: left;
+	}
+	#quickresponse, #monitoring, #helpdeskaccess{
+		margin-right: 4%;
+	}
+	#monthlyreporting, #crashplan{
+		margin-right: 0;
+	}
+	#workshops{
+	    p{
+		    clear: both;
+	    }
+    }
+    #w_icons{
+	    width: 70%;
+	    margin: auto 15%;
+    }
+    #workShopsPs{
+	    clear: both;
+	    padding-top: 2em;
+    }
+    
+    #development{
+	    img{
+	    	padding-top: 1.5em;
+	    	float: none;
+		    width: 70%;
+		    margin: auto 15%;
+	    }
+	    #devText{
+		    width: 100%;
+		    float: none;
+	    }
+    }
+}
+@media all and (max-width: 660px) {
+	#logo{
+		margin-right: 2em;
+	}
+	#menuButton{
+		display: block;
+		img{
+			width: 20px;
+			height: 16px;
+		}
+	}
+	nav{
+		margin: 4.4em 2em 0 0;
+	}
+	#nav{
+		display: none;
+		position: fixed;
+		bottom: 0
+		/*
+li{
+			float: none;
+			text-align: left;
+			width: auto;
+			height: auto;
+			margin: 0;
+		}
+*/
+		a{
+			/* padding-top: 1em; */
+		}
+	}
+	
+	.button{
+		position: relative;
+		margin: auto;
+		clear: both;
+	}
+	#index{
+		h2{
+			text-align: center;
+		}
+	}
+}
+
+
+@media all and (max-width: 480px) {
+    /* styles for iPhone/Android landscape (and really narrow browser windows) */
+    .slas, .leadIn, h2{
+	    margin: 0.5em 3%;
+	    width: 96%;
+    }
+    .slas{
+	    margin-bottom: 1.5em;
+    }
+    .button{
+	    width: 100%;
+    }
+    h2{
+	    margin: 0.5em auto;
+    }
+    .section{
+	    padding: 3em 0;
+	    border: none;
+    }
+    .insideContainer{
+	    padding: 0;
+    }
+    #workshops{
+	    #w_icons{
+		    display: none;
+	    }
+	    p{
+		    margin: 0 3%;
+	    }
+	}
+	#development{
+		img{
+			display: none;
+		}
+		#devText{
+			width: 100%;
+			p{
+				width: 94%;
+				margin: auto 3%;	
+			}
+		}
+	}
+	#contactAndLegalese{
+		width: 100%;
+	}
+	#tweets{
+		display: none;
+	}
+}
+
+@media all and (max-width: 320px) {
+    /* styles for iPhone/Android portrait */
+}
+
+@media all and (max-width: 240px) {
+    /* styles for smaller devices */
+}
+
