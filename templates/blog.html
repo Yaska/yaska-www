@@ -3,7 +3,7 @@
 		{#posts}
 		<article class="blogPost">
 			<h2>{value.title}</h2>
-			<div class="metadata">
+			<div class="metadata clearfix">
 				<span class="pubDate">{value.dateString}</span>
 				<span class="author">{value.author}</span>
 				<span class="tags clearfix">
@@ -12,7 +12,7 @@
 					{/value.tags}
 				</span>
 			</div>
-			<div>{value.html|s}</div>
+			<div class="postContent">{value.html|s}</div>
 		</article>
 		{/posts}
 	</div>
@@ -33,9 +33,9 @@
 		</div>
 		<div id="tags">
 			<h3>Tags</h2>
-				{#tags}
-					<a class="tagCloudTag" href="{baseURL}/blog/tags/{.}">{.}</a>
-				{/tags}
+			{#tags}
+				<a class="tagCloudTag" href="{baseURL}/blog/tags/{.}">{.}</a>
+			{/tags}
 		</div>
 		<div id="archive" class="hidden">
 			<h3>Archive</h3>

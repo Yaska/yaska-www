@@ -87,7 +87,7 @@ html[xmlns] .clearfix {
 /* ! TYPOGRAPHY */
 body {
   /* font-family: Georgia, serif; */
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #969696; }
 
@@ -542,6 +542,9 @@ th, td {
 .tags {
   background: url("/static/img/blog/tag.png") no-repeat;
   width: 30%; }
+
+.postContent {
+  padding: 0.8em 0; }
 
 #aside {
   float: left;
