@@ -668,8 +668,15 @@ form {
 #quickresponse, #monthlyreporting, #crashplan, #helpdeskaccess {
   margin-right: 5%; }
 
+.mobile {
+  display: none; }
+
 @media all and (max-width: 1024px) {
   /* styles for narrow desktop browsers and iPad landscape */ }
+@media all and (max-width: 1024px) {
+  .metadata.phone {
+    clear: left;
+    margin-left: 0; } }
 @media all and (max-width: 920px) {
   #devText {
     width: 100%; }
@@ -681,7 +688,8 @@ form {
     padding-top: 1.5em; } }
 @media all and (max-width: 768px) {
   .button {
-    right: 0; }
+    /* right: 0; */
+    right: 1em; }
 
   .slas {
     width: 48%; }
@@ -717,6 +725,9 @@ form {
   #development #devText {
     width: 100%;
     float: none; } }
+@media all and (max-width: 660px) {
+  .mapContainer {
+    width: 90%; } }
 @media all and (max-width: 660px) {
   #logo {
     margin-right: 2em; }
@@ -770,6 +781,14 @@ form {
     text-align: center; } }
 @media all and (max-width: 480px) {
   /* styles for iPhone/Android landscape (and really narrow browser windows) */
+    /*
+.mobile{
+	    display: inline;
+    }
+*/
+  .non-mobile {
+    display: none; }
+
   .slas, .leadIn, h2 {
     margin: 0.5em 3%;
     width: 96%; }
@@ -805,10 +824,22 @@ form {
 
   #contactAndLegalese {
     width: 100%; }
+    #contactAndLegalese div {
+      float: left;
+      color: #8dc63f;
+      width: 33%;
+      text-align: center; }
+    #contactAndLegalese #social, #contactAndLegalese #copy {
+      width: 50%; }
 
   #tweets {
     display: none; } }
+@media all and (max-width: 420px) {
+  form .inputDiv {
+    width: 90%; } }
 @media all and (max-width: 320px) {
-  /* styles for iPhone/Android portrait */ }
+  /* styles for iPhone/Android portrait */
+  form .inputDiv {
+    width: 90%; } }
 @media all and (max-width: 240px) {
   /* styles for smaller devices */ }

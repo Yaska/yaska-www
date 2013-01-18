@@ -810,10 +810,19 @@ form{
 #quickresponse, #monthlyreporting, #crashplan, #helpdeskaccess{
 	margin-right: 5%;
 }
+.mobile{
+	display: none;	
+}
 
 @media all and (max-width: 1024px) {
     /* styles for narrow desktop browsers and iPad landscape */
     
+}
+@media all and (max-width: 1024px) {
+	.metadata.phone{
+		clear: left;
+		margin-left: 0; 
+	}
 }
 @media all and (max-width: 920px) {
 	#devText{
@@ -830,7 +839,8 @@ form{
 }
 @media all and (max-width: 768px) {
 	.button{
-		right: 0;
+		/* right: 0; */
+		right: 1em;
 	}
 	.slas{
 		width: 48%;
@@ -873,6 +883,12 @@ form{
 		    float: none;
 	    }
     }
+}
+
+@media all and (max-width: 660px) {
+	.mapContainer{
+		width: 90%;
+	}
 }
 @media all and (max-width: 660px) {
 	#logo{
@@ -936,6 +952,14 @@ li{
 
 @media all and (max-width: 480px) {
     /* styles for iPhone/Android landscape (and really narrow browser windows) */
+    /*
+.mobile{
+	    display: inline;
+    }
+*/
+    .non-mobile{
+	    display: none;
+    }
     .slas, .leadIn, h2{
 	    margin: 0.5em 3%;
 	    width: 96%;
@@ -978,14 +1002,35 @@ li{
 	}
 	#contactAndLegalese{
 		width: 100%;
+		div{
+			float: left;
+			color: $green;
+			width: 33%;
+			text-align: center;
+		}
+		#social, #copy{
+			width: 50%;
+		}
 	}
 	#tweets{
 		display: none;
 	}
 }
+@media all and (max-width: 420px) {
+    form{
+	    .inputDiv{
+		 	width: 90%;   
+	    }
+    }
+}
 
 @media all and (max-width: 320px) {
     /* styles for iPhone/Android portrait */
+    form{
+	    .inputDiv{
+		 	width: 90%;   
+	    }
+    }
 }
 
 @media all and (max-width: 240px) {

@@ -207,7 +207,7 @@ $(document).ready(function() {
 	
 	if(window.innerWidth > 480){
 		JQTWEET.loadTweets();
-		$('#contactAndLegalese').css('width', '33%');
+		$('#contactAndLegalese').css('width', '30%').css('margin-left', '3%');
 		$('#tweets').css('width', '66%');
 	}
 	
