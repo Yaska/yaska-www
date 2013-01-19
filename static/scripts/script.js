@@ -258,7 +258,7 @@ if(google !== undefined){
 	/* ! Responsive shizzle */
 	$('#menuButton').click(function(){
 		
-		$('#nav').slideToggle();
+		$('#nav').slideToggle('fast');
 	})
 	
 });
