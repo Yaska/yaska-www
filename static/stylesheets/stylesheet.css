@@ -1,3 +1,7 @@
+/* ! Dev */
+#tags {
+  display: none; }
+
 /* ! VARS */
 #white {
   backgrounColor: white; }
@@ -132,10 +136,13 @@ em {
   right: 1.5em;
   display: block;
   /* background-color: $lightgreyish; */
-  color: white;
   -moz-border-radius: 1px;
   -webkit-border-radius: 1px;
   border-radius: 1px; }
+  .button a {
+    display: block;
+    text-decoration: none;
+    color: white; }
 
 #slaButton {
   background-color: #8dc63f; }

@@ -1,3 +1,9 @@
+/* ! Dev */
+#tags{
+	display: none;
+}
+
+
 /* ! VARS */
 
 $white: #fff;
@@ -211,8 +217,12 @@ em{
 	right: 1.5em;
 	display: block;
 	/* background-color: $lightgreyish; */
-	color: white;
 	@include border_radius(1px);
+	a{
+		display: block;
+		text-decoration: none;
+		color: white;
+	}
 }
 #slaButton{
 	background-color: $green;
