@@ -681,6 +681,37 @@ form {
   background-size: 1em 1em;
   padding-left: 1.5em; }
 
+/* ! ABOUT */
+#wereYaska {
+  background-color: #293238;
+  color: white; }
+  #wereYaska h1 {
+    font-size: 1.3em;
+    color: white; }
+  #wereYaska img {
+    float: left;
+    max-width: 30%;
+    _width: 50%;
+    margin: 7em 10%; }
+
+#aboutUsText {
+  margin: 2em auto;
+  float: left;
+  width: 45%;
+  margin-left: 5%; }
+
+.person {
+  float: left;
+  text-align: center;
+  width: 25%;
+  margin: 2em 0; }
+  .person img {
+    width: 150px; }
+  .person span {
+    display: block; }
+  .person .name {
+    font-weight: bold; }
+
 /* ! MEDIA QUERIES */
 /* ! WIDE */
 #crashplan {
@@ -820,7 +851,18 @@ form {
 
   #essential, #security {
     width: 96%;
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #aboutUsText {
+    width: 90%; }
+
+  #wereYaska img {
+    max-width: 50%;
+    _width: 50%;
+    margin: 2em 25%; }
+
+  .person {
+    width: 33.33%; } }
 @media all and (max-width: 480px) {
   /* styles for iPhone/Android landscape (and really narrow browser windows) */
     /*
@@ -875,13 +917,19 @@ form {
       width: 50%; }
 
   #tweets {
-    display: none; } }
+    display: none; }
+
+  .person {
+    width: 50%; } }
 @media all and (max-width: 420px) {
   form .inputDiv {
     width: 90%; } }
 @media all and (max-width: 320px) {
   /* styles for iPhone/Android portrait */
   form .inputDiv {
-    width: 90%; } }
+    width: 90%; }
+
+  .person {
+    width: 100%; } }
 @media all and (max-width: 240px) {
   /* styles for smaller devices */ }
