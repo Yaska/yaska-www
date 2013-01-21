@@ -216,10 +216,12 @@ $(document).ready(function() {
 	
 	$('td[data-checks="yes"]').html('<img src="/static/img/checks/yes.png" />');
 	$('td[data-checks="no"]').html('<img src="/static/img/checks/no.png" />');
-	for(var i = 0, ii = $('tr').length; i < ii; i++){
-		if(i % 2 !== 0){
-			$($('tr')[i]).addClass('odd');
-		} 
+	for(var i = 0, ii = $('table').length; i < ii; i++){
+		for(var j = 0, jj = $($('table')[i]).find('tr').length; j < jj; j++){
+			if(j % 2 !== 0){
+				$($($('table')[i]).find('tr')[j]).addClass('odd');
+			} 
+		}
 	}
 	$('tr').css('border', 'none');
 	
@@ -260,5 +262,12 @@ if(google !== undefined){
 		
 		$('#nav').slideToggle('fast');
 	})
+	$('#julien')
+		.hover(function(){
+			$('#julien img').attr('src', '/static/img/contact/dready.png');
+		},
+		function(){
+			$('#julien img').attr('src', '/static/img/contact/julien.png');
+		});
 	
 });
