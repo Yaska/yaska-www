@@ -227,7 +227,7 @@ em{
 	right: 1.5em;
 	display: block;
 	/* background-color: $lightgreyish; */
-	@include border_radius(1px);
+	@include border_radius(3px);
 	a{
 		display: block;
 		text-decoration: none;
