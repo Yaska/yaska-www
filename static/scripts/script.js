@@ -247,27 +247,19 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	/* ! MAPS */
-	/*
-if(google !== undefined){
-		initializeMap([51.055799, 3.742372], 'BelgianMap');
-		initializeMap([52.182732, 20.99762], 'PolishMap');
-		console.log("did some mappin'");
-	}
-*/
-	
-	
 	/* ! Responsive shizzle */
 	$('#menuButton').click(function(){
 		
 		$('#nav').slideToggle('fast');
 	})
-	$('#julien')
+	$('.person img')
 		.hover(function(){
-			$('#julien img').attr('src', '/static/img/contact/dready.png');
+			var walternate = $(this).attr('src').replace('.png', '_alt.png')
+			$(this).attr('src', walternate);
 		},
 		function(){
-			$('#julien img').attr('src', '/static/img/contact/julien.png');
+			var walter = $(this).attr('src').replace('_alt', '');
+			$(this).attr('src', walter);
 		});
 	
 });
