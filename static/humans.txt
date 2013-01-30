@@ -1,0 +1,26 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Yaska.eu: @verbekealexis, @artlambi, @da_deef, @kazernee, @julienvds, @lauradschr
+  Site: www.yaska.eu
+  Twitter: @yaska_eu
+  Location: Ghent, Belgium
+
+/* THANKS */
+  Nespresso + Nalu = o_O
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: Coda 2, TextMate 2, CodeKit
+
+/* ICONS */
+  Glyphicons http://glyphicons.com
+  GlyphishPro http://glyphish.com
+  Simplicons http://pixlsby.me
+  appicns http://twitter.com/appicns
+  
+/* LAST UPDATE */
+  29/01/2013
