@@ -460,6 +460,7 @@ footer{
 #pic{
 	background-color: $green;
 	clear: both;
+	display: none;
 	img{
 		width: 1024px;
 		max-width: 100%;
@@ -1089,6 +1090,15 @@ form{
 	.hiddenMicroformats{
 		display: none;
 	}	
+}
+
+::selection {
+	background: $green; /* Safari */
+	color: $white;
+}
+::-moz-selection {
+	background: $green; /* Firefox */
+	color: $white;
 }
 /* ! MEDIA QUERIES */
 

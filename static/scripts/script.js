@@ -168,38 +168,84 @@ function login(usr, pwd, cb){
 	    }
 	});
 }
-
-
-/* ! GOOGLE MAPS */
-/*
-function initializeMap(positionAsArray, containerByID) {
-	//Map
-	var LatLng = new google.maps.LatLng(positionAsArray[0], positionAsArray[1]);
-	console.log(LatLng);
-	var mapOptions = {
-	  center: LatLng,
-	  zoom: 14,
-	  mapTypeId: google.maps.MapTypeId.ROADMAP,
-	  streetViewControl: false,
-	  panControl: false
-	};
+function isHidpi(){
+	var hdpiCheck = window.matchMedia("only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+	if(hdpiCheck && hdpiCheck.matches){
+		return true;
+	}
+	else{
+		return false;
+	}
 	
-	map = new google.maps.Map(document.getElementById(containerByID),
-	    mapOptions);
-	
-	var marker = new google.maps.Marker({
-	    position: LatLng,
-	    map: map
-    })
-    
-    marker.setMap(map);
-};
-*/
-
+}
+function preloader() {
+	if (document.images) {
+		var julien = new Image();
+		var eric = new Image();
+		var alexis = new Image();
+		var arthur = new Image();
+		var laura = new Image();
+		var david = new Image();
+		var karl = new Image();
+		var louis = new Image();
+		var pierre = new Image();
+		
+		var hdpiCheck = window.matchMedia("only screen and (-moz-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 2.6/2), only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen  and (min-device-pixel-ratio: 1.3), only screen and (min-resolution: 1.3dppx)");
+		
+		if(isHidpi()){
+			console.log('loading hi-hidpi');
+			julien.src = "http://yaska.eu/static/img/about/julien_alt@2x.png";
+			eric.src = "http://yaska.eu/static/img/about/eric_alt@2x.png";
+			alexis.src = "http://yaska.eu/static/img/about/alexis_alt@2x.png";
+			arthur.src = "http://yaska.eu/static/img/about/arthur_alt@2x.png";
+			laura.src = "http://yaska.eu/static/img/about/laura_alt@2x.png";
+			david.src = "http://yaska.eu/static/img/about/david_alt@2x.png";
+			karl.src = "http://yaska.eu/static/img/about/karl_alt@2x.png";
+			louis.src = "http://yaska.eu/static/img/about/louis_alt@2x.png";
+			pierre.src = "http://yaska.eu/static/img/about/pierre_alt@2x.png";
+			
+		}
+		else{
+			console.log('loading non-hidpi');
+			julien.src = "http://yaska.eu/static/img/about/julien_alt.png";
+			eric.src = "http://yaska.eu/static/img/about/eric_alt.png";
+			alexis.src = "http://yaska.eu/static/img/about/alexis_alt.png";
+			arthur.src = "http://yaska.eu/static/img/about/arthur_alt.png";
+			laura.src = "http://yaska.eu/static/img/about/laura_alt.png";
+			david.src = "http://yaska.eu/static/img/about/david_alt.png";
+			karl.src = "http://yaska.eu/static/img/about/karl_alt.png";
+			louis.src = "http://yaska.eu/static/img/about/louis_alt.png";
+			pierre.src = "http://yaska.eu/static/img/about/pierre_alt.png";
+		}
+	}
+}
 
 $(document).ready(function() {
 	console.log('doc.ready');
 	$('body').removeClass('no-js');
+	
+	if(window.location.pathname === '/about'){
+		preloader()
+	}
+	
+	if(window.location.pathname.indexOf('/services') !== -1  && window.location.hash !== ""){
+		$('.sideNavButton').removeClass('active');
+		$('.sideNavButton a[href="' + window.location.hash + '"]').parents('.sideNavButton').addClass('active')
+	}
+	
+	if(window.location.pathname === '/'){
+		if(Math.random() <= 0.5){
+			$('#pic')
+				.css('background-color', '#293238')
+				.find('img').attr('src', '/static/img/develop.png').end()
+				.show();
+		}else{
+			$('#pic')
+				.css('background-color', '#8dc63f')
+				.find('img').attr('src', '/static/img/visual.png').end()
+				.show();
+		}
+	}
 	//Hack for ETAG-caching until i find a better solution 
 	if (document.location.href === 'http://yaska.couchdb:5984/post'){
 		document.location.href = 'http://yaska.couchdb:5984/post?' + Math.random();
@@ -247,21 +293,30 @@ $(document).ready(function() {
 		return false;
 	});
 	
+	$('.person').click(function(){
+		var img = $(this).css('background-image');
+		var el = $(this)
+		if(!isHidpi()){
+			if(img.indexOf('_alt') === -1){
+				el.css('background-image', img.replace('.png', '_alt.png'));
+			}
+			else{
+				el.css('background-image', img.replace('_alt', ''));
+			}
+		}
+		else{
+			if(img.indexOf('_alt') === -1){
+				el.css('background-image', img.replace('@2x.png', '_alt@2x.png'));
+			}
+			else{
+				el.css('background-image', img.replace('_alt', ''));
+			}
+		}
+	});
+	
 	/* ! Responsive shizzle */
 	$('#menuButton').click(function(){
-		
 		$('#nav').slideToggle('fast');
 	})
-	/*
-$('.person img')
-		.hover(function(){
-			var walternate = $(this).attr('src').replace('.png', '_alt.png')
-			$(this).attr('src', walternate);
-		},
-		function(){
-			var walter = $(this).attr('src').replace('_alt', '');
-			$(this).attr('src', walter);
-		});
-*/
 	
 });
