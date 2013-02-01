@@ -252,7 +252,8 @@ $(document).ready(function() {
 		
 		$('#nav').slideToggle('fast');
 	})
-	$('.person img')
+	/*
+$('.person img')
 		.hover(function(){
 			var walternate = $(this).attr('src').replace('.png', '_alt.png')
 			$(this).attr('src', walternate);
@@ -261,5 +262,6 @@ $(document).ready(function() {
 			var walter = $(this).attr('src').replace('_alt', '');
 			$(this).attr('src', walter);
 		});
+*/
 	
 });

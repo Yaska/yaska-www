@@ -603,6 +603,9 @@ th, td {
   -webkit-border-radius: 3px 0 0 3px;
   border-radius: 3px 0 0 3px;
   font-size: 0.7857em; }
+  #sideNav ul {
+    padding-left: 0;
+    margin-top: 0; }
 
 .sideNavButton {
   display: block;
@@ -718,7 +721,7 @@ th, td {
   position: relative;
   padding-right: 3%; }
   .blogPost img, .blogPost video, .blogPost iframe {
-    margin: 2em auto;
+    margin: 0 auto;
     max-width: 100%;
     _width: 100%;
     border: 1px solid #eceef0; }
@@ -916,14 +919,151 @@ form {
   float: left;
   text-align: center;
   width: 25%;
-  margin: 2em 0; }
-  .person img {
-    width: 150px; }
+  margin: 2em 0;
+  padding-top: 160px; }
   .person span {
     display: block; }
   .person .name {
     color: #293238;
     font-weight: bold; }
+
+#julien {
+  background: url("../img/about/julien.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #julien {
+      background-image: url("../img/about/julien@2x.png");
+      background-size: 150px 150px; } }
+  #julien:hover {
+    background: url("../img/about/julien_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #julien:hover {
+        background-image: url("../img/about/julien_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#eric {
+  background: url("../img/about/eric.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #eric {
+      background-image: url("../img/about/eric@2x.png");
+      background-size: 150px 150px; } }
+  #eric:hover {
+    background: url("../img/about/eric_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #eric:hover {
+        background-image: url("../img/about/eric_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#alexis {
+  background: url("../img/about/alexis.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #alexis {
+      background-image: url("../img/about/alexis@2x.png");
+      background-size: 150px 150px; } }
+  #alexis:hover {
+    background: url("../img/about/alexis_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #alexis:hover {
+        background-image: url("../img/about/alexis_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#arthur {
+  background: url("../img/about/arthur.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #arthur {
+      background-image: url("../img/about/arthur@2x.png");
+      background-size: 150px 150px; } }
+  #arthur:hover {
+    background: url("../img/about/arthur_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #arthur:hover {
+        background-image: url("../img/about/arthur_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#laura {
+  background: url("../img/about/laura.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #laura {
+      background-image: url("../img/about/laura@2x.png");
+      background-size: 150px 150px; } }
+  #laura:hover {
+    background: url("../img/about/laura_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #laura:hover {
+        background-image: url("../img/about/laura_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#david {
+  background: url("../img/about/david.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #david {
+      background-image: url("../img/about/david@2x.png");
+      background-size: 150px 150px; } }
+  #david:hover {
+    background: url("../img/about/david_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #david:hover {
+        background-image: url("../img/about/david_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#karl {
+  background: url("../img/about/karl.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #karl {
+      background-image: url("../img/about/karl@2x.png");
+      background-size: 150px 150px; } }
+  #karl:hover {
+    background: url("../img/about/karl_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #karl:hover {
+        background-image: url("../img/about/karl_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#louis {
+  background: url("../img/about/louis.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #louis {
+      background-image: url("../img/about/louis@2x.png");
+      background-size: 150px 150px; } }
+  #louis:hover {
+    background: url("../img/about/louis_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #louis:hover {
+        background-image: url("../img/about/louis_alt@2x.png");
+        background-size: 150px 150px; } }
+
+#pierre {
+  background: url("../img/about/pierre.png") no-repeat;
+  background-position: center top; }
+  @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    #pierre {
+      background-image: url("../img/about/pierre@2x.png");
+      background-size: 150px 150px; } }
+  #pierre:hover {
+    background: url("../img/about/pierre_alt.png") no-repeat;
+    background-position: center top; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #pierre:hover {
+        background-image: url("../img/about/pierre_alt@2x.png");
+        background-size: 150px 150px; } }
+
+.vcard .hiddenMicroformats {
+  display: none; }
 
 /* ! MEDIA QUERIES */
 /* ! WIDE */
@@ -1025,7 +1165,8 @@ form {
     margin-bottom: 0.5em; }
 
   #nav {
-    padding-bottom: 0.8em;
+    margin: 0;
+    padding: 0 0 0.8em 0;
     -moz-box-shadow: 0 0 0.3em #293238;
     -webkit-box-shadow: 0 0 0.3em #293238;
     box-shadow: 0 0 0.3em #293238;
