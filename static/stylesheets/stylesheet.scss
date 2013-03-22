@@ -1103,6 +1103,68 @@ form{
 	background: $green; /* Firefox */
 	color: $white;
 }
+
+/* ! PROJECTS */
+#projectsModule{
+    margin-top: 5em;
+    
+    .insideContainer{
+        border-top: 1px solid $mediumLightGrey;
+    }
+    h2{
+        text-align: center;
+        background-color: white;
+        margin: -1em auto 0;
+        font-size: 150%;
+        padding-bottom: 2em;
+    }
+    p{
+        width: 70%;
+        margin: auto;
+    }
+    
+    #h2-sites{
+        width: 4em;
+    }
+    #h2-videos{
+        width: 5em;
+    }
+    #h2-illustrations{
+        width: 9em;
+    }
+    #toolbar{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    #videos{
+        text-align: center;
+    }
+    iframe{
+        margin-top: 3em;
+        margin-bottom: 5em;
+    }
+    #sites{
+        background: url('/static/img/projects/coffee.png') no-repeat;
+        @include hidpi('/static/img/projects/coffee@2x.png', 82px, 74px);
+        background-position: right 7em;
+    }
+    #videos{
+        background: url('/static/img/projects/camera.png') no-repeat;
+        @include hidpi('/static/img/projects/camera@2x.png', 114px, 134px);
+        background-position: 1em 19em;
+    }
+    #illustrations{
+        background: url('/static/img/projects/stift.png') no-repeat;
+        @include hidpi('/static/img/projects/stift@2x.png', 98px, 170px);
+        background-position: right 9em;
+    }
+    #why{
+        width: 70%;
+        margin: 2em auto;
+    }
+}
+
 /* ! MEDIA QUERIES */
 
 /* ! WIDE */
@@ -1201,6 +1263,10 @@ form{
 	}
 }
 @media all and (max-width: 660px) {
+    #sites, #illustrations, #videos{
+        background: none !important;
+    }
+    
 	header{
 		position: fixed;
 		z-index: 1;
@@ -1394,3 +1460,35 @@ form{
     /* styles for smaller devices */
 }
 
+/* SlideShow */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto 5em;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }

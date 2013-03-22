@@ -1078,6 +1078,60 @@ form {
   /* Firefox */
   color: white; }
 
+/* ! PROJECTS */
+#projectsModule {
+  margin-top: 5em; }
+  #projectsModule .insideContainer {
+    border-top: 1px solid #969696; }
+  #projectsModule h2 {
+    text-align: center;
+    background-color: white;
+    margin: -1em auto 0;
+    font-size: 150%;
+    padding-bottom: 2em; }
+  #projectsModule p {
+    width: 70%;
+    margin: auto; }
+  #projectsModule #h2-sites {
+    width: 4em; }
+  #projectsModule #h2-videos {
+    width: 5em; }
+  #projectsModule #h2-illustrations {
+    width: 9em; }
+  #projectsModule #toolbar {
+    display: block;
+    width: 70%;
+    margin: 0 auto; }
+  #projectsModule #videos {
+    text-align: center; }
+  #projectsModule iframe {
+    margin-top: 3em;
+    margin-bottom: 5em; }
+  #projectsModule #sites {
+    background: url("/static/img/projects/coffee.png") no-repeat;
+    background-position: right 7em; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #projectsModule #sites {
+        background-image: url("/static/img/projects/coffee@2x.png");
+        background-size: 82px 74px; } }
+  #projectsModule #videos {
+    background: url("/static/img/projects/camera.png") no-repeat;
+    background-position: 1em 19em; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #projectsModule #videos {
+        background-image: url("/static/img/projects/camera@2x.png");
+        background-size: 114px 134px; } }
+  #projectsModule #illustrations {
+    background: url("/static/img/projects/stift.png") no-repeat;
+    background-position: right 9em; }
+    @media all and (min--moz-device-pixel-ratio: 1.5), (o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+      #projectsModule #illustrations {
+        background-image: url("/static/img/projects/stift@2x.png");
+        background-size: 98px 170px; } }
+  #projectsModule #why {
+    width: 70%;
+    margin: 2em auto; }
+
 /* ! MEDIA QUERIES */
 /* ! WIDE */
 #crashplan {
@@ -1151,6 +1205,9 @@ form {
   .mapContainer {
     width: 90%; } }
 @media all and (max-width: 660px) {
+  #sites, #illustrations, #videos {
+    background: none !important; }
+
   header {
     position: fixed;
     z-index: 1;
@@ -1310,3 +1367,31 @@ form {
     width: 100%; } }
 @media all and (max-width: 240px) {
   /* styles for smaller devices */ }
+/* SlideShow */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 70%;
+  padding: 0;
+  margin: 0 auto 5em; }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left; }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0; }

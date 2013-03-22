@@ -234,16 +234,22 @@ $(document).ready(function() {
 	}
 	
 	if(window.location.pathname === '/'){
-		if(Math.random() <= 0.5){
+		var randomizr = Math.random();
+		if(randomizr <= 0.33){
 			$('#pic')
 				.css('background-color', '#293238')
 				.find('img').attr('src', '/static/img/develop.png').end()
 				.show();
-		}else{
+		}else if (randomizr <= 0.66){
 			$('#pic')
 				.css('background-color', '#8dc63f')
 				.find('img').attr('src', '/static/img/visual.png').end()
 				.show();
+		}else{
+			$('#pic')
+			.css('background-color', '#878b89')
+			.find('img').attr('src', '/static/img/support.png').end()
+			.show();
 		}
 	}
 	//Hack for ETAG-caching until i find a better solution 
@@ -313,6 +319,9 @@ $(document).ready(function() {
 			}
 		}
 	});
+	
+	/* ! SlideShow */
+	$(".rslides").responsiveSlides();
 	
 	/* ! Responsive shizzle */
 	$('#menuButton').click(function(){

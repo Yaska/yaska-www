@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+        <title>Yaska Feed</title>
+        <subtitle>Apple and Yaska-related news</subtitle>
+        <link href="http://yaska.eu/feed/" rel="self" />
+        <link href="http://yaska.eu/" />
+        <id>http://www.yaska.eu/</id>
+		<category term="Technology" />
+        <updated>{updateDate}</updated>
+		<icon>http://www.yaska.eu/static/favicon.ico</icon>
+		<logo>http://www.yaska.eu/static/image/logo.png</logo>
+ 
+        {#posts}
+	        <entry>
+	                <title>{value.title}</title>
+					<id>http://yaska.eu/blog/{value._id}</id>
+	                <link href="http://yaska.eu/blog/{value._id}" />
+	                <link rel="alternate" type="text/html" href="http://yaska.eu/blog/{value._id}"/>
+	                <updated>{value.ISOString}</updated>
+	                <author>
+	                      <name>{value.author}</name>
+	                </author>
+					{?value.tags}
+						<category term="{#value.tags}{.} {/value.tags}"/>
+					{/value.tags}
+					<content type="html">
+						<![CDATA[ {value.html|s} ]]>
+					</content>
+	        </entry>
+        {/posts}
+ 
+</feed>

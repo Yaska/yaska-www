@@ -15,6 +15,9 @@
 	<![endif]-->
     <link rel="stylesheet" href="{baseURL}/static/stylesheets/stylesheet.css">
     <link rel="profile" href="http://microformats.org/profile/hcard">
+	{#extrasInHead}
+    	{.|s}
+    {/extrasInHead}
     <script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -125,6 +128,7 @@
   	</div>
 	<script src="{baseURL}/modules.js"></script>
 	<script src="{baseURL}/static/scripts/script.js"></script>
+	<script src="{baseURL}/static/scripts/responsiveslides.min.js"></script>
 	{#extraScripts}
     	{.|s}
     {/extraScripts}
