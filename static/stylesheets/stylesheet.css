@@ -798,14 +798,14 @@ th, td {
     margin-bottom: 0.3em;
     font-size: 0.854em; }
 
-a.tagCloudTag {
+#share a, a.tagCloudTag {
   display: block;
   float: left;
   text-decoration: none;
   font-size: 0.854em;
   color: #4b575e;
   margin: 0.2em;
-  padding: 0.3em;
+  padding: 0.3em 0.7em;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -858,7 +858,8 @@ form {
     color: white;
     height: 3em;
     margin: 2.5% 2em;
-    border: #4b575e; }
+    border: #4b575e;
+    -webkit-appearance: none; }
 
 #maps {
   margin: auto;
