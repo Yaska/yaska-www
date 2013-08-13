@@ -9,26 +9,26 @@ exports.clearErrors = function (form) {
     $('.password').removeClass('validation_error');
 };
 
-// exports.showDropDown = function () {
-//     $('#session .login').addClass('active');
-//     $('#login_dropdown').slideDown();
-//     $('#login_dropdown input[name="name"]').focus().select();
-// };
+exports.showDropDown = function () {
+    $('#session .login').addClass('active');
+    $('#login_dropdown').slideDown();
+    $('#login_dropdown input[name="name"]').focus().select();
+};
 
-// exports.hideDropDown = function () {
-//     $('#session .login').removeClass('active');
-//     $('#login_dropdown').slideUp();
-//     exports.clearErrors();
-// };
+exports.hideDropDown = function () {
+    $('#session .login').removeClass('active');
+    $('#login_dropdown').slideUp();
+    exports.clearErrors();
+};
 
-// exports.toggleDropDown = function () {
-//     if ($('#session .login').hasClass('active')) {
-//         exports.hideDropDown();
-//     }
-//     else {
-//         exports.showDropDown();
-//     }
-// };
+exports.toggleDropDown = function () {
+    if ($('#session .login').hasClass('active')) {
+        exports.hideDropDown();
+    }
+    else {
+        exports.showDropDown();
+    }
+};
 
 exports.bind = function () {
     $('#session .logout').click(function (ev) {
