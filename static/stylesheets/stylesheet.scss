@@ -1210,27 +1210,79 @@ form{
 	margin-top: 5em;
 }
 #fourOhfour{
+	#content{
+		min-height: 28em;
+	}
 	h1{
 		font-size: 1.457em;
 		text-align: center;
 	}
-	footer{
-		position: fixed;
-		bottom: 0;
-	}
 }
 
-@-webkit-keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
+.rotate-animation {
+  -webkit-animation: rotate 2s linear 0 infinite normal;
+  -moz-animation: rotate 2s linear 0 infinite normal;
+  -o-animation: rotate 2s linear 0 infinite normal;
+  -ms-animation: rotate 2s linear 0 infinite normal;
+  animation: rotate 2s linear 0 infinite normal;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+
+  }
+  to { 
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(0deg);
+
+  }
+  to { 
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+
+  }
+  to { 
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+
+  }
+  to { 
+    transform: rotate(360deg);
+  }
 }
 
 .rotating {
-    -webkit-animation: rotating 2s linear infinite;
+	-webkit-animation: rotate 2s linear 0s infinite normal;
+	-moz-animation: rotate 2s linear 0s infinite normal;
+	-o-animation: rotate 2s linear 0s infinite normal;
+	-ms-animation: rotate 2s linear 0s infinite normal;
+	animation: rotate 2s linear 0s infinite normal;
 }
 
 /* ! MEDIA QUERIES */
@@ -1332,7 +1384,7 @@ form{
 	
 	.fButton{
 		width: 30%;
-		margin: auto 1.666666667%;
+		margin: 0 1.666666667% 2em;
 	}
 }
 @media all and (max-width: 660px) {
@@ -1531,6 +1583,8 @@ form{
 	.fButton{
 		float: none;
 		margin: auto;
+		margin-bottom: 1.5em;
+		width: 50%;
 	}
 }
 
