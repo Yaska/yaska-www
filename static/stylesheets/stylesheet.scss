@@ -243,7 +243,7 @@ em{
 #slaButton{
 	background-color: $green;
 }
-#workshopsButton{
+#workshopsButton {
 	background-color: $mediumDarkGrey;
 }
 #developmentButton{
@@ -409,6 +409,7 @@ footer{
 	width: 100%;
 	background-color: $darkBlueGrey;
 	color: $white;
+	clear: both;
 	div{
 		margin: 0.33em 0;
 	}
@@ -1166,6 +1167,72 @@ form{
     }
 }
 
+/* ! 404 */
+
+.fButton{
+    min-width: 8em;
+    width: 20%;
+    margin: auto 6.666666665%;
+	padding: 0.6em auto 0.5em;
+	text-align: center;
+	height: 2.5em;
+	line-height: 2.5em;
+	float: left;
+	@include border_radius(3px);
+	a{
+		display: block;
+		text-decoration: none;
+		color: white;
+	}
+}
+
+#homepageButton{
+    background-color: $green;
+}
+
+#blogButton{
+    background-color: $mediumDarkGrey;
+} 
+
+#contactButton{
+    background-color: $darkBlueGrey;
+}
+#beachBall{
+	width: 75px;
+	margin: 5em auto 2em;
+	height: 8em;
+}
+.beachBallImg{
+	width: 75px;
+	position: absolute;
+}
+#fourOhFourButtons{
+	margin-top: 5em;
+}
+#fourOhfour{
+	h1{
+		font-size: 1.457em;
+		text-align: center;
+	}
+	footer{
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+}
+
 /* ! MEDIA QUERIES */
 
 /* ! WIDE */
@@ -1261,6 +1328,11 @@ form{
 @media all and (max-width: 660px) {
 	.mapContainer{
 		width: 90%;
+	}
+	
+	.fButton{
+		width: 30%;
+		margin: auto 1.666666667%;
 	}
 }
 @media all and (max-width: 660px) {
@@ -1454,6 +1526,11 @@ form{
     }
     .person{
 		width: 100%;
+	}
+	
+	.fButton{
+		float: none;
+		margin: auto;
 	}
 }
 

@@ -351,7 +351,8 @@ footer {
   position: relative;
   width: 100%;
   background-color: #293238;
-  color: white; }
+  color: white;
+  clear: both; }
   footer div {
     margin: 0.33em 0; }
   footer h3 {
@@ -1133,6 +1134,62 @@ form {
     width: 70%;
     margin: 2em auto; }
 
+/* ! 404 */
+.fButton {
+  min-width: 8em;
+  width: 20%;
+  margin: auto 6.666666665%;
+  padding: 0.6em auto 0.5em;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+  float: left;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+  .fButton a {
+    display: block;
+    text-decoration: none;
+    color: white; }
+
+#homepageButton {
+  background-color: #8dc63f; }
+
+#blogButton {
+  background-color: #878b89; }
+
+#contactButton {
+  background-color: #293238; }
+
+#beachBall {
+  width: 75px;
+  margin: 5em auto 2em;
+  height: 8em; }
+
+.beachBallImg {
+  width: 75px;
+  position: absolute; }
+
+#fourOhFourButtons {
+  margin-top: 5em; }
+
+#fourOhfour h1 {
+  font-size: 1.457em;
+  text-align: center; }
+#fourOhfour footer {
+  position: fixed;
+  bottom: 0; }
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite; }
+
 /* ! MEDIA QUERIES */
 /* ! WIDE */
 #crashplan {
@@ -1204,7 +1261,11 @@ form {
     float: none; } }
 @media all and (max-width: 660px) {
   .mapContainer {
-    width: 90%; } }
+    width: 90%; }
+
+  .fButton {
+    width: 30%;
+    margin: auto 1.666666667%; } }
 @media all and (max-width: 660px) {
   #sites, #illustrations, #videos {
     background: none !important; }
@@ -1365,7 +1426,11 @@ form {
     width: 90%; }
 
   .person {
-    width: 100%; } }
+    width: 100%; }
+
+  .fButton {
+    float: none;
+    margin: auto; } }
 @media all and (max-width: 240px) {
   /* styles for smaller devices */ }
 /* SlideShow */
