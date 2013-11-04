@@ -25,7 +25,7 @@
   background-color: #4b575e; }
 
 #green {
-  background-color: #8dc63f; }
+  background-color: #a2e155; }
 
 .color {
   height: 100px;
@@ -157,7 +157,7 @@ em {
     color: white; }
 
 #slaButton {
-  background-color: #8dc63f; }
+  background-color: #a2e155; }
 
 #workshopsButton {
   background-color: #878b89; }
@@ -236,7 +236,7 @@ nav {
     #nav a:hover {
       color: #878b89; }
   #nav .active a {
-    color: #8dc63f; }
+    color: #a2e155; }
 
 #menuButton {
   display: none; }
@@ -360,7 +360,7 @@ footer {
     font-size: 1em;
     margin-bottom: 0.66em; }
   footer a {
-    color: #8dc63f; }
+    color: #a2e155; }
 
 #contactAndLegalese {
   position: relative;
@@ -369,7 +369,8 @@ footer {
   width: 100%; }
 
 #social {
-  width: 50%; }
+  width: 50%;
+  max-width: 200px; }
   #social a {
     width: 20%;
     display: block;
@@ -391,7 +392,7 @@ footer {
 
 /* ! INDEX */
 #pic {
-  background-color: #8dc63f;
+  background-color: #a2e155;
   clear: both;
   display: none; }
   #pic img {
@@ -475,7 +476,7 @@ footer {
 #services #development {
   padding-bottom: 2em; }
   #services #development h2, #services #development h3, #services #development p {
-    color: white; }
+    color: #293238; }
 #services #workshops {
   background-color: #dddddd; }
   #services #workshops img {
@@ -590,7 +591,7 @@ th, td {
     color: #ccd2d7; }
 
 #services #development {
-  background-color: #8dc63f; }
+  background-color: #a2e155; }
   #services #development img {
     float: none; }
 
@@ -730,7 +731,7 @@ th, td {
     _width: 100%;
     border: 1px solid #eceef0; }
   .blogPost a {
-    color: #8dc63f; }
+    color: #a2e155; }
 
 .metadata {
   font-size: 0.854em;
@@ -821,7 +822,7 @@ form {
   width: 90%;
   margin: auto 5%; }
   form span {
-    color: #8dc63f; }
+    color: #a2e155; }
   form .inputDiv {
     position: relative;
     width: 45%;
@@ -1071,12 +1072,12 @@ form {
   display: none; }
 
 ::selection {
-  background: #8dc63f;
+  background: #a2e155;
   /* Safari */
   color: white; }
 
 ::-moz-selection {
-  background: #8dc63f;
+  background: #a2e155;
   /* Firefox */
   color: white; }
 
@@ -1153,7 +1154,7 @@ form {
     color: white; }
 
 #homepageButton {
-  background-color: #8dc63f; }
+  background-color: #a2e155; }
 
 #blogButton {
   background-color: #878b89; }
@@ -1444,7 +1445,7 @@ form {
     width: 100%; }
     #contactAndLegalese div {
       float: left;
-      color: #8dc63f;
+      color: #a2e155;
       width: 33%;
       text-align: center; }
     #contactAndLegalese #social, #contactAndLegalese #copy {

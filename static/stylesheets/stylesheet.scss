@@ -17,7 +17,9 @@ $mediumDarkGrey: #878b89;
 
 $darkBlueGrey: #293238;
 $lightBlueGrey: #4b575e;
-$green: #8dc63f;
+//$green: #8dc63f;
+//5c:$green: #a1e877;
+$green: #a2e155;
 
 $otherGrey: #ccd2d7;
 $workshopGrey: #ddd;
@@ -430,6 +432,7 @@ footer{
 }
 #social{
 	width: 50%;
+	max-width: 200px;
 	a{
 		width: 20%;
 		display: block;
@@ -532,7 +535,8 @@ footer{
 	#development{
 		padding-bottom: 2em;
 		h2, h3, p{
-			color: $white;
+			//color: $white;
+			color: $darkBlueGrey;
 		}
 	}
 	#workshops{
