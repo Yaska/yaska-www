@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="49px" height="117px" viewBox="0 0 49 117" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.0 (7573) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_r</title>
+    <description>Created with Sketch.</description>
+    <defs></defs>
+    <g id="desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="overview" sketch:type="MSArtboardGroup" transform="translate(-1755.000000, -533.000000)" fill="#123E4D" opacity="0.5">
+            <g sketch:type="MSLayerGroup" id="landing">
+                <g transform="translate(204.000000, 164.000000)" sketch:type="MSShapeGroup">
+                    <g id="ui-slideshow" transform="translate(41.000000, 369.000000)">
+                        <path d="M1558,1.03914042 L1556.7389,0 L1509,58.5 L1556.7389,117 L1558,115.96086 L1511.1127,58.5 L1558,1.03914042" id="arrow_r" transform="translate(1534.000000, 59.000000) scale(-1, 1) translate(-1534.000000, -59.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
