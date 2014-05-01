@@ -3,24 +3,6 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  background-color: #FAFBFB; }
-
-.container {
-  border-left: 1px solid #DFE2E7;
-  border-right: 1px solid #DFE2E7;
-  *zoom: 1;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white; }
-  .container:before, .container:after {
-    content: " ";
-    display: table; }
-  .container:after {
-    clear: both; }
-
-
 h1, h2, h3, h4, p, a, label, input, textarea {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 200; }
@@ -36,6 +18,27 @@ h2 {
 p {
   color: #828C97; }
 
+body {
+  background-color: #FAFBFB; }
+
+.container {
+  *zoom: 1;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  /* border-right: none;
+  border-left: none; */ }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media screen and (min-width: 960px)  {
+    .container {
+      border-left: 1px solid #DFE2E7;
+      border-right: 1px solid #DFE2E7; } }
+
 header {
   *zoom: 1;
   max-width: 60em;
@@ -47,31 +50,24 @@ header {
   header:after {
     clear: both; }
   header .top {
-    *zoom: 1;
-    max-width: 60em;
-    margin-left: auto;
-    margin-right: auto;
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 100%;
-    padding: 7px 0 0 0;
+    position: relative;
     background-color: #123E4D;
-    position: fixed;
     z-index: 1; }
-    header .top:before, header .top:after {
-      content: " ";
-      display: table; }
-    header .top:after {
-      clear: both; }
     header .top:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 768px)  {
+      header .top {
+        position: fixed; } }
     header .top .network {
       float: left;
       display: block;
       margin-right: 3.22581%;
       width: 22.58065%;
-      padding: 0 0 0 20px; }
+      padding: 8px 0 0 20px; }
       header .top .network:last-child {
         margin-right: 0; }
       header .top .network img {
@@ -87,7 +83,8 @@ header {
         margin-right: 0; }
       header .top .local ul {
         float: right;
-        margin: 0; }
+        margin: 0;
+        padding: 0.1em 0 0.2em 0; }
         header .top .local ul li {
           height: 12px;
           border-left: 1px solid white;
@@ -101,7 +98,8 @@ header {
             text-decoration: none;
             color: white;
             font-size: 0.6em;
-            font-weight: 500; }
+            font-weight: 500;
+            display: block; }
           header .top .local ul li:active a, header .top .local ul li:hover a {
             color: #8BC640; }
   header .nav {
@@ -120,7 +118,11 @@ header {
       float: left;
       display: block;
       margin-right: 2.5641%;
-      width: 79.48718%; }
+      width: 79.48718%;
+      display: none; }
+      @media screen and (min-width: 768px) and (max-width: 960px)  {
+        header .nav .menu {
+          display: block; } }
       header .nav .menu:last-child {
         margin-right: 0; }
       header .nav .menu ul {
@@ -145,11 +147,36 @@ header {
             header .nav .menu ul li a:hover {
               color: #123E4D; }
 
-.main .carousel {
-  height: 400px; }
-  .main .carousel img {
-    margin-top: 60px;
-    width: 360px; }
+.main {
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 79.48718%;
+  margin-left: 10.25641%; }
+  .main:last-child {
+    margin-right: 0; }
+  .main .carousel {
+    display: none;
+    height: 400px; }
+    @media screen and (min-width: 768px)  {
+      .main .carousel {
+        display: block; } }
+    .main .carousel .carousel-item {
+      height: 250px; }
+      .main .carousel .carousel-item img {
+        width: 262px; }
+    .main .carousel .carousel-nav {
+      position: relative; }
+      .main .carousel .carousel-nav .prev, .main .carousel .carousel-nav .next {
+        position: absolute;
+        margin-top: -100px; }
+      .main .carousel .carousel-nav .prev {
+        left: 0; }
+      .main .carousel .carousel-nav .next {
+        right: 0; }
+    .main .carousel img {
+      margin-top: 60px;
+      width: 360px; }
 
 .centerrow {
   text-align: center;
@@ -161,19 +188,20 @@ header {
   .centerrow:last-child {
     margin-right: 0; }
 
-.narrow {
-  float: left;
-  display: block;
-  margin-right: 2.5641%;
-  width: 58.97436%;
-  margin-left: 20.51282%; }
-  .narrow:last-child {
-    margin-right: 0; }
+@media screen and (min-width: 768px)  {
+  .narrow {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 74.19355%;
+    margin-left: 12.90323%; }
+    .narrow:last-child {
+      margin-right: 0; } }
 
 .btn {
   opacity: 0.8;
-  margin: 15px auto 60px auto;
   display: inline-block;
+  margin: 10px auto 30px auto;
   padding: 0.5em 2em;
   overflow: hidden;
   text-decoration: none;
@@ -190,6 +218,9 @@ header {
   -moz-transition-timing-function: linear, linear;
   transition-timing-function: linear, linear;
   background-color: white; }
+  @media screen and (min-width: 768px)  {
+    .btn {
+      margin: 15px auto 60px auto; } }
   .btn.darkblue {
     border-color: #123E4D;
     color: #123E4D; }
@@ -225,22 +256,9 @@ header {
   color: #88BACA; }
 
 .block .blockintro {
-  *zoom: 1;
   text-align: center;
-  float: left;
-  display: block;
-  margin-right: 2.5641%;
-  width: 58.97436%;
-  margin-left: 20.51282%;
   font-size: 0.9em;
   line-height: 1.6em; }
-  .block .blockintro:before, .block .blockintro:after {
-    content: " ";
-    display: table; }
-  .block .blockintro:after {
-    clear: both; }
-  .block .blockintro:last-child {
-    margin-right: 0; }
 .block .blockheading {
   line-height: 1.6em;
   font-size: 0.8em;
@@ -248,7 +266,10 @@ header {
 .block .blockcontent {
   line-height: 1.5em;
   font-size: 0.8em;
-  margin: 0 0 3.5em 0; }
+  margin: 0 0 1.5em 0; }
+  @media screen and (min-width: 768px)  {
+    .block .blockcontent {
+      margin: 0 0 3.5em 0; } }
 
 .hero {
   text-align: center; }
@@ -260,36 +281,41 @@ header {
     margin: 0; }
 
 .services, .moresupport, .block.codingservice, .block.hostingservice, .block.happyclients, .team, .contact {
-  margin-bottom: 60px; }
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px)  {
+    .services, .moresupport, .block.codingservice, .block.hostingservice, .block.happyclients, .team, .contact {
+      margin-bottom: 60px; } }
 
 .services {
-  *zoom: 1;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center; }
-  .services:before, .services:after {
-    content: " ";
-    display: table; }
-  .services:after {
-    clear: both; }
   .services .servicescontainer {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%; }
+    width: 100%; }
     .services .servicescontainer:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 768px)  {
+      .services .servicescontainer {
+        margin-bottom: 30px; } }
     .services .servicescontainer .serviceblock {
+      padding: 5px 5px 30px 5px;
+      border: 1px solid #DFE2E6;
       float: left;
       display: block;
-      margin-right: 2.12766%;
-      width: 31.91489%;
-      padding: 5px 5px 30px 5px;
-      border: 1px solid #DFE2E6; }
+      margin-right: 2.5641%;
+      width: 100%;
+      margin-bottom: 30px; }
       .services .servicescontainer .serviceblock:last-child {
         margin-right: 0; }
+      @media screen and (min-width: 768px)  {
+        .services .servicescontainer .serviceblock {
+          float: left;
+          display: block;
+          margin-right: 2.12766%;
+          width: 31.91489%; }
+          .services .servicescontainer .serviceblock:last-child {
+            margin-right: 0; } }
       .services .servicescontainer .serviceblock .info {
         height: 50px; }
       .services .servicescontainer .serviceblock .bolder {
@@ -314,22 +340,23 @@ header {
         margin-top: 20px; }
 
 .service h2, .team h2, .contact h2, .about h2 {
-  font-weight: 600; }
-.service h3.pullLeft, .team h3.pullLeft, .contact h3.pullLeft, .about h3.pullLeft {
-  text-align: left;
+  margin-top: 0.5em;
+  font-weight: 600;
   float: left;
   display: block;
   margin-right: 2.5641%;
-  width: 79.48718%;
-  margin-left: 10.25641%;
-  *zoom: 1; }
-  .service h3.pullLeft:last-child, .team h3.pullLeft:last-child, .contact h3.pullLeft:last-child, .about h3.pullLeft:last-child {
+  width: 100%; }
+  .service h2:last-child, .team h2:last-child, .contact h2:last-child, .about h2:last-child {
     margin-right: 0; }
-  .service h3.pullLeft:before, .service h3.pullLeft:after, .team h3.pullLeft:before, .team h3.pullLeft:after, .contact h3.pullLeft:before, .contact h3.pullLeft:after, .about h3.pullLeft:before, .about h3.pullLeft:after {
-    content: " ";
-    display: table; }
-  .service h3.pullLeft:after, .team h3.pullLeft:after, .contact h3.pullLeft:after, .about h3.pullLeft:after {
-    clear: both; }
+.service h3, .team h3, .contact h3, .about h3 {
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 100%; }
+  .service h3:last-child, .team h3:last-child, .contact h3:last-child, .about h3:last-child {
+    margin-right: 0; }
+  .service h3.pullLeft, .team h3.pullLeft, .contact h3.pullLeft, .about h3.pullLeft {
+    text-align: left; }
 
 .service, .team, .about {
   *zoom: 1;
@@ -352,46 +379,53 @@ header {
     display: table; }
   .service:after, .team:after, .about:after {
     clear: both; }
-  .service .featurecontainer, .team .featurecontainer, .about .featurecontainer {
+  .service .featurecontainer .feature, .team .featurecontainer .feature, .about .featurecontainer .feature {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%; }
-    .service .featurecontainer:last-child, .team .featurecontainer:last-child, .about .featurecontainer:last-child {
+    width: 100%; }
+    .service .featurecontainer .feature:last-child, .team .featurecontainer .feature:last-child, .about .featurecontainer .feature:last-child {
       margin-right: 0; }
-    .service .featurecontainer .feature, .team .featurecontainer .feature, .about .featurecontainer .feature {
-      float: left;
-      display: block;
-      margin-right: 2.12766%;
-      width: 48.93617%; }
-      .service .featurecontainer .feature:last-child, .team .featurecontainer .feature:last-child, .about .featurecontainer .feature:last-child {
-        margin-right: 0; }
-      .service .featurecontainer .feature:nth-child(2n), .team .featurecontainer .feature:nth-child(2n), .about .featurecontainer .feature:nth-child(2n) {
-        margin-right: 0; }
-      .service .featurecontainer .feature:nth-child(2n+1), .team .featurecontainer .feature:nth-child(2n+1), .about .featurecontainer .feature:nth-child(2n+1) {
-        clear: left; }
+    @media screen and (min-width: 768px)  {
+      .service .featurecontainer .feature, .team .featurecontainer .feature, .about .featurecontainer .feature {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 48.93617%; }
+        .service .featurecontainer .feature:last-child, .team .featurecontainer .feature:last-child, .about .featurecontainer .feature:last-child {
+          margin-right: 0; }
+        .service .featurecontainer .feature:nth-child(2n), .team .featurecontainer .feature:nth-child(2n), .about .featurecontainer .feature:nth-child(2n) {
+          margin-right: 0; }
+        .service .featurecontainer .feature:nth-child(2n+1), .team .featurecontainer .feature:nth-child(2n+1), .about .featurecontainer .feature:nth-child(2n+1) {
+          clear: left; } }
   .service .casecontainer, .team .casecontainer, .about .casecontainer {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%; }
+    width: 100%; }
     .service .casecontainer:last-child, .team .casecontainer:last-child, .about .casecontainer:last-child {
       margin-right: 0; }
     .service .casecontainer .case, .team .casecontainer .case, .about .casecontainer .case {
       float: left;
       display: block;
-      margin-right: 1.5873%;
-      width: 49.20635%;
+      margin-right: 2.5641%;
+      width: 100%;
       border: 1px solid #DFE2E6;
       margin-bottom: 30px; }
       .service .casecontainer .case:last-child, .team .casecontainer .case:last-child, .about .casecontainer .case:last-child {
         margin-right: 0; }
-      .service .casecontainer .case:nth-child(2n), .team .casecontainer .case:nth-child(2n), .about .casecontainer .case:nth-child(2n) {
-        margin-right: 0; }
-      .service .casecontainer .case:nth-child(2n+1), .team .casecontainer .case:nth-child(2n+1), .about .casecontainer .case:nth-child(2n+1) {
-        clear: left; }
+      @media screen and (min-width: 768px)  {
+        .service .casecontainer .case, .team .casecontainer .case, .about .casecontainer .case {
+          float: left;
+          display: block;
+          margin-right: 1.5873%;
+          width: 49.20635%; }
+          .service .casecontainer .case:last-child, .team .casecontainer .case:last-child, .about .casecontainer .case:last-child {
+            margin-right: 0; }
+          .service .casecontainer .case:nth-child(2n), .team .casecontainer .case:nth-child(2n), .about .casecontainer .case:nth-child(2n) {
+            margin-right: 0; }
+          .service .casecontainer .case:nth-child(2n+1), .team .casecontainer .case:nth-child(2n+1), .about .casecontainer .case:nth-child(2n+1) {
+            clear: left; } }
       .service .casecontainer .case h4, .service .casecontainer .case p, .team .casecontainer .case h4, .team .casecontainer .case p, .about .casecontainer .case h4, .about .casecontainer .case p {
         margin: 5px 0;
         padding: 0 20px; }
@@ -403,21 +437,28 @@ header {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%; }
+    width: 100%; }
     .service .checkcontainer:last-child, .team .checkcontainer:last-child, .about .checkcontainer:last-child {
       margin-right: 0; }
     .service .checkcontainer .check, .team .checkcontainer .check, .about .checkcontainer .check {
       float: left;
       display: block;
-      margin-right: 9.09091%;
-      width: 27.27273%; }
+      margin-right: 2.5641%;
+      width: 100%; }
       .service .checkcontainer .check:last-child, .team .checkcontainer .check:last-child, .about .checkcontainer .check:last-child {
         margin-right: 0; }
-      .service .checkcontainer .check:nth-child(3n), .team .checkcontainer .check:nth-child(3n), .about .checkcontainer .check:nth-child(3n) {
-        margin-right: 0; }
-      .service .checkcontainer .check:nth-child(3n+1), .team .checkcontainer .check:nth-child(3n+1), .about .checkcontainer .check:nth-child(3n+1) {
-        clear: left; }
+      @media screen and (min-width: 768px) and (max-width: 960px)  {
+        .service .checkcontainer .check, .team .checkcontainer .check, .about .checkcontainer .check {
+          float: left;
+          display: block;
+          margin-right: 9.09091%;
+          width: 27.27273%; }
+          .service .checkcontainer .check:last-child, .team .checkcontainer .check:last-child, .about .checkcontainer .check:last-child {
+            margin-right: 0; }
+          .service .checkcontainer .check:nth-child(3n), .team .checkcontainer .check:nth-child(3n), .about .checkcontainer .check:nth-child(3n) {
+            margin-right: 0; }
+          .service .checkcontainer .check:nth-child(3n+1), .team .checkcontainer .check:nth-child(3n+1), .about .checkcontainer .check:nth-child(3n+1) {
+            clear: left; } }
       .service .checkcontainer .check img, .team .checkcontainer .check img, .about .checkcontainer .check img {
         float: left;
         width: 13px; }
@@ -430,22 +471,35 @@ header {
   float: left;
   display: block;
   margin-right: 2.5641%;
-  width: 79.48718%;
-  margin-left: 10.25641%;
-  padding: 60px 0; }
+  width: 100%;
+  padding: 20px 0 30px 0;
+  text-align: center; }
   .happyclients .clientscontainer:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px)  {
+    .happyclients .clientscontainer {
+      padding: 20px 0; } }
   .happyclients .clientscontainer .client {
     float: left;
     display: block;
-    margin-right: 6.66667%;
-    width: 20%; }
+    margin-right: 2.5641%;
+    width: 100%;
+    padding: 15px 0; }
+    @media screen and (min-width: 768px)  {
+      .happyclients .clientscontainer .client {
+        float: left;
+        display: block;
+        margin-right: 6.66667%;
+        width: 20%;
+        text-align: center; }
+        .happyclients .clientscontainer .client:last-child {
+          margin-right: 0; }
+        .happyclients .clientscontainer .client:nth-child(4n) {
+          margin-right: 0; }
+        .happyclients .clientscontainer .client:nth-child(4n+1) {
+          clear: left; } }
     .happyclients .clientscontainer .client:last-child {
       margin-right: 0; }
-    .happyclients .clientscontainer .client:nth-child(4n) {
-      margin-right: 0; }
-    .happyclients .clientscontainer .client:nth-child(4n+1) {
-      clear: left; }
     .happyclients .clientscontainer .client img {
       width: 100px; }
 
@@ -457,23 +511,60 @@ header {
   float: left;
   display: block;
   margin-right: 2.5641%;
-  width: 79.48718%;
-  margin-left: 10.25641%; }
+  width: 100%; }
   .team .teamcontainer:last-child {
     margin-right: 0; }
   .team .teamcontainer .teammember {
-    float: left;
-    display: block;
-    margin-right: 6.66667%;
-    width: 20%;
-    margin: 20px;
+    margin: 20px 0 0 0;
     text-align: center; }
-    .team .teamcontainer .teammember:last-child {
-      margin-right: 0; }
-    .team .teamcontainer .teammember:nth-child(4n) {
-      margin-right: 0; }
-    .team .teamcontainer .teammember:nth-child(4n+1) {
-      clear: left; }
+    @media screen and (max-width: 480px)  {
+      .team .teamcontainer .teammember {
+        float: left;
+        display: block;
+        margin-right: 2.5641%;
+        width: 100%; }
+        .team .teamcontainer .teammember:last-child {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(1n) {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(1n+1) {
+          clear: left; } }
+    @media screen and (min-width: 480px) and (max-width: 768px)  {
+      .team .teamcontainer .teammember {
+        float: left;
+        display: block;
+        margin-right: 2.5641%;
+        width: 48.71795%; }
+        .team .teamcontainer .teammember:last-child {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(2n) {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (min-width: 768px) and (max-width: 960px)  {
+      .team .teamcontainer .teammember {
+        float: left;
+        display: block;
+        margin-right: 9.09091%;
+        width: 27.27273%; }
+        .team .teamcontainer .teammember:last-child {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(3n) {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(3n+1) {
+          clear: left; } }
+    @media screen and (min-width: 960px)  {
+      .team .teamcontainer .teammember {
+        float: left;
+        display: block;
+        margin-right: 6.66667%;
+        width: 20%; }
+        .team .teamcontainer .teammember:last-child {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(4n) {
+          margin-right: 0; }
+        .team .teamcontainer .teammember:nth-child(4n+1) {
+          clear: left; } }
     .team .teamcontainer .teammember img {
       width: 125px; }
     .team .teamcontainer .teammember h3 {
@@ -483,21 +574,19 @@ header {
   display: block;
   margin-right: 2.5641%;
   width: 100%; }
+  .team .factscontainer h3 {
+    margin: 30px 0; }
   .team .factscontainer:last-child {
     margin-right: 0; }
   .team .factscontainer ul {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%;
     padding: 0;
     list-style-type: none;
     margin-bottom: 60px; }
-    .team .factscontainer ul:last-child {
-      margin-right: 0; }
-    .team .factscontainer ul li p {
-      margin: 0; }
+    .team .factscontainer ul li {
+      margin-bottom: 5px; }
+      .team .factscontainer ul li p {
+        margin: 0;
+        font-size: 0.8em; }
 
 .contact, .about {
   *zoom: 1;
@@ -509,22 +598,15 @@ header {
     display: table; }
   .contact:after, .about:after {
     clear: both; }
-  .contact h3, .about h3 {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%; }
-    .contact h3:last-child, .about h3:last-child {
-      margin-right: 0; }
   .contact #contactForm, .about #contactForm {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%;
-    margin-left: 10.25641%;
-    padding: 20px;
-    border: 1px solid #DFE2E6; }
+    width: 100%; }
+    @media screen and (min-width: 768px) and (max-width: 960px)  {
+      .contact #contactForm, .about #contactForm {
+        border: 1px solid #DFE2E6;
+        padding: 20px; } }
     .contact #contactForm:last-child, .about #contactForm:last-child {
       margin-right: 0; }
     .contact #contactForm .insideContainer label, .about #contactForm .insideContainer label {
@@ -541,23 +623,32 @@ header {
       float: left;
       display: block;
       margin-right: 2.5641%;
-      width: 48.71795%;
-      *zoom: 1;
-      max-width: 60em;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10px 20px; }
+      width: 100%;
+      padding: 10px 0px; }
+      @media screen and (min-width: 768px)  {
+        .contact #contactForm .insideContainer .inputDiv, .about #contactForm .insideContainer .inputDiv {
+          float: left;
+          display: block;
+          margin-right: 2.5641%;
+          width: 48.71795%;
+          *zoom: 1;
+          max-width: 60em;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 10px 20px; }
+          .contact #contactForm .insideContainer .inputDiv:last-child, .about #contactForm .insideContainer .inputDiv:last-child {
+            margin-right: 0; }
+          .contact #contactForm .insideContainer .inputDiv:nth-child(2n), .about #contactForm .insideContainer .inputDiv:nth-child(2n) {
+            margin-right: 0; }
+          .contact #contactForm .insideContainer .inputDiv:nth-child(2n+1), .about #contactForm .insideContainer .inputDiv:nth-child(2n+1) {
+            clear: left; }
+          .contact #contactForm .insideContainer .inputDiv:before, .contact #contactForm .insideContainer .inputDiv:after, .about #contactForm .insideContainer .inputDiv:before, .about #contactForm .insideContainer .inputDiv:after {
+            content: " ";
+            display: table; }
+          .contact #contactForm .insideContainer .inputDiv:after, .about #contactForm .insideContainer .inputDiv:after {
+            clear: both; } }
       .contact #contactForm .insideContainer .inputDiv:last-child, .about #contactForm .insideContainer .inputDiv:last-child {
         margin-right: 0; }
-      .contact #contactForm .insideContainer .inputDiv:nth-child(2n), .about #contactForm .insideContainer .inputDiv:nth-child(2n) {
-        margin-right: 0; }
-      .contact #contactForm .insideContainer .inputDiv:nth-child(2n+1), .about #contactForm .insideContainer .inputDiv:nth-child(2n+1) {
-        clear: left; }
-      .contact #contactForm .insideContainer .inputDiv:before, .contact #contactForm .insideContainer .inputDiv:after, .about #contactForm .insideContainer .inputDiv:before, .about #contactForm .insideContainer .inputDiv:after {
-        content: " ";
-        display: table; }
-      .contact #contactForm .insideContainer .inputDiv:after, .about #contactForm .insideContainer .inputDiv:after {
-        clear: both; }
       .contact #contactForm .insideContainer .inputDiv input, .contact #contactForm .insideContainer .inputDiv textarea, .about #contactForm .insideContainer .inputDiv input, .about #contactForm .insideContainer .inputDiv textarea {
         float: left;
         display: block;
@@ -574,7 +665,10 @@ header {
       display: block;
       margin-right: 2.5641%;
       width: 100%;
-      padding: 10px 40px 10px 20px; }
+      margin-bottom: 20px; }
+      @media screen and (min-width: 768px)  {
+        .contact #contactForm .insideContainer .textfield, .about #contactForm .insideContainer .textfield {
+          padding: 10px 40px 10px 20px; } }
       .contact #contactForm .insideContainer .textfield:last-child, .about #contactForm .insideContainer .textfield:last-child {
         margin-right: 0; }
       .contact #contactForm .insideContainer .textfield textarea, .about #contactForm .insideContainer .textfield textarea {
@@ -589,56 +683,57 @@ header {
         .contact #contactForm .insideContainer .textfield textarea:last-child, .about #contactForm .insideContainer .textfield textarea:last-child {
           margin-right: 0; }
     .contact #contactForm .insideContainer .centerrow, .about #contactForm .insideContainer .centerrow {
-      padding: 0 40px;
       float: left;
       display: block;
       margin-right: 2.5641%;
       width: 100%; }
+      @media screen and (min-width: 768px)  {
+        .contact #contactForm .insideContainer .centerrow, .about #contactForm .insideContainer .centerrow {
+          padding: 0 40px; } }
       .contact #contactForm .insideContainer .centerrow:last-child, .about #contactForm .insideContainer .centerrow:last-child {
         margin-right: 0; }
-    .contact #contactForm .insideContainer #submit, .about #contactForm .insideContainer #submit {
-      float: right;
-      margin-bottom: 10px; }
+      .contact #contactForm .insideContainer .centerrow #submit, .about #contactForm .insideContainer .centerrow #submit {
+        margin-bottom: 10px; }
+        @media screen and (min-width: 768px)  {
+          .contact #contactForm .insideContainer .centerrow #submit, .about #contactForm .insideContainer .centerrow #submit {
+            float: right; } }
 
 .about .addresscontainer {
-  *zoom: 1;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto; }
-  .about .addresscontainer:before, .about .addresscontainer:after {
-    content: " ";
-    display: table; }
-  .about .addresscontainer:after {
-    clear: both; }
-  .about .addresscontainer .address {
-    margin-left: 10.25641%;
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 28.20513%; }
-    .about .addresscontainer .address:last-child {
-      margin-right: 0; }
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 100%; }
+  .about .addresscontainer:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 768px)  {
+    .about .addresscontainer .address {
+      float: left;
+      display: block;
+      margin-right: 2.5641%;
+      width: 28.20513%; }
+      .about .addresscontainer .address:last-child {
+        margin-right: 0; } }
   .about .addresscontainer .map {
-    float: left;
-    display: block;
-    margin-right: 2.5641%;
-    width: 48.71795%; }
-    .about .addresscontainer .map:last-child {
-      margin-right: 0; }
+    display: none; }
+    @media screen and (min-width: 768px)  {
+      .about .addresscontainer .map {
+        float: left;
+        display: block;
+        margin-right: 2.5641%;
+        width: 48.71795%; }
+        .about .addresscontainer .map:last-child {
+          margin-right: 0; } }
     .about .addresscontainer .map iframe {
       width: 100%; }
 
 footer {
   background-color: #8BC640;
-  *zoom: 1;
-  max-width: 60em;
-  margin-left: auto;
-  margin-right: auto; }
-  footer:before, footer:after {
-    content: " ";
-    display: table; }
-  footer:after {
-    clear: both; }
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 100%; }
+  footer:last-child {
+    margin-right: 0; }
   footer ul {
     list-style-type: none;
     margin: 0; }
@@ -648,18 +743,20 @@ footer {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 17.94872%; }
+    width: 38.46154%; }
     footer .copy:last-child {
       margin-right: 0; }
     footer .copy p {
-      padding: 10px 20px 5px 20px;
+      padding: 11px 20px 5px 20px;
       margin: 0;
-      color: white; }
+      color: white;
+      font-size: 0.8em; }
   footer .social {
     float: left;
     display: block;
     margin-right: 2.5641%;
-    width: 79.48718%; }
+    width: 58.97436%;
+    margin-right: 0; }
     footer .social:last-child {
       margin-right: 0; }
     footer .social ul {

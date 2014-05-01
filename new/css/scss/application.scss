@@ -13,9 +13,6 @@ $blue: #88BACA;
 $bluegrey: #828C97;
 $devidergrey: #DFE2E6;
 
-$medium: 320px;
-$large: 1024px;
-
 @import 'bourbon/bourbon';
 @import 'grid-settings';
 @import 'neat/neat';
@@ -23,20 +20,6 @@ $large: 1024px;
 @mixin border-line {
   border-left: 1px solid $darkgrey;
   border-right: 1px solid $darkgrey;
-}
-
-body {
-  background-color: $lightgrey;
-}
-
-.container {
-  @include border-line;
-  @include outer-container;
-  background-color: white;
-}
-
-h1 {
-
 }
 
 h1, h2, h3, h4, p, a, label, input, textarea {
@@ -51,7 +34,6 @@ h2, h3 {
 h2 {
   font-size: 2em;
   margin: 2em 0 0.2em 0;
-  //color: $darkgrey;
 }
 
 h3 {
@@ -62,22 +44,41 @@ p {
   color: $bluegrey;
 }
 
+body {
+  background-color: $lightgrey;
+}
+
+.container {
+  @include outer-container;
+  background-color: white;
+  /* border-right: none;
+  border-left: none; */
+  //@include media($mobile) {
+  //}
+  @include media($desktop) {
+    @include border-line;
+  }
+}
+
 header {
   //@include span-columns(10);
   //background-color: pink;
   @include outer-container;
   .top {
-    @include outer-container;
-    @include span-columns(10);
-    @include pad(7px 0 0 0);
+    //@include outer-container;
+    //@include pad(7px 0 0 0);
     //@include fill-parent();
+    @include span-columns(10);
+    position: relative;
+    @include media($mintablet) {
+      position: fixed;
+    }
     background-color: $darkblue;
-    position: fixed;
-    //overflow: hidden;
     z-index: 1;
+    //width: 958px;
     .network {
       @include span-columns(2 of 8);
-      @include pad(0 0 0 20px);
+      @include pad(8px 0 0 20px);
       img {
         vertical-align: top;
         width: 87px;
@@ -89,6 +90,7 @@ header {
       ul {
         float: right;
         margin: 0;
+        @include pad(0.1em 0 0.2em 0);
         li {
           height: 12px;
           border-left: 1px solid white;
@@ -104,6 +106,7 @@ header {
             color: white;
             font-size: 0.6em;
             font-weight: 500;
+            display: block;
           }
           &:active, &:hover {
             a {
@@ -124,8 +127,11 @@ header {
       }
     }
     .menu {
+      @include media($tablet) {
+        display: block;
+      }
       @include span-columns(8);
-      //background-color: darkgrey;
+      display: none;
       ul {
         float: right;
         @include pad(0 1em);
@@ -151,8 +157,33 @@ header {
 }
 
 .main {
+  @include span-columns(8);
+  @include shift(1);
   .carousel {
+    @include media($mintablet) {
+      display: block;
+    }
+    display: none;
     height: 400px;
+    .carousel-item {
+      height: 250px;
+      img {
+        width: 262px;
+      }
+    }
+    .carousel-nav {
+      position: relative;
+      .prev, .next {
+        position: absolute;
+        margin-top: -100px;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+    }
     img {
       margin-top: 60px;
       width: 360px;
@@ -168,15 +199,20 @@ header {
 }
 
 .narrow {
-  @include span-columns(6);
-  @include shift(2);
+  @include media($mintablet) {
+    @include span-columns(6 of 8);
+    @include shift(1);
+  }
 }
 
 .btn {
+  @include media($mintablet) {
+    margin: 15px auto 60px auto ;
+  }
   opacity: 0.8;
   //display: inline-block;
-  margin: 15px auto 60px auto ;
   display: inline-block;
+  margin: 10px auto 30px auto;
   padding: .5em 2em;
   overflow: hidden;
   text-decoration: none;
@@ -240,12 +276,21 @@ header {
 }
 
 .block {
+  //@include media($mobile) {
+  //@include outer-container;
+  //@include span-columns(8);
+  //@include shift(1);
+  //}
   .blockintro {
-    @include clearfix;
-    text-align: center;
-    @include span-columns(6);
-    @include shift(2);
+    //@include clearfix;
+    //@include media($mobile) {
+    //  @include span-columns(8);
+    //  @include shift(1);
+    //}
+    //@include span-columns(8);
+    //@include shift(1);
     //@include pad();
+    text-align: center;
     font-size: 0.9em;
     line-height: 1.6em;
   }
@@ -257,7 +302,10 @@ header {
   .blockcontent {
     line-height: 1.5em;
     font-size: 0.8em;
-    margin: 0 0 3.5em 0;
+    margin: 0 0 1.5em 0;
+    @include media($mintablet) {
+      margin: 0 0 3.5em 0;
+    }
   }
 }
 
@@ -270,27 +318,35 @@ header {
   h3 {
     color: $green;
     margin: 0;
+    //@include span-columns(8 of 10);
+    //@include shift(1);
   }
   p {
   }
 }
 
 .services, .moresupport, .block.codingservice, .block.hostingservice, .block.happyclients, .team, .contact {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+  @include media($mintablet) {
+    margin-bottom: 60px;
+  }
 }
 
 .services {
-  @include outer-container;
   text-align: center;
-  .blockintro {
-  }
   .servicescontainer {
-    @include span-columns(8);
-    @include shift(1);
+    @include span-columns(10);
+    @include media($mintablet) {
+      margin-bottom: 30px;
+    }
     .serviceblock {
-      @include span-columns(4 of 12);
       padding: 5px 5px 30px 5px;
       border: 1px solid $devidergrey;
+      @include span-columns(10);
+      margin-bottom: 30px;
+      @include media($mintablet) {
+        @include span-columns(4 of 12);
+      }
       .info {
         height: 50px;
       }
@@ -334,15 +390,18 @@ header {
 
 .service, .team, .contact, .about {
   h2 {
-    //margin-top: 60px;
+    margin-top: 0.5em;
     font-weight: 600;
+    //@include clearfix;
+    @include span-columns(10);
   }
   h3 {
+    @include span-columns(10);
     &.pullLeft {
       text-align: left;
-      @include span-columns(8);
-      @include shift(1);
-      @include clearfix;
+      //@include span-columns(8);
+      //@include shift(1);
+      //@include clearfix;
     }
   }
 }
@@ -368,22 +427,26 @@ header {
   }
   @include outer-container;
   .featurecontainer {
-    @include span-columns(8);
-    @include shift(1);
+    //@include span-columns(8);
+    //@include shift(1);
     .feature {
-      @include span-columns(6 of 12);
-      @include omega(2n);
+      @include span-columns(10);
+      @include media($mintablet) {
+        @include span-columns(6 of 12);
+        @include omega(2n);
+      }
     }
   }
   .casecontainer {
-    //@include outer-container;
-    @include span-columns(8);
-    @include shift(1);
+    @include span-columns(10);
     .case {
-      @include span-columns(8 of 16);
-      @include omega(2n);
-      border: 1px solid $devidergrey  ;
+      @include span-columns(10);
+      border: 1px solid $devidergrey;
       margin-bottom: 30px;
+      @include media($mintablet) {
+        @include span-columns(8 of 16);
+        @include omega(2n);
+      }
       h4, p {
         margin: 5px 0;
         padding: 0 20px;
@@ -398,11 +461,13 @@ header {
     }
   }
   .checkcontainer {
-    @include span-columns(8);
-    @include shift(1);
+    @include span-columns(10);
     .check {
-      @include span-columns(1 of 3);
-      @include omega(3n);
+      @include span-columns(10);
+      @include media($tablet) {
+        @include span-columns(1 of 3);
+        @include omega(3n);
+      }
       img {
         float: left;
         width: 13px;
@@ -419,17 +484,23 @@ header {
 
 .happyclients {
   .clientscontainer {
-    @include span-columns(8);
-    @include shift(1);
-    @include pad(60px 0);
+    @include span-columns(10);
+    @include pad(20px 0 30px 0);
+    text-align: center;
+    @include media($mobile) {
+      @include pad(20px 0);
+    }
     .client {
-      @include span-columns(1 of 4);
-      @include omega(4n);
+      @include media($mintablet) {
+        @include span-columns(1 of 4);
+        @include omega(4n);
+        text-align: center;
+      }
+      @include span-columns(10);
+      @include pad(15px 0);
       img {
         width: 100px;
       }
-      //background-color: green;
-      //height: 100px;
     }
   }
 }
@@ -437,40 +508,54 @@ header {
   .blockcontent {
     line-height: 1.5em;
     font-size: 0.8em;
-    //margin: 0 0 3.5em 0;
     margin-bottom: 0;
+    //margin: 0 0 3.5em 0;
   }
   .teamcontainer {
-    @include span-columns(8);
-    @include shift(1);
+    @include span-columns(10);
     .teammember {
-      @include span-columns(1 of 4);
-      @include omega(4n);
-      //@include pad(20px);
-      margin: 20px;
+      margin: 20px 0 0 0;
       text-align: center;
+      @include media($mobile) {
+        @include span-columns(10);
+        @include omega(1n);
+      }
+      @include media($widemobile) {
+        @include span-columns(5);
+        @include omega(2n);
+      }
+      @include media($tablet) {
+        @include span-columns(1 of 3);
+        @include omega(3n);
+      }
+      @include media($desktop) {
+        @include span-columns(1 of 4);
+        @include omega(4n);
+      }
       img {
         width: 125px;
       }
       h3 {
         margin: 0;
       }
-
-      .team {
-      }
     }
   }
   .factscontainer {
+    h3 {
+      margin: 30px 0;
+    }
     @include span-columns(10);
     ul {
-      @include span-columns(8);
-      @include shift(1);
+      //@include span-columns(8);
+      //@include shift(1);
       @include pad(0);
       list-style-type: none;
       margin-bottom: 60px;
       li {
+        margin-bottom: 5px;
         p {
           margin: 0;
+          font-size: 0.8em;
         }
       }
     }
@@ -479,14 +564,17 @@ header {
 .contact, .about {
   @include outer-container;
   h3 {
-    @include span-columns(8);
-    @include shift(1);
+    //@include span-columns(8);
+    //@include shift(1);
   }
   #contactForm {
-    @include span-columns(8);
-    @include shift(1);
-    @include pad(20px);
-    border: 1px solid $devidergrey;
+    @include media($tablet) {
+      border: 1px solid $devidergrey;
+      @include pad(20px);
+    }
+    @include span-columns(10);
+    //@include span-columns(8);
+    //@include shift(1);
     .insideContainer {
       label {
         margin: 0 0 5px 0;
@@ -495,10 +583,14 @@ header {
         font-size: 0.9em;
       }
       .inputDiv {
-        @include span-columns(5 of 10);
-        @include omega(2n);
-        @include outer-container;
-        @include pad(10px 20px);
+        @include media($mintablet) {
+          @include span-columns(5 of 10);
+          @include omega(2n);
+          @include outer-container;
+          @include pad(10px 20px);
+        }
+        @include span-columns(10);
+        @include pad(10px 0px);
         input, textarea {
           @include span-columns(10);
           background-color: $lightgrey;
@@ -508,9 +600,13 @@ header {
         }
       }
       .textfield {
+        @include media($mintablet) {
+          @include pad(10px 40px 10px 20px);
+        }
         @include span-columns(10);
+        margin-bottom: 20px;
         //@include shift(1);
-        @include pad(10px 40px 10px 20px);
+        //@include pad(10px 30px 10px 20px);
         textarea {
           @include span-columns(10);
           background-color: $lightgrey;
@@ -520,41 +616,51 @@ header {
         }
       }
       .centerrow {
-        @include pad(0 40px);
+        @include media($mintablet) {
+          @include pad(0 40px);
+        }
         @include span-columns(10);
+        #submit {
+          @include media($mintablet) {
+            float: right;
+          }
+          margin-bottom: 10px;
+        }
       }
-      #submit {
-        //@include span-columns(10);
-        float: right;
-        margin-bottom: 10px;
-      }
-    }
-    .row {
     }
   }
 }
 .about {
   .addresscontainer {
-    @include outer-container;
+    //@include outer-container;
+    @include span-columns(10);
     .address {
-      @include shift(1);
-      @include span-columns(3);
+      @include media($mintablet) {
+        //@include shift(1);
+        @include span-columns(3);
+      }
       p {
         //margin-bottom: 2em;
       }
     }
     .map {
-      @include span-columns(5);
+      display: none;
+      @include media($mintablet) {
+        @include span-columns(5);
+      }
       iframe {
         @include fill-parent;
       }
     }
   }
 }
-
 footer {
   background-color: $green;
-  @include outer-container;
+  //@include outer-container;
+  @include span-columns(10);
+  //@include media($mobile) {
+  //  @include span-columns(4);
+  //}
   ul {
     list-style-type: none;
     margin: 0;
@@ -563,15 +669,17 @@ footer {
     }
   }
   .copy {
-    @include span-columns(2);
+    @include span-columns(4);
     p {
-      @include pad(10px 20px 5px 20px);
+      @include pad(11px 20px 5px 20px);
       margin: 0;
       color: white;
+      font-size: 0.8em;
     }
   }
   .social {
-    @include span-columns(8);
+    @include span-columns(6);
+    @include omega();
     ul {
       float: right;
       @include pad(10px 20px 5px 0);
@@ -587,13 +695,11 @@ footer {
     }
   }
 }
-
 .devider {
   border-width: 0;
   background-color: $devidergrey;
   height: 1px;
   line-height: 0;
-  //text-align: center;
   width: 80%;
   //&.large {
   //  margin-top: 50px;

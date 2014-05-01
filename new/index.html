@@ -6,8 +6,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/bower_components/normalize.css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="bower_components/normalize.css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/application.css" rel="stylesheet" type="text/css" />
+    <link href="bower_components/filementgroup-responsive-carousel/src/responsive-carousel.css" rel="stylesheet" type="text/css" />
     <!--[if IE]>
       <link href="/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -70,7 +71,18 @@
           <h2>In Mac we trust.</h2>
           <h3>Encore plus pour votre business.</h3>
           <div class="carousel">
-            <img src="images/png/mbp.png" alt="mbp">
+            <div>
+              <img src="images/png/c_arthur.png" alt="arthur lambillotte">
+            </div>
+            <div>
+              <img src="images/png/c_alexis.png" alt="alexis">
+            </div>
+            <div>
+              <img src="images/png/c_david.png" alt="david">
+            </div>
+            <div>
+              <img src="images/png/c_julien.png" alt="julien">
+            </div>
           </div>
           <p class="blockintro">Bonjour, nous sommes Yaska.<br>Nous croyons que les technologies Mac  peuvent am&eacute;liorer votre business de la m&ecirc;me fa&ccedil;on qu&rsquo;elles ont r&eacute;volutionn&eacute; notre quotidien.</p>
           <div class="centerrow"><a href="#" class="btn darkblue">Découvrez comment</a></div>
@@ -402,7 +414,7 @@
                 </div>
                 <div class="textfield">
                   <label for="message" id="messageLabel">Message</label>
-                  <textarea name="message"></textarea>
+                  <textarea name="message" id="message"></textarea>
                 </div>
                 <div class="centerrow">
                   <input id="submit" type="submit" value="Envoyer !" class="btn darkblue clearfix">
@@ -421,7 +433,7 @@
               <p class="blockcontent">Heures d&rsquo;ouvertures:<br>du lundi au vendredi: 9h - 17h</p>
             </div>
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.845680397388!2d3.7422475999999882!3d51.05593719999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c376b57263ebb5%3A0x2eb89e417d6cacfa!2sDendermondsesteenweg+40!5e0!3m2!1sen!2s!4v1397758224395" frameborder="0" style="border:0"></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.845680397388!2d3.7422475999999882!3d51.05593719999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c376b57263ebb5%3A0x2eb89e417d6cacfa!2sDendermondsesteenweg+40!5e0!3m2!1sen!2s!4v1397758224395" frameborder="0" style="border:0"></iframe> -->
             </div>
           </div>
           <hr class="devider">
@@ -434,7 +446,7 @@
               <p class="blockcontent">Heures d&rsquo;ouvertures:<br>du lundi au vendredi: 9h - 17h</p>
             </div>
             <div class="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2446.3261190560784!2d20.9972728!3d52.1829446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719332673c39efd%3A0x4b16a8cdb2b27b67!2sul.+Post%C4%99pu+21a!5e0!3m2!1sen!2s!4v1397758772449" frameborder="0" style="border:0"></iframe>
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2446.3261190560784!2d20.9972728!3d52.1829446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719332673c39efd%3A0x4b16a8cdb2b27b67!2sul.+Post%C4%99pu+21a!5e0!3m2!1sen!2s!4v1397758772449" frameborder="0" style="border:0"></iframe> -->
             </div>
           </div>
         </div>
@@ -464,11 +476,11 @@
         </div>
       </footer>
     </div>
-
-    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script> -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+    <!--<script src="js/main.js"></script> -->
+    <script src="bower_components/filementgroup-responsive-carousel/src/responsive-carousel.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <!-- <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
