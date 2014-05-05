@@ -61,23 +61,25 @@ body {
 }
 
 header {
-  //@include span-columns(10);
+  @include span-columns(10);
   //background-color: pink;
-  @include outer-container;
+  //@include outer-container;
   .top {
     //@include outer-container;
     //@include pad(7px 0 0 0);
-    //@include fill-parent();
+    @include fill-parent;
     @include span-columns(10);
     position: relative;
-    @include media($mintablet) {
-      position: fixed;
-    }
     background-color: $darkblue;
     z-index: 1;
-    //width: 958px;
+    @include media($mintablet) {
+    }
+    @include media($desktop) {
+      position: fixed;
+      width: 958px;
+    }
     .network {
-      @include span-columns(2 of 8);
+      @include span-columns(2);
       @include pad(8px 0 0 20px);
       img {
         vertical-align: top;
@@ -85,7 +87,7 @@ header {
       }
     }
     .local {
-      @include span-columns(6 of 8);
+      @include span-columns(8);
       @include pad(0 20px);
       ul {
         float: right;
@@ -127,12 +129,16 @@ header {
       }
     }
     .menu {
-      @include media($tablet) {
-        display: block;
+      //float: right;
+      @include media($mintablet) {
+        @include span-columns(8);
+        //@include omega;
       }
-      @include span-columns(8);
-      display: none;
       ul {
+        @include media($mintablet) {
+          display: block;
+        }
+        display: none;
         float: right;
         @include pad(0 1em);
         li {
@@ -152,6 +158,14 @@ header {
           }
         }
       }
+      .mobile {
+        display: block;
+        float: right;
+        margin: 20px 30px 0 0;
+        @include media($mintablet) {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -162,16 +176,21 @@ header {
   .carousel {
     @include media($mintablet) {
       display: block;
+      background-image: url(../images/png/mbp.png);
+      background-repeat: no-repeat;
+      background-size: 356px;
+      background-position: 50% 20px;
+      margin-top: 60px;
     }
     display: none;
-    height: 400px;
+    height: 300px;
     .carousel-item {
       height: 250px;
       img {
         width: 262px;
       }
     }
-    .carousel-nav {
+   /*  .carousel-nav {
       position: relative;
       .prev, .next {
         position: absolute;
@@ -183,12 +202,49 @@ header {
       .next {
         right: 0;
       }
-    }
+    } */
     img {
       margin-top: 60px;
       width: 360px;
     }
   }
+}
+/* styled arrows */
+.arrows .carousel-nav {
+  bottom: auto;
+  top: 50%;
+}
+.arrows .carousel-nav a {
+  //background-color: red;
+  text-decoration: none;
+  text-indent: -9999px;
+  display: block;
+  position: absolute;
+  //width: 2em;
+  //height: 2em;
+  //background: #fff;
+  opacity: .5;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  //border-radius: 100%;
+  height: 100px;
+  //border: 1px solid red;
+  width: 50px;
+  margin-top: -150px;
+}
+.arrows .carousel-nav a:hover,
+.arrows .carousel-nav a:focus {
+  opacity: 1;
+}
+.arrows .carousel-nav a.next {
+  background-image: url(../images/png/arrow_r.png);
+  right: 1em;
+}
+.arrows .carousel-nav a.prev {
+  background-image: url(../images/png/arrow_l.png);
+  left: 1em;
 }
 
 .centerrow {
@@ -647,6 +703,7 @@ header {
       display: none;
       @include media($mintablet) {
         @include span-columns(5);
+        display: block;
       }
       iframe {
         @include fill-parent;
@@ -706,3 +763,4 @@ footer {
   //  margin-bottom: 50px;
   //}
 }
+
