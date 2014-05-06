@@ -161,7 +161,7 @@ header {
       .mobile {
         display: block;
         float: right;
-        margin: 20px 30px 0 0;
+        margin: 15px 30px 0 0;
         @include media($mintablet) {
           display: none;
         }
@@ -173,28 +173,39 @@ header {
 .main {
   @include span-columns(8);
   @include shift(1);
-  .carousel {
+  .macbookpro {
+    background-image: url(../images/png/mbp.png);
+    background-repeat: no-repeat;
+    background-size: 356px;
+    background-position: 50% 20px;
+    height: 275px;
+    padding-top: 60px;
     @include media($mintablet) {
       display: block;
-      background-image: url(../images/png/mbp.png);
-      background-repeat: no-repeat;
-      background-size: 356px;
-      background-position: 50% 20px;
-      margin-top: 60px;
     }
     display: none;
-    height: 300px;
-    .carousel-item {
-      height: 250px;
-      img {
-        width: 262px;
+    .carousel {
+      @include media($mintablet) {
+        width: 272px;
+        margin: 0 auto 0 auto;
       }
+      .carousel-item {
+        //height: 250px;
+        img {
+          width: 272px;
+        }
+      }
+      /* img {
+        //margin-top: 60px;
+        width: 360px;
+      } */
     }
-   /*  .carousel-nav {
+    .carousel-nav {
+      //height: 700px;
       position: relative;
       .prev, .next {
         position: absolute;
-        margin-top: -100px;
+        margin-top: -125px;
       }
       .prev {
         left: 0;
@@ -202,49 +213,47 @@ header {
       .next {
         right: 0;
       }
-    } */
-    img {
-      margin-top: 60px;
-      width: 360px;
     }
   }
 }
 /* styled arrows */
-.arrows .carousel-nav {
-  bottom: auto;
-  top: 50%;
-}
-.arrows .carousel-nav a {
-  //background-color: red;
-  text-decoration: none;
-  text-indent: -9999px;
-  display: block;
-  position: absolute;
-  //width: 2em;
-  //height: 2em;
-  //background: #fff;
-  opacity: .5;
-  overflow: hidden;
-  background-position: 50% 50%;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  //border-radius: 100%;
-  height: 100px;
-  //border: 1px solid red;
-  width: 50px;
-  margin-top: -150px;
-}
-.arrows .carousel-nav a:hover,
-.arrows .carousel-nav a:focus {
-  opacity: 1;
-}
-.arrows .carousel-nav a.next {
-  background-image: url(../images/png/arrow_r.png);
-  right: 1em;
-}
-.arrows .carousel-nav a.prev {
-  background-image: url(../images/png/arrow_l.png);
-  left: 1em;
+.macbookpro {
+  .carousel-nav {
+    //bottom: auto;
+    //top: 50%;
+  }
+  .carousel-nav a {
+    //background-color: red;
+    text-decoration: none;
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    //width: 2em;
+    //height: 2em;
+    //background: #fff;
+    opacity: .5;
+    //overflow: hidden;
+    background-position: 50% 50%;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    //border-radius: 100%;
+    height: 100px;
+    //border: 1px solid red;
+    width: 50px;
+    //margin-top: -150px;
+  }
+  .carousel-nav a:hover,
+  .carousel-nav a:focus {
+    opacity: 1;
+  }
+  .carousel-nav a.next {
+    background-image: url(../images/png/arrow_r.png);
+    right: 1em;
+  }
+  .carousel-nav a.prev {
+    background-image: url(../images/png/arrow_l.png);
+    left: 1em;
+  }
 }
 
 .centerrow {
@@ -377,8 +386,6 @@ header {
     //@include span-columns(8 of 10);
     //@include shift(1);
   }
-  p {
-  }
 }
 
 .services, .moresupport, .block.codingservice, .block.hostingservice, .block.happyclients, .team, .contact {
@@ -390,6 +397,7 @@ header {
 
 .services {
   text-align: center;
+  @include clearfix;
   .servicescontainer {
     @include span-columns(10);
     @include media($mintablet) {
@@ -449,10 +457,15 @@ header {
     margin-top: 0.5em;
     font-weight: 600;
     //@include clearfix;
+    text-transform: uppercase;
+    font-size: 1.4em;
     @include span-columns(10);
   }
   h3 {
     @include span-columns(10);
+    font-weight: 400;
+    font-size: 0.9em;
+    text-align: center;
     &.pullLeft {
       text-align: left;
       //@include span-columns(8);
@@ -460,27 +473,17 @@ header {
       //@include clearfix;
     }
   }
-}
-
-.service, .team, .about {
-  //padding-top: 50px;
   .centerrow {
     img {
       width: 30px;
     }
   }
-  h2 {
-    text-transform: uppercase;
-    font-size: 1.4em;
-  }
-  h3 {
-    font-weight: 400;
-    font-size: 0.9em;
-    text-align: center;
-  }
   h4 {
     font-size: 0.8em;
   }
+}
+
+.service, .team, .about {
   @include outer-container;
   .featurecontainer {
     //@include span-columns(8);
@@ -520,7 +523,7 @@ header {
     @include span-columns(10);
     .check {
       @include span-columns(10);
-      @include media($tablet) {
+      @include media($mintablet) {
         @include span-columns(1 of 3);
         @include omega(3n);
       }
@@ -702,8 +705,9 @@ header {
     .map {
       display: none;
       @include media($mintablet) {
-        @include span-columns(5);
+        @include span-columns(7);
         display: block;
+        //@include fill-parent;
       }
       iframe {
         @include fill-parent;
@@ -725,6 +729,15 @@ footer {
       float: left;
     }
   }
+  .hoveropacity {
+    opacity: 0.7;
+    @include transition-property(opacity);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(linear);
+    &:hover {
+      opacity: 1;
+    }
+  }
   .copy {
     @include span-columns(4);
     p {
@@ -732,6 +745,10 @@ footer {
       margin: 0;
       color: white;
       font-size: 0.8em;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
   .social {

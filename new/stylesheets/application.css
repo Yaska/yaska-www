@@ -150,7 +150,7 @@ header {
     header .nav .menu .mobile {
       display: block;
       float: right;
-      margin: 20px 30px 0 0; }
+      margin: 15px 30px 0 0; }
       @media screen and (min-width: 768px)  {
         header .nav .menu .mobile {
           display: none; } }
@@ -163,65 +163,56 @@ header {
   margin-left: 10.25641%; }
   .main:last-child {
     margin-right: 0; }
-  .main .carousel {
-    display: none;
-    height: 300px;
-    /*  .carousel-nav {
-      position: relative;
-      .prev, .next {
-        position: absolute;
-        margin-top: -100px;
-      }
-      .prev {
-        left: 0;
-      }
-      .next {
-        right: 0;
-      }
-    } */ }
+  .main .macbookpro {
+    background-image: url(../images/png/mbp.png);
+    background-repeat: no-repeat;
+    background-size: 356px;
+    background-position: 50% 20px;
+    height: 275px;
+    padding-top: 60px;
+    display: none; }
     @media screen and (min-width: 768px)  {
-      .main .carousel {
-        display: block;
-        background-image: url(../images/png/mbp.png);
-        background-repeat: no-repeat;
-        background-size: 356px;
-        background-position: 50% 20px;
-        margin-top: 60px; } }
-    .main .carousel .carousel-item {
-      height: 250px; }
-      .main .carousel .carousel-item img {
-        width: 262px; }
-    .main .carousel img {
-      margin-top: 60px;
-      width: 360px; }
+      .main .macbookpro {
+        display: block; } }
+    .main .macbookpro .carousel {
+      /* img {
+        //margin-top: 60px;
+        width: 360px;
+      } */ }
+      @media screen and (min-width: 768px)  {
+        .main .macbookpro .carousel {
+          width: 272px;
+          margin: 0 auto 0 auto; } }
+      .main .macbookpro .carousel .carousel-item img {
+        width: 272px; }
+    .main .macbookpro .carousel-nav {
+      position: relative; }
+      .main .macbookpro .carousel-nav .prev, .main .macbookpro .carousel-nav .next {
+        position: absolute;
+        margin-top: -125px; }
+      .main .macbookpro .carousel-nav .prev {
+        left: 0; }
+      .main .macbookpro .carousel-nav .next {
+        right: 0; }
 
 /* styled arrows */
-.arrows .carousel-nav {
-  bottom: auto;
-  top: 50%; }
-
-.arrows .carousel-nav a {
+.macbookpro .carousel-nav a {
   text-decoration: none;
   text-indent: -9999px;
   display: block;
   position: absolute;
   opacity: 0.5;
-  overflow: hidden;
   background-position: 50% 50%;
   background-size: 25px;
   background-repeat: no-repeat;
   height: 100px;
-  width: 50px;
-  margin-top: -150px; }
-
-.arrows .carousel-nav a:hover, .arrows .carousel-nav a:focus {
+  width: 50px; }
+.macbookpro .carousel-nav a:hover, .macbookpro .carousel-nav a:focus {
   opacity: 1; }
-
-.arrows .carousel-nav a.next {
+.macbookpro .carousel-nav a.next {
   background-image: url(../images/png/arrow_r.png);
   right: 1em; }
-
-.arrows .carousel-nav a.prev {
+.macbookpro .carousel-nav a.prev {
   background-image: url(../images/png/arrow_l.png);
   left: 1em; }
 
@@ -334,7 +325,13 @@ header {
       margin-bottom: 60px; } }
 
 .services {
-  text-align: center; }
+  text-align: center;
+  *zoom: 1; }
+  .services:before, .services:after {
+    content: " ";
+    display: table; }
+  .services:after {
+    clear: both; }
   .services .servicescontainer {
     float: left;
     display: block;
@@ -389,6 +386,8 @@ header {
 .service h2, .team h2, .contact h2, .about h2 {
   margin-top: 0.5em;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.4em;
   float: left;
   display: block;
   margin-right: 2.5641%;
@@ -399,28 +398,24 @@ header {
   float: left;
   display: block;
   margin-right: 2.5641%;
-  width: 100%; }
+  width: 100%;
+  font-weight: 400;
+  font-size: 0.9em;
+  text-align: center; }
   .service h3:last-child, .team h3:last-child, .contact h3:last-child, .about h3:last-child {
     margin-right: 0; }
   .service h3.pullLeft, .team h3.pullLeft, .contact h3.pullLeft, .about h3.pullLeft {
     text-align: left; }
+.service .centerrow img, .team .centerrow img, .contact .centerrow img, .about .centerrow img {
+  width: 30px; }
+.service h4, .team h4, .contact h4, .about h4 {
+  font-size: 0.8em; }
 
 .service, .team, .about {
   *zoom: 1;
   max-width: 60em;
   margin-left: auto;
   margin-right: auto; }
-  .service .centerrow img, .team .centerrow img, .about .centerrow img {
-    width: 30px; }
-  .service h2, .team h2, .about h2 {
-    text-transform: uppercase;
-    font-size: 1.4em; }
-  .service h3, .team h3, .about h3 {
-    font-weight: 400;
-    font-size: 0.9em;
-    text-align: center; }
-  .service h4, .team h4, .about h4 {
-    font-size: 0.8em; }
   .service:before, .service:after, .team:before, .team:after, .about:before, .about:after {
     content: " ";
     display: table; }
@@ -494,7 +489,7 @@ header {
       width: 100%; }
       .service .checkcontainer .check:last-child, .team .checkcontainer .check:last-child, .about .checkcontainer .check:last-child {
         margin-right: 0; }
-      @media screen and (min-width: 768px) and (max-width: 960px)  {
+      @media screen and (min-width: 768px)  {
         .service .checkcontainer .check, .team .checkcontainer .check, .about .checkcontainer .check {
           float: left;
           display: block;
@@ -767,7 +762,7 @@ header {
         float: left;
         display: block;
         margin-right: 2.5641%;
-        width: 48.71795%;
+        width: 69.23077%;
         display: block; }
         .about .addresscontainer .map:last-child {
           margin-right: 0; } }
@@ -787,6 +782,19 @@ footer {
     margin: 0; }
     footer ul li {
       float: left; }
+  footer .hoveropacity {
+    opacity: 0.7;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    transition-timing-function: linear; }
+    footer .hoveropacity:hover {
+      opacity: 1; }
   footer .copy {
     float: left;
     display: block;
@@ -799,6 +807,9 @@ footer {
       margin: 0;
       color: white;
       font-size: 0.8em; }
+      footer .copy p a {
+        text-decoration: none;
+        color: white; }
   footer .social {
     float: left;
     display: block;
