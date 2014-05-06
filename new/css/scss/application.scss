@@ -383,8 +383,6 @@ header {
   h3 {
     color: $green;
     margin: 0;
-    //@include span-columns(8 of 10);
-    //@include shift(1);
   }
 }
 
@@ -468,8 +466,6 @@ header {
     text-align: center;
     &.pullLeft {
       text-align: left;
-      //@include span-columns(8);
-      //@include shift(1);
       //@include clearfix;
     }
   }
@@ -507,7 +503,7 @@ header {
         @include omega(2n);
       }
       h4, p {
-        margin: 5px 0;
+        margin: 10px 0 5px 0;
         padding: 0 20px;
       }
       p {
@@ -515,7 +511,6 @@ header {
       }
       img {
         @include fill-parent;
-        //width: 320px;
       }
     }
   }
@@ -605,8 +600,6 @@ header {
     }
     @include span-columns(10);
     ul {
-      //@include span-columns(8);
-      //@include shift(1);
       @include pad(0);
       list-style-type: none;
       margin-bottom: 60px;

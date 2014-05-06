@@ -469,7 +469,7 @@ header {
           .service .casecontainer .case:nth-child(2n+1), .team .casecontainer .case:nth-child(2n+1), .about .casecontainer .case:nth-child(2n+1) {
             clear: left; } }
       .service .casecontainer .case h4, .service .casecontainer .case p, .team .casecontainer .case h4, .team .casecontainer .case p, .about .casecontainer .case h4, .about .casecontainer .case p {
-        margin: 5px 0;
+        margin: 10px 0 5px 0;
         padding: 0 20px; }
       .service .casecontainer .case p, .team .casecontainer .case p, .about .casecontainer .case p {
         margin-bottom: 15px; }

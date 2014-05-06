@@ -3,9 +3,9 @@ $('<select class="mobile" />').appendTo(".container header .nav .menu");
 
 // Create default option "Go to..."
 $("<option />", {
-   "selected": "selected",
-   "value"   : "",
-   "text"    : "navigation"
+  "selected": "selected",
+  "value"   : "",
+  "text"    : "navigation"
 }).appendTo(".nav select");
 
 // Populate dropdown with menu items
@@ -13,6 +13,7 @@ $(".menu a").each(function() {
   var el = $(this);
   console.log(el.attr("href"));
   $("<option />", {
+      "href"   : el.attr("href"),
       "value"   : el.attr("href"),
       "text"    : el.text()
   }).appendTo(".nav select");
