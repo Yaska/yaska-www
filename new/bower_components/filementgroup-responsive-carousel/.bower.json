@@ -1,0 +1,14 @@
+{
+  "name": "filementgroup-responsive-carousel",
+  "homepage": "https://github.com/filamentgroup/responsive-carousel",
+  "version": "0.2.1",
+  "_release": "0.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.1",
+    "commit": "a6db9465c3000c2846fbd8eb3a4cbd125e1cda18"
+  },
+  "_source": "git://github.com/filamentgroup/responsive-carousel.git",
+  "_target": "~0.2.0",
+  "_originalSource": "filementgroup-responsive-carousel"
+}
