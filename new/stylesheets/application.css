@@ -7,6 +7,9 @@ h1, h2, h3, h4, p, a, label, input, textarea {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 200; }
 
+h1, h2, h3, h4, p {
+  cursor: default; }
+
 h2, h3 {
   text-align: center; }
 
@@ -26,9 +29,7 @@ body {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
-  /* border-right: none;
-  border-left: none; */ }
+  background-color: white; }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -72,7 +73,7 @@ header {
         margin-right: 0; }
       header .top .network img {
         vertical-align: top;
-        width: 87px; }
+        width: 100px; }
     header .top .local {
       float: left;
       display: block;
@@ -195,7 +196,6 @@ header {
       .main .macbookpro .carousel-nav .next {
         right: 0; }
 
-/* styled arrows */
 .macbookpro .carousel-nav a {
   text-decoration: none;
   text-indent: -9999px;
@@ -383,11 +383,23 @@ header {
         width: 51px;
         margin-top: 20px; }
 
-.service h2, .team h2, .contact h2, .about h2 {
+.service h2 {
+  text-transform: uppercase;
   margin-top: 0.5em;
   font-weight: 600;
-  text-transform: uppercase;
-  font-size: 1.4em;
+  font-size: 1.4em; }
+
+h2 {
+  color: #123E4D;
+  margin: 1em 0 0.2em 0;
+  float: left;
+  display: block;
+  margin-right: 2.5641%;
+  width: 100%; }
+  h2:last-child {
+    margin-right: 0; }
+
+.service h2, .team h2, .contact h2, .about h2 {
   float: left;
   display: block;
   margin-right: 2.5641%;

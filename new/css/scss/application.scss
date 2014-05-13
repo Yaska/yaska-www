@@ -22,9 +22,22 @@ $devidergrey: #DFE2E6;
   border-right: 1px solid $darkgrey;
 }
 
+@mixin dont-select {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
 h1, h2, h3, h4, p, a, label, input, textarea {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-weight: 200;
+}
+
+h1, h2, h3, h4, p {
+  cursor: default;
 }
 
 h2, h3 {
@@ -51,10 +64,6 @@ body {
 .container {
   @include outer-container;
   background-color: white;
-  /* border-right: none;
-  border-left: none; */
-  //@include media($mobile) {
-  //}
   @include media($desktop) {
     @include border-line;
   }
@@ -62,11 +71,7 @@ body {
 
 header {
   @include span-columns(10);
-  //background-color: pink;
-  //@include outer-container;
   .top {
-    //@include outer-container;
-    //@include pad(7px 0 0 0);
     @include fill-parent;
     @include span-columns(10);
     position: relative;
@@ -83,7 +88,7 @@ header {
       @include pad(8px 0 0 20px);
       img {
         vertical-align: top;
-        width: 87px;
+        width: 100px;
       }
     }
     .local {
@@ -129,10 +134,8 @@ header {
       }
     }
     .menu {
-      //float: right;
       @include media($mintablet) {
         @include span-columns(8);
-        //@include omega;
       }
       ul {
         @include media($mintablet) {
@@ -143,7 +146,6 @@ header {
         @include pad(0 1em);
         li {
           display: inline-block;
-          //margin: 2em 0;
           a {
             padding: 1em;
             text-decoration: none;
@@ -216,7 +218,7 @@ header {
     }
   }
 }
-/* styled arrows */
+
 .macbookpro {
   .carousel-nav {
     //bottom: auto;
@@ -341,20 +343,7 @@ header {
 }
 
 .block {
-  //@include media($mobile) {
-  //@include outer-container;
-  //@include span-columns(8);
-  //@include shift(1);
-  //}
   .blockintro {
-    //@include clearfix;
-    //@include media($mobile) {
-    //  @include span-columns(8);
-    //  @include shift(1);
-    //}
-    //@include span-columns(8);
-    //@include shift(1);
-    //@include pad();
     text-align: center;
     font-size: 0.9em;
     line-height: 1.6em;
@@ -450,13 +439,28 @@ header {
   }
 }
 
-.service, .team, .contact, .about {
+.service {
   h2 {
+    text-transform: uppercase;
     margin-top: 0.5em;
     font-weight: 600;
     //@include clearfix;
-    text-transform: uppercase;
     font-size: 1.4em;
+  }
+}
+
+h2 {
+  color: $darkblue;
+  margin: 1em 0 0.2em 0;
+  @include span-columns(10);
+}
+
+.service, .team, .contact, .about {
+  h2 {
+    //margin-top: 0.5em;
+    //font-weight: 600;
+    //@include clearfix;
+    //font-size: 1.4em;
     @include span-columns(10);
   }
   h3 {
@@ -558,6 +562,7 @@ header {
     }
   }
 }
+
 .team {
   .blockcontent {
     line-height: 1.5em;
@@ -613,6 +618,7 @@ header {
     }
   }
 }
+
 .contact, .about {
   @include outer-container;
   h3 {
@@ -682,6 +688,7 @@ header {
     }
   }
 }
+
 .about {
   .addresscontainer {
     //@include outer-container;
@@ -762,6 +769,7 @@ footer {
     }
   }
 }
+
 .devider {
   border-width: 0;
   background-color: $devidergrey;
