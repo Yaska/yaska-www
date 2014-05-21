@@ -115,7 +115,7 @@ header {
             font-weight: 500;
             display: block;
           }
-          &:active, &:hover {
+          &:active, &:hover, &.active {
             a {
               color: $green;
             }

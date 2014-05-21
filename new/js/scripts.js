@@ -1,3 +1,5 @@
+
+
 // Create the dropdown base
 $('<select class="mobile" />').appendTo(".container header .nav .menu");
 
@@ -11,7 +13,7 @@ $("<option />", {
 // Populate dropdown with menu items
 $(".menu a").each(function() {
   var el = $(this);
-  console.log(el.attr("href"));
+  //console.log(el.attr("href"));
   $("<option />", {
       "href"   : el.attr("href"),
       "value"   : el.attr("href"),
@@ -39,18 +41,3 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
   }
 });
-
-/*
-$(window).load(function(){
-  $('.flexslider').flexslider({
-    animation: "slide",
-    animationLoop: false,
-    itemWidth: 260,
-    itemMargin: 0,
-    //pausePlay: true,
-    start: function(slider){
-      $('body').removeClass('loading');
-    }
-  });
-});
-*/
