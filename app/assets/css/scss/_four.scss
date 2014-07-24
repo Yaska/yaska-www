@@ -1,0 +1,100 @@
+
+.fButton {
+  min-width: 8em;
+  width: 20%;
+  margin: auto 6.666666665%;
+  padding: 0.6em auto 0.5em;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+  float: left;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.fButton a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+#beachBall {
+  width: 75px;
+  margin: 5em auto 2em;
+  height: 75px;
+}
+
+.beachBallImg {
+  width: 75px;
+  position: absolute; }
+
+#fourOhFourButtons {
+  margin-top: 5em; }
+
+#fourOhfour #content {
+  min-height: 28em; }
+#fourOhfour h1 {
+  font-size: 1.457em;
+  text-align: center; }
+
+.rotate-animation {
+  -webkit-animation: rotate 2s linear 0 infinite normal;
+  -moz-animation: rotate 2s linear 0 infinite normal;
+  -o-animation: rotate 2s linear 0 infinite normal;
+  -ms-animation: rotate 2s linear 0 infinite normal;
+  animation: rotate 2s linear 0 infinite normal; }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(0deg);
+
+  }
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotate 2s linear 0s infinite normal;
+  -moz-animation: rotate 2s linear 0s infinite normal;
+  -o-animation: rotate 2s linear 0s infinite normal;
+  -ms-animation: rotate 2s linear 0s infinite normal;
+  animation: rotate 2s linear 0s infinite normal;
+}

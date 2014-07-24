@@ -1,0 +1,109 @@
+.header {
+  @include span-columns(10);
+  @include omega();
+  .top {
+    @include span-columns(10);
+    @include omega();
+    position: relative;
+    background-color: $darkblue;
+    z-index: 100;
+    @include media($mintablet) {
+    }
+    @include media($desktop) {
+      position: fixed;
+      width: 958px;
+    }
+    .network {
+      @include span-columns(2);
+      @include pad(5px 0 0px 20px);
+      img {
+        vertical-align: top;
+        width: 131px;
+      }
+    }
+    .local {
+      @include span-columns(8);
+      @include pad(0 20px);
+      .locallist {
+        float: right;
+        margin: 0;
+        padding: 0.2em 0 0.2em 0;
+        li {
+          height: 12px;
+          border-left: 1px solid white;
+          padding-left: 3px;
+          display: inline-block;
+          &:first-child {
+            border-left: none;
+          }
+          &:active, &:hover, &.active {
+            a, p {
+              color: $green;
+            }
+          }
+          a, p {
+            color: white;
+            font-size: 0.6em;
+            font-weight: 500;
+            vertical-align: top;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .nav {
+    @include span-columns(10);
+    @include omega();
+    @include media($desktop) {
+      @include pad(25px 0 0 0);
+    }
+    .logo {
+      @include span-columns(2);
+      @include pad(10px 0 0 20px);
+      img {
+        width: 131px;
+      }
+    }
+    .menu {
+      @include media($mintablet) {
+        @include span-columns(8);
+      }
+      ul {
+        @include media($mintablet) {
+          display: block;
+        }
+        display: none;
+        float: right;
+        @include pad(0 1em);
+        li {
+          display: inline-block;
+          a {
+            padding: 1em;
+            text-decoration: none;
+            color: $bluegrey;
+            font-size: 0.8em;
+            @include transition-property(color);
+            @include transition-duration(0.2s);
+            @include transition-timing-function(linear);
+            &:hover {
+              color: $darkblue;
+            }
+          }
+        }
+      }
+      .mobile {
+        display: block;
+        float: right;
+        margin: 15px 30px 0 0;
+        @include media($mintablet) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+  @include outer-container;
+  @include media($desktop) {
+    @include border-line;
+  }
+  height: 37px;
+  background-color: $green;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    li {
+      float: left;
+    }
+  }
+  .hoveropacity {
+    opacity: 0.7;
+    @include transition-property(opacity);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(linear);
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .copy {
+    @include span-columns(4);
+    p {
+      padding: 11px 20px 5px 20px;
+      opacity: 0.7;
+      margin: 0;
+      color: white;
+      font-size: 0.8em;
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  .social {
+    @include span-columns(6);
+    @include omega();
+    ul {
+      float: right;
+      @include pad(8px 20px 5px 0);
+      li {
+        margin-left: 15px;
+        @include media($desktop) {
+          margin-left: 30px;
+        }
+        height: 16px;
+        a {
+        vertical-align: middle;
+        color: white;
+        text-decoration: none;
+          img {
+            margin-top: 2px;
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+}

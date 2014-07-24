@@ -1,0 +1,23 @@
+@import 'neat/neat-helpers';
+
+// Change the grid settings
+$column: 90px;
+$gutter: 30px;
+$grid-columns: 10;
+$max-width: em(960);
+
+$visual-grid: false;
+$visual-grid-color: pink;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.5;
+
+// Define your breakpoints
+//$mobile: new-breakpoint(min-width 320px 10);
+$mobile: new-breakpoint(max-width 480px 10);
+$widemobile: new-breakpoint(min-width 480px max-width 767px 10);
+//$maxmobile: new-breakpoint(max-width 768px 10);
+$tablet: new-breakpoint(min-width 768px max-width 959px 10);
+$mintablet: new-breakpoint(min-width 768px 10);
+$desktop: new-breakpoint(min-width 960px 10);
+//$mintablet: new-breakpoint(min-width 320px 8);
+//$mindesktop: new-breakpoint(min-width 768px 8);

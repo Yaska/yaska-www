@@ -1,0 +1,552 @@
+
+@import 'bourbon/bourbon';
+@import 'grid-settings';
+@import 'neat/neat';
+
+@import 'colors';
+@import 'mixins';
+
+@import 'helpers';
+@import 'header';
+@import 'footer';
+@import 'buttons';
+@import 'flexslider';
+@import 'four'; //404 page
+
+@import 'modal';
+
+h1, h2, h3, h4, p, a, label, input, textarea {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, p {
+  cursor: default;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 2em 0 0.2em 0;
+  color: $darkblue;
+  margin: 1em 0 0.2em 0;
+  @include span-columns(10);
+}
+
+h3 {
+  //padding: 0 0 1.5em 0;
+}
+
+p {
+  color: $bluegrey;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: $lightgrey;
+  //position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: white;
+
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -37px;
+  padding: 0 0 37px 0; // footer + (flag)border
+
+  @include outer-container;
+  @include media($desktop) {
+    @include border-line;
+  }
+}
+
+.main {
+  @include span-columns(8);
+  @include omega();
+  @include shift(1);
+  .macbookpro {
+    background-image: url(../images/png/mbp.png);
+    background-repeat: no-repeat;
+    background-size: 356px;
+    background-position: 50% 20px;
+    height: 300px;
+    //padding-top: 50px;
+    margin-bottom: 50px;
+    @include media($mintablet) {
+      display: block;
+    }
+    display: none;
+    .carousel {
+      @include media($mintablet) {
+        width: 272px;
+        margin: 0 auto 0 auto;
+      }
+      overflow: hidden;
+      .carousel-item {
+        img {
+          width: 272px;
+        }
+      }
+    }
+    .carousel-nav {
+      //height: 700px;
+      position: relative;
+      .prev, .next {
+        position: absolute;
+        margin-top: -125px;
+      }
+      .prev {
+        left: 0;
+      }
+      .next {
+        right: 0;
+      }
+    }
+  }
+}
+
+.block {
+  @include span-columns(10);
+  @include omega();
+  .blockintro {
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+  .blockheading {
+    line-height: 1.6em;
+    font-size: 0.8em;
+    margin: 1em 0 3.5em 0;
+    p {
+      margin: 0;
+    }
+  }
+  .blockcontent {
+    line-height: 1.5em;
+    font-size: 0.8em;
+    margin: 0 0 1.5em 0;
+    @include media($mintablet) {
+      margin: 0 0 3.5em 0;
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  h2 {
+    color: $darkblue;
+    margin: 1em 0 0.2em 0;
+  }
+  h3 {
+    color: $green;
+    margin: 0;
+  }
+}
+
+.services {
+  text-align: center;
+  .servicescontainer {
+    @include span-columns(10);
+    @include media($mintablet) {
+      margin-bottom: 30px;
+    }
+    .serviceblock {
+      padding: 5px 5px 30px 5px;
+      border: 1px solid $devidergrey;
+      @include span-columns(10);
+      margin-bottom: 30px;
+      @include media($mintablet) {
+        @include span-columns(4 of 12);
+      }
+      .info {
+        //height: 50px;
+      }
+      .bolder {
+        color: $darkblue;
+        font-weight: 400;
+      }
+      .servicetitle {
+        text-transform: uppercase;
+        margin-top: 0;
+      }
+      p {
+        line-height: 1.5em;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .blockcontent {
+        min-height: 80px;
+        margin-bottom: 1em;
+      }
+      .btn {
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin: 0;
+        padding: .5em 1em;
+      }
+      hr {
+      }
+      img {
+        width: 51px;
+        margin-top: 20px;
+      }
+    }
+    .codingservice {
+    }
+    .supportservice {
+    }
+    .hostingservice {
+    }
+  }
+}
+
+.service {
+  .featurecontainer {
+    @include span-columns(10);
+    @include omega();
+    //margin-bottom: 60px;
+    .feature {
+      @include span-columns(10);
+      @include media($mintablet) {
+        @include span-columns(6 of 12);
+        @include omega(2n);
+      }
+    }
+  }
+  .casecontainer {
+    @include span-columns(10);
+    .case {
+      @include span-columns(10);
+      border: 1px solid $devidergrey;
+      margin-bottom: 30px;
+      @include media($mintablet) {
+        @include span-columns(8 of 16);
+        @include omega(2n);
+      }
+      h4, p {
+        margin: 10px 0 5px 0;
+        padding: 0 20px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      img {
+        @include fill-parent;
+      }
+    }
+  }
+  .checkcontainer {
+    @include span-columns(10);
+    .check {
+      @include span-columns(10);
+      @include media($mintablet) {
+        @include span-columns(1 of 3);
+        @include omega(3n);
+      }
+      img {
+        float: left;
+        width: 13px;
+      }
+      p {
+        margin: 0 0 0.5em 20px;
+      }
+    }
+    &.last {
+      margin-bottom: 50px;
+    }
+  }
+  h2 {
+    text-transform: uppercase;
+    margin-top: 0.5em;
+    font-weight: 600;
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 0.8em;
+  }
+  .centerrow {
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.supportservice {
+  .servicetitle {
+    color: $green;
+  }
+}
+
+.codingservice {
+  .servicetitle {
+    color: $purple;
+  }
+}
+
+.hostingservice {
+  .servicetitle {
+    color: $blue;
+  }
+}
+
+.services, .moresupport, .block.codingservice, .block.hostingservice, .block.happyclients, .team, .contact {
+  margin-bottom: 20px;
+  @include media($mintablet) {
+    margin-bottom: 60px;
+  }
+}
+
+.service, .team, .contact, .about {
+  h3 {
+    @include span-columns(10);
+    @include omega();
+    font-weight: 400;
+    font-size: 0.9em;
+  }
+}
+
+.clients {
+  .clientscontainer {
+    @include span-columns(10);
+    @include pad(20px 0 30px 0);
+    text-align: center;
+    @include media($mobile) {
+      @include pad(20px 0);
+    }
+    .client {
+      @include media($mintablet) {
+        @include span-columns(1 of 4);
+        @include omega(4n);
+        text-align: center;
+      }
+      @include span-columns(10);
+      @include pad(15px 0);
+      img {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.team {
+  //@include span-columns(10);
+  //@include omega();
+  .blockcontent {
+    line-height: 1.5em;
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+  .teamcontainer {
+    @include span-columns(10);
+    @include omega();
+    .teammember {
+      margin: 20px 0 0 0;
+      text-align: center;
+      @include media($mobile) {
+        @include span-columns(10);
+        @include omega(1n);
+      }
+      @include media($widemobile) {
+        @include span-columns(5);
+        @include omega(2n);
+      }
+      @include media($tablet) {
+        @include span-columns(4 of 12);
+        @include omega(3n);
+      }
+      @include media($desktop) {
+        @include span-columns(1 of 4);
+        @include omega(4n);
+      }
+      .portrait {
+        img {
+          width: 125px;
+        }
+        .alt {
+          display: none;
+        }
+        &:hover{
+          .primary {
+            display: none;
+          }
+          .alt {
+            display: inline-block;
+          }
+        }
+      }
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+  .factscontainer {
+    h3 {
+      margin: 30px 0;
+    }
+    @include span-columns(10);
+    ul {
+      @include pad(0);
+      list-style-type: none;
+      margin-bottom: 60px;
+      li {
+        margin-bottom: 8px;
+        p {
+          margin: 0;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  #contactForm {
+    @include media($tablet) {
+      border: 1px solid $devidergrey;
+      @include pad(20px);
+    }
+    @include span-columns(10);
+    .insideContainer {
+      label {
+        margin: 0 0 5px 0;
+        @include span-columns(10);
+        font-weight: 400;
+        font-size: 0.9em;
+      }
+      .inputDiv {
+        @include media($mintablet) {
+          @include span-columns(5 of 10);
+          @include omega(2n);
+          @include outer-container;
+          @include pad(10px 20px);
+        }
+        @include span-columns(10);
+        @include pad(10px 0px);
+        input, textarea {
+          -webkit-appearance: none;
+          @include span-columns(10);
+          background-color: $lightgrey;
+          border: 1px solid $darkgrey;
+          border-radius: 3px;
+          font-size: 1em;
+        }
+      }
+      .textfield {
+        @include media($mintablet) {
+          @include pad(10px 40px 10px 20px);
+        }
+        @include span-columns(10);
+        margin-bottom: 20px;
+        //@include shift(1);
+        //@include pad(10px 30px 10px 20px);
+        textarea {
+          -webkit-appearance: none;
+          @include span-columns(10);
+          background-color: $lightgrey;
+          border: 1px solid $darkgrey;
+          border-radius: 3px;
+          font-size: 1em;
+          height: 80px;
+          //@include transition-property(height);
+          //@include transition-duration(0.1s);
+          //@include transition-timing-function(linear);
+          &:focus {
+            //background-color: red;
+            //height: 100px;
+          }
+        }
+      }
+      .centerrow {
+        @include media($mintablet) {
+          @include pad(0 40px);
+        }
+        @include span-columns(10);
+        @include omega();
+        #submit {
+          @include media($mintablet) {
+            float: right;
+          }
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .addresscontainer {
+    @include span-columns(10);
+    @include omega();
+    .address {
+      @include media($mintablet) {
+        @include span-columns(3);
+      }
+      a {
+        text-decoration: none;
+        color: $bluegrey;
+      }
+    }
+    .map {
+      display: none;
+      @include media($mintablet) {
+        @include span-columns(7);
+        display: block;
+        //@include fill-parent;
+      }
+      iframe {
+        @include fill-parent;
+      }
+    }
+  }
+}
+
+#konami {
+  //overflow: hidden;
+  //position: absolute;
+  //bottom: -450px;
+  //display: none;
+  //@include transition-property(bottom);
+  //@include transition-duration(0.2s);
+  //@include transition-timing-function(linear);
+}
+
+.edit-me {
+  font-size: 20px;
+  color: red;
+  opacity: 0.5;
+  cursor: pointer;
+  vertical-align: top;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.input-edit {
+  width: 100%;
+}
+
+form {
+  display: inline-block;
+}
+
+#logout {
+  background-color: $darkblue;
+  border: none;
+  color: white;
+  font-size: 0.6em;
+  font-weight: 500;
+  vertical-align: top;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  margin: 0;
+}

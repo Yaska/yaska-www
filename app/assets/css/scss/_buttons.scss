@@ -1,0 +1,50 @@
+.btn {
+  @include media($mintablet) {
+    margin: 15px auto 60px auto ;
+  }
+  opacity: 0.8;
+  display: inline-block;
+  margin: 10px auto 30px auto;
+  padding: .5em 2em;
+  overflow: hidden;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 7px;
+  @include transition-property(background-color, color);
+  @include transition-duration(0.1s, 0.1s);
+  @include transition-timing-function(linear, linear);
+  background-color: white;
+  &.darkblue {
+    border-color: $darkblue;
+    color: $darkblue;
+    &:hover {
+      color: white;
+      background-color: $darkblue;
+    }
+  }
+  &.green {
+    border-color: $green;
+    color: $green;
+    &:hover {
+      color: white;
+      background-color: $green;
+    }
+  }
+  &.purple {
+    border-color: $purple;
+    color: $purple;
+    &:hover {
+      color: white;
+      background-color: $purple;
+    }
+  }
+  &.blue {
+    border-color: $blue;
+    color: $blue;
+    &:hover {
+      color: white;
+      background-color: $blue;
+    }
+  }
+}
