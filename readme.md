@@ -19,6 +19,18 @@
 1. run `composer update`
 2. chmod the app/storage files
 
+### Composer installation
+
+```
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+```
+
+### Install dependencies 
+
+install 
+`composer install`
+
 
 ### Database
 
