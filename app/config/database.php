@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'yaskalaravel',
-			'username'  => 'root',
-			'password'  => '',
+			'database'  => 'yaska-www',
+			'username'  => 'ladmin',
+			'password'  => 'iggujowtitin',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

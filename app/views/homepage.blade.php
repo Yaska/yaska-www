@@ -128,11 +128,11 @@
     @for ($i = 0; $i < $moresupportitems; $i++)
       <div class="feature">
         <h4>{{ Lang::get('moresupport.title_'.$i); }}</h4>
-          @if (Lang::has('moresupport.content_'.$i))
-          <p class="blockcontent">{{ Lang::get('moresupport.content_'.$i) }}</p>
-          @else
-          <p class="blockcontent"></p>
-          @endif
+        @if (Lang::has('moresupport.content_'.$i))
+        <p class="blockcontent">{{ Lang::get('moresupport.content_'.$i) }}</p>
+        @else
+        <p class="blockcontent"></p>
+        @endif
       </div>
     @endfor
   </div>

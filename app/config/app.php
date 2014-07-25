@@ -120,9 +120,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider'
-
+		'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
 	),
 
 	/*
