@@ -1,5 +1,5 @@
 <?php
 
 class Language extends \Eloquent {
-	protected $fillable = ['name', 'locale'];
+	protected $fillable = array('name', 'locale');
 }
