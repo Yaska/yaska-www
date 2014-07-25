@@ -73,18 +73,18 @@
       <img src="images/png/icn_coding.png" alt="coding" />
       {{ HTML::text('homepage.servicecodingtitle', 'h4', array('class' => 'servicetitle')); }}
       {{ HTML::text('homepage.servicecodingtext', 'p', array('class' => 'blockcontent')); }}
-      <a href="#coding" class="btn purple">{{ Lang::get('homepage.servicebutton'); }}</a>
+      <a href="#coding" class="btn blue">{{ Lang::get('homepage.servicebutton'); }}</a>
     </div>
     <div class="serviceblock supportservice">
       {{ HTML::text('homepage.servicesupportintro', 'p', array('class' => 'info bolder')); }}
       <hr class="devider">
       <img src="images/png/icn_support.png" alt="support" />
       {{ HTML::text('homepage.servicesupporttitle', 'h4', array('class' => 'servicetitle')); }}
-      <div class="blockcontent">
+      {{-- <div class="blockcontent">
         {{ HTML::text('homepage.servicesupporttext', 'p'); }}
         {{ HTML::text('homepage.servicesupportbold', 'span', array('class' => 'bolder')); }}
-      </div>
-      {{-- <p class="blockcontent">{{ Lang::get('homepage.servicesupporttext'); }}<span class="bolder">&nbsp;{{ Lang::get('homepage.servicesupportbold'); }}</span></p> --}}
+      </div> --}}
+      <p class="blockcontent">{{ Lang::get('homepage.servicesupporttext'); }}<span class="bolder">&nbsp;{{ Lang::get('homepage.servicesupportbold'); }}</span></p>
       <a href="#support" class="btn green">{{ Lang::get('homepage.servicebutton'); }}</a>
     </div>
     <div class="serviceblock hostingservice">
@@ -93,7 +93,7 @@
       <img src="images/png/icn_hosting.png" alt="hosting" />
       <h4 class="servicetitle">{{ Lang::get('homepage.servicehostingtitle'); }}</h4>
       <p class="blockcontent">{{ Lang::get('homepage.servicehostingtext'); }}<span class="bolder">&nbsp;{{ Lang::get('homepage.servicehostingbold'); }}</span></p>
-      <a href="#hosting" class="btn blue">{{ Lang::get('homepage.servicebutton'); }}</a>
+      <a href="#hosting" class="btn purple">{{ Lang::get('homepage.servicebutton'); }}</a>
     </div>
   </div>
 </div>
@@ -110,11 +110,11 @@
     @for ($i = 0; $i < $supportitems; $i++)
       <div class="feature">
         <h4>{{ Lang::get('support.title_'.$i); }}</h4>
-          @if (Lang::has('support.content_'.$i))
-          <p class="blockcontent">{{ Lang::get('support.content_'.$i) }}</p>
-          @else
-          <p class="blockcontent"></p>
-          @endif
+        @if (Lang::has('support.content_'.$i))
+        <p class="blockcontent">{{ Lang::get('support.content_'.$i) }}</p>
+        @else
+        <p class="blockcontent"></p>
+        @endif
       </div>
     @endfor
   </div>
@@ -179,7 +179,7 @@
     </div>
   </div>
   <div class="centerrow">
-    <a href="#contact" class="btn purple">{{ Lang::get('homepage.casebutton'); }}</a>
+    <a href="#contact" class="btn blue">{{ Lang::get('homepage.casebutton'); }}</a>
   </div>
   <div class="centerrow">
     <hr class="devider">
@@ -219,7 +219,7 @@
     @endfor
   </div>
   <div class="centerrow">
-    <a href="#contact" class="btn blue">{{ Lang::get('homepage.hostingbutton'); }}</a>
+    <a href="#contact" class="btn purple">{{ Lang::get('homepage.hostingbutton'); }}</a>
   </div>
   <div class="centerrow">
     <hr class="devider">
@@ -374,7 +374,7 @@
         </div>
         <div class="inputDiv">
           <label for="email">{{ Lang::get('homepage.contactemail'); }}</label>
-          <input class="clearfix" type="email" name="email" id="email">
+          <input class="clearfix" type="email" name="email" id="email" required="required">
         </div>
         <div class="inputDiv clearfix">
           <label for="phone">{{ Lang::get('homepage.contacttel'); }}</label>

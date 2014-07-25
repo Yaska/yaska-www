@@ -1,18 +1,18 @@
 <?php
 
 return array(
-  'title_0' => 'Vous avez un besoin urgent ou temporaire de matériel informatique supplémentaire ?',
-  'content_0' => 'En deux temps trois mouvements, nous déployons dans vos murs jusqu’à une centaine de Mac ou de devises IOS pour pallier au manque. Pas de panique, nous avons les outils et l’expérience pour le faire !',
+  'title_0' => 'Do you need urgent or temporary supplementary IT equipment?',
+  'content_0' => 'We can send you up to a hundred Mac or iOS devices to plug the gap in a flash! Don’t worry, we have the tools and experience to do it!',
 
-  'title_1' => 'Un nouvel employé débarque dans la société et vous devez configurer ses futurs devices ?',
-  'content_1' => 'Ne vous compliquez pas la tâche à essayer de tout programmer vous-même, nous pouvons vous aider à déployer efficacement tous les outils de vos recrues (messageries mails, apps,…).',
+  'title_1' => 'A new employee joins the company and you have to configure their devices.',
+  'content_1' => 'Don’t make things hard by trying to program everything yourself.  We’ll come and set up your future employees’ tools efficiently (mailboxes, apps, access restrictions in line with your company policy, etc.).',
 
-  'title_2' => 'Vous travaillez sur un projet avec des collaborateurs externes ?',
-  'content_2' => 'Nous sécurisons toutes vos données corporate (via Apple Profile Manager, Air-Watch, Mobile Iron ou n’importe quelle plate-forme requise pour le projet).',
+  'title_2' => 'Are you  working on a project with external colleagues?',
+  'content_2' => 'your corporate data (via Apple Profile Manager, Air-Watch, Mobile Iron or whichever platform is required for the project).',
 
-  'title_3' => 'Vous vous demandez si votre technologie est toujours aux normes actuelles ?',
-  'content_3' => 'Nous venons réaliser un audit de votre infrastructure IT et nous vous recommandons une stratégie à moyen et long terme pour gagner en performance.',
+  'title_3' => 'Do you want to know if your technology is still up to scratch?',
+  'content_3' => 'We’ll come and carry out an audit of your IT infrastructure and recommend which medium- and long-term strategy you need to boost performance.',
 
-  'title_4' => 'Vous êtes un professionnel de la vidéo ?',
-  'content_4' => 'Vous êtes à la bonne adresse IP ! Notre expertise du monde vidéo sur Mac peut vous être utile. Serveurs, cartes graphiques,… n’ont aucun secret pour nous.'
+  'title_4' => 'Are you a video professional?',
+  'content_4' => 'You’re at the right IP address! Our expertise in the world of video on Mac could come in handy. Servers, graphics cards, they hold no secrets for us.'
 );

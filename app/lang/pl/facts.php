@@ -8,5 +8,5 @@ return array(
   'fact5' => '… que notre certification Apple est notre meilleure garantie de qualité.',
   'fact6' => '… que la technologie du système IOS peut permettre de décupler votre business.',
   'fact7' => '… que la technique Mac peut parfois révéler des surprises, mais le plus souvent des bonnes.',
-  'fact8' => '… que c’est sûrement le moment de nous appeler !'
+  'fact8' => '… que c’est sûrement le moment de nous appeler!'
 );

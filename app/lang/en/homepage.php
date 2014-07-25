@@ -31,42 +31,42 @@ return array(
 
   'servicehostingintro' => '… to protect what matters',
   'servicehostingtitle' => 'Yaska Hosting',
-  'servicehostingtext' => 'Host your data in total security on our Mac Mini for',
-  'servicehostingbold' => '99 €/month.',
+  'servicehostingtext' => 'With our Support Pack, you don’t have to worry about anything, neither IT nor your budget. Support or maintenance, everything’s included in our fixed monthly price of',
+  'servicehostingbold' => '49 €/month (excl. VAT)!',
 
   'supporttitle' => 'Yaska Support',
-  'supportsubtitle' => 'Votre tranquillité pour 49 €/mois.',
-  'supporttext' => 'Avec Yaska Support, vous ne vous souciez plus de rien : ni de votre IT, ni de votre budget. Assistance ou maintenance, tout est compris dans notre prix mensuel fixe de 49 €/mois !',
+  'supportsubtitle' => 'Your peace of mind for 49 €/mois.',
+  'supporttext' => 'Avec Yaska Support, vous ne vous souciez plus de rien: ni de votre IT, ni de votre budget. Assistance ou maintenance, tout est compris dans notre prix mensuel fixe de 49 €/mois!',
 
-  'supportbutton' => 'Ça m’intéresse !',
+  'supportbutton' => 'Find out more!',
 
-  'supportsubtitle2' => 'Vous avez des besoins plus spécifiques ?',
-  'supportsubtitle2b' => 'YASKA vous concocte des solutions sur mesure.',
+  'supportsubtitle2' => 'Do you have more specific needs?',
+  'supportsubtitle2b' => 'Yaska will devise customised solutions',
 
-  'supportbutton2' => 'Contactez-nous',
+  'supportbutton2' => 'Contact us',
 
   'codingtitle' => 'Yaska Coding',
-  'codingsubtitle' => 'Nous programmons votre gain de temps.',
-  'codingtext' => 'Backend, frontend, applis iOS, … YASKA peut tout développer pour vous. Mais notre grande spécialité : automatiser les process et les workflows dans les sociétés qui génèrent un grand nombre d’échanges d’informations ou de transactions.',
-  'codingtext2' => 'Quelle que soit la taille de votre entreprise, nous sommes capables d’automatiser et d’intégrer dans un logiciel simple d’emploi les tâches répétitives de votre travail. Au sein même de votre infrastructure IT.',
+  'codingsubtitle' => 'We programme your time saving.',
+  'codingtext' => 'Back-end, front-end, iOS apps, etc., YASKA can develop them all for you. But our major speciality is automating the processes and workflows in companies which manage a large number of exchanges of information or transactions.',
+  'codingtext2' => 'No matter what size your company, we can automate and integrate the repetitive aspects of your business in a user-friendly software program. Even at the heart of your IT infrastructure.',
 
-  'casestitle' => '4 cases pour vous le prouver :',
+  'casestitle' => 'Here are a few concrete examples to prove it:',
 
-  'casebutton' => 'Ça m’intéresse !',
+  'casebutton' => 'Find out more!',
 
   'hostingtitle' => 'Yaska Hosting',
-  'hostingsubtitle' => 'De l’hébergement Mac Mini à 99€/mois.',
-  'hostingtext' => 'Idéal pour stocker vos propres données en toute sécurité : Profile Manager, Mail, Web, File Sharing ou n’importe quoi d’autre (pour autant que cela respecte les lois belges !).',
-  'hostingbodytitle1' => 'Yaska Hosting comprend :',
+  'hostingsubtitle' => 'We offer to host your servers in our dedicated rack for 99 €/month excl. VAT.',
+  'hostingtext' => 'Ideal for storing your data in total security: Profile Manager, Mail, Web, File Sharing, or any other data (as long as it complies with Belgian law!).',
+  'hostingbodytitle1' => 'The Yaska Hosting package includes:',
 
-  'hostingbodytitle2' => 'Nos 3 garanties de qualité :',
+  'hostingbodytitle2' => 'Our 3 quality guarantees:',
 
-  'hostingbutton' => 'Ça m’intéresse !',
+  'hostingbutton' => 'I’m interested',
 
   'clientstitle' => 'Clients',
 
   'teamtitle' => 'In Mac we trust',
-  'teamsubtitle' => 'Chez YASKA, chaque membre est un “Mac Environmentalist” : un défendeur convaincu de l’environnement Mac. Notre mission: vous aider à tirer profit au mieux de la technologie Mac & iOS.',
+  'teamsubtitle' => 'At Yaksa, every member of the team is a ‘Mac Environmentalist’, a committed defender of the Mac environment. Our mission: to help you to get the very best out of Mac and iOS technology.',
 
   'positionceo' => 'General Manager (Business developer and founder)',
   'positioncfo' => 'Administration and Accounting',
@@ -76,7 +76,7 @@ return array(
   'positiongraphic' => 'Graphic Design and User Interfaces',
   'positiondev' => 'Web Developer',
   'positionbackend' => 'Back-end Developer',
-  'positionyou' => 'Vous êtes un Mac environmentalist ?',
+  'positionyou' => 'Are you a Mac Environmentalist?',
   'positionjoin' => 'Join us!',
 
   'flavourarthur' => 'He’s got more iPhones than socks',
@@ -89,30 +89,30 @@ return array(
   'flavourlaura' => 'Her dream is to organise an Apple Keynote',
   'flavourpierre' => 'He often has his head in the iCloud',
 
-  'factstitle' => 'Un Mac Environmentalist croit…',
+  'factstitle' => 'A Mac Environmentalist believes…',
 
-  'contacttitle' => 'Contactez-nous',
-  'contactsubtitle' => '… et travaillez sur vos deux oreilles.',
+  'contacttitle' => 'Contact us',
+  'contactsubtitle' => '… and work with total peace of mind.',
   'contactcompany' => 'Nom de l’entreprise',
-  'contactname' => 'Nom de l’entreprise',
-  'contactemail' => 'Adresse e-mail',
-  'contacttel' => 'Numero de téléphone',
-  'contactmessage' => 'Message',
-  'contactbutton' => 'Envoyer!',
+  'contactname' => 'Company',
+  'contactemail' => 'Your e-mail address*',
+  'contacttel' => 'Telephone Number*',
+  'contactmessage' => 'Message*',
+  'contactbutton' => 'Send!',
 
-  'yaskabelgium' => 'Yaska Belgique',
+  'yaskabelgium' => 'Yaska Belgium HQ',
   'streetbelgium' => 'Dendermondsesteenweg 40',
   'citybelgium' => '9000 Gent',
   'telbelgium' => '+32 9 379 07 88',
-  'openingbelgium' => 'Heures d’ouvertures:',
-  'hoursbelgium' => 'du lundi au vendredi: 9h - 17h',
+  'openingbelgium' => 'Opening hours:',
+  'hoursbelgium' => 'from monday till fryday: 9h - 17h',
 
   'yaskapoland' => 'Yaska Pologne',
   'streetpoland' => 'Ul. Postepu 21',
   'citypoland' => '02-676 Warszawa',
   'telpoland' => '+48 22 43 00 340',
   'openingpoland' => 'Heures d’ouvertures:',
-  'hourspoland' => 'du lundi au vendredi: 9h - 17h',
+  'hourspoland' => 'from monday till fryday: 9h - 17h',
 
   'visithomepage' => 'Visit homepage',
   'contactus' => 'Contact us'

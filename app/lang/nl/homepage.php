@@ -3,10 +3,10 @@
 return array(
 
   'test' => 'Hallo',
-
-  'menuservice' => 'Diensten',
-  'menucases' => 'Portfolio',
-  'menuteam' => 'Medewerkers',
+  
+  'menuservice' => 'Services',
+  'menucases' => 'Cases',
+  'menuteam' => 'Team',
   'menucontact' => 'Contact',
 
   'herotitle' => 'In Mac we trust',

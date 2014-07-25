@@ -142,7 +142,7 @@ return array(
 		//'hz'          => array('name' => 'Herero',                 'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Otjiherero'),
 		//'uz-Latn'     => array('name' => 'Uzbek (Latin)',          'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Oʼzbekcha'),
 		//'nds'         => array('name' => 'Low German',             'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Plattdüütsch'),
-		'pl'          => array('name' => 'Polish',                 'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Polski'),
+		//'pl'          => array('name' => 'Polish',                 'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Polski'),
 		//'pt'          => array('name' => 'Portuguese',             'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Português'),
 		//'pt-BR'       => array('name' => 'Brazilian Portuguese',   'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Português do Brasil'),
 		//'ff'          => array('name' => 'Fulah',                  'script' => 'Latn', 'dir' => 'ltr', 'native' => 'Pulaar'),

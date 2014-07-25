@@ -2,7 +2,7 @@
 
 //Route::resource('users', 'UsersController');
 
-Route::group(
+/*Route::group(
   array(
     'prefix' => LaravelLocalization::setLocale(),
     'before' => array('LaravelLocalizationRedirectFilter', 'guest') // LaravelLocalization filter
@@ -40,4 +40,4 @@ Route::group(array('before' => 'auth'), function () {
     array('as' => 'sessions.delete', 'uses' => 'SessionsController@destroy')
   );
 
-});
+});*/
