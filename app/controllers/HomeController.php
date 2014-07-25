@@ -78,7 +78,7 @@ class HomeController extends BaseController {
     ->count();
     //dd($hostingitems);
 
-		return View::make('homepage')->with(compact(['supportitems', 'moresupportitems', 'factitems', 'hostingitems', 'qualityitems']));
+		return View::make('homepage')->with(compact(array('supportitems', 'moresupportitems', 'factitems', 'hostingitems', 'qualityitems')));
 	}
 
 	public function backoffice()
