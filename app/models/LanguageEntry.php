@@ -1,5 +1,5 @@
 <?php
 
 class LanguageEntry extends \Eloquent {
-	protected $fillable = [];
+	protected $fillable = array();
 }
