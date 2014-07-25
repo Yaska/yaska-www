@@ -20,4 +20,4 @@ Thumbs.db
 /*.sublime-workspace
 /bourbon
 /neat
-/public/bower_components/*
+#/public/bower_components/*
