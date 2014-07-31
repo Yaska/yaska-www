@@ -89,7 +89,8 @@ class HomeController extends BaseController {
     return View::make('backoffice');
 	}
 
-  public function partial($partial) {
+  public function partial($partial) 
+  {
 
     if ($partial !== null) {
       return View::make('partials/'.$partial);
@@ -97,7 +98,13 @@ class HomeController extends BaseController {
 
   }
 
-  public function upload() {
+  public function thankyou() 
+  {
+    return Redirect::to('/');
+  }
+
+  public function upload() 
+  {
 
     return dd(Input::all());
 

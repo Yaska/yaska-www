@@ -5,19 +5,29 @@
 
 * NodeJs with npm and packages:
 	* gulp
-* Ruby with gems:
-	* sass
-	* bourbon
-	* neat
 * php 5.4 with mcrypt extention
 * composer
 * mysql
 * apache or nginx
 
-### Download vendor files
+### Dev prerequisites
 
-1. run `composer update`
-2. chmod the app/storage files
+* Ruby with gems:
+	* sass
+	* bourbon 3.1.8
+	`sudo gem install bourbon -v 3.1.8`
+	* neat 1.5.0
+	`sudo gem install neat -v 1.5.0`
+	
+### Development
+
+in terminal
+`cd [project root]`
+`sudo npm install`
+`bower install`
+`bourbon install`
+`neat install`
+`gulp watch`
 
 ### Composer installation
 
@@ -26,10 +36,15 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 ```
 
-### Install dependencies 
+### Install framework 
 
-install 
-`composer install`
+1. Download vendor files
+
+	`composer install`
+
+2. Give Apache user access to storage files
+
+	`sudo chown -R www-data:www-data app/storage/`
 
 
 ### Database
@@ -40,11 +55,7 @@ install
 4. migrate the other tables and seed them: `php artisan migrate --seed`
 5. load the translations from the json files: `php artisan translator:load`
 
-
-### Assets
-
-`sudo npm install`
-
+### Server setttings
 
 Apache
 ```

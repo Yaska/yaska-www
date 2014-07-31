@@ -40,6 +40,11 @@ Route::group(array('before' => 'auth'), function () {
 
 });
 
+Route::get(
+  '/thankyou',
+  array('as' => 'thankyou', 'uses' => 'HomeController@thankyou')
+);
+
 //Route::resource('users', 'UsersController');
 
 //if (App::environment('local')) {

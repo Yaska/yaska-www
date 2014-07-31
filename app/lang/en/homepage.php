@@ -68,7 +68,7 @@ return array(
   'teamtitle' => 'In Mac we trust',
   'teamsubtitle' => 'At Yaksa, every member of the team is a ‘Mac Environmentalist’, a committed defender of the Mac environment. Our mission: to help you to get the very best out of Mac and iOS technology.',
 
-  'positionceo' => 'General Manager (Business developer and founder)',
+  'positionceo' => 'Business developer and founder',
   'positioncfo' => 'Administration and Accounting',
   'positionconsultancy' => 'Apple Certified Technical Coordinator (ACTC)',
   'positionpoland' => 'Director Poland and Project Management',

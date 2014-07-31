@@ -1201,7 +1201,8 @@ body {
       border: 1px solid #DFE2E7;
       border-radius: 3px;
       font-size: 1em;
-      height: 80px; }
+      height: 80px;
+      max-width: 701px; }
       .contact #contactForm .insideContainer .textfield textarea:last-child {
         margin-right: 0; }
   .contact #contactForm .insideContainer .centerrow {
