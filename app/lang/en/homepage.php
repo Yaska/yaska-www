@@ -35,8 +35,8 @@ return array(
   'servicehostingbold' => '49 €/month (excl. VAT)!',
 
   'supporttitle' => 'Yaska Support',
-  'supportsubtitle' => 'Your peace of mind for 49 €/mois.',
-  'supporttext' => 'Avec Yaska Support, vous ne vous souciez plus de rien: ni de votre IT, ni de votre budget. Assistance ou maintenance, tout est compris dans notre prix mensuel fixe de 49 €/mois!',
+  'supportsubtitle' => 'Your peace of mind for 49 €/month.',
+  'supporttext' => 'With our Support Pack, you don’t have to worry about anything, neither IT nor your budget. Support or maintenance, everything’s included in our fixed monthly price of €49/month (excl. VAT)!',
 
   'supportbutton' => 'Find out more!',
 
@@ -105,14 +105,14 @@ return array(
   'citybelgium' => '9000 Gent',
   'telbelgium' => '+32 9 379 07 88',
   'openingbelgium' => 'Opening hours:',
-  'hoursbelgium' => 'from monday till fryday: 9h - 17h',
+  'hoursbelgium' => 'from monday till friday: 9h - 17h',
 
   'yaskapoland' => 'Yaska Pologne',
   'streetpoland' => 'Ul. Postepu 21',
   'citypoland' => '02-676 Warszawa',
   'telpoland' => '+48 22 43 00 340',
-  'openingpoland' => 'Heures d’ouvertures:',
-  'hourspoland' => 'from monday till fryday: 9h - 17h',
+  'openingpoland' => 'Opening hours:',
+  'hourspoland' => 'from monday till friday: 9h - 17h',
 
   'visithomepage' => 'Visit homepage',
   'contactus' => 'Contact us'

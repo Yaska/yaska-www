@@ -104,14 +104,14 @@ return array(
   'streetbelgium' => 'Dendermondsesteenweg 40',
   'citybelgium' => '9000 Gent',
   'telbelgium' => '+32 9 379 07 88',
-  'openingbelgium' => 'Heures d’ouvertures:',
+  'openingbelgium' => 'Openings uren:',
   'hoursbelgium' => 'du lundi au vendredi: 9h - 17h',
 
   'yaskapoland' => 'Yaska Poland',
   'streetpoland' => 'Ul. Postepu 21',
   'citypoland' => '02-676 Warszawa',
   'telpoland' => '+48 22 43 00 340',
-  'openingpoland' => 'Heures d’ouvertures:',
+  'openingpoland' => 'Openings uren:',
   'hourspoland' => 'du lundi au vendredi: 9h - 17h',
 
   'visithomepage' => 'Visit homepage',
