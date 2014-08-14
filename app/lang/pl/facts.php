@@ -1,12 +1,12 @@
 <?php
 
 return array(
-  'fact1' => '… qu’un Mac sera toujours meilleur qu’un PC.',
-  'fact2' => '… que Cupertino est mieux que Redmond.',
-  'fact3' => '… que Steve est un plus beau prénom que Bill.',
-  'fact4' => '… qu’il y a toujours une solution Apple à un problème IT.',
-  'fact5' => '… que notre certification Apple est notre meilleure garantie de qualité.',
-  'fact6' => '… que la technologie du système IOS peut permettre de décupler votre business.',
-  'fact7' => '… que la technique Mac peut parfois révéler des surprises, mais le plus souvent des bonnes.',
-  'fact8' => '… que c’est sûrement le moment de nous appeler!'
+  'fact1' => '… że Mac zawsze będzie lepszy niż PC.',
+  'fact2' => '… że Cupertino jest lepszy niż w Redmond.',
+  'fact3' => '… że Steve to ładniejsze imię niż Bill.',
+  'fact4' => '… że zawsze znajdziemy rozwiązanie Apple dla każdego  problemu IT.',
+  'fact5' => '… że oficjalna certyfikacja Apple jest najlepszą gwarancją jakości.',
+  'fact6' => '… że iOS może zwiększyć zyski każdej firmy.',
+  'fact7' => '… że Mac często zaskakuje, ale tylko w pozytywnie.',
+  'fact8' => '… że to najwyższy czas, żebyś skontaktował się z nami!'
 );

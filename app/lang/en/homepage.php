@@ -93,8 +93,8 @@ return array(
 
   'contacttitle' => 'Contact us',
   'contactsubtitle' => '… and work with total peace of mind.',
-  'contactcompany' => 'Nom de l’entreprise',
-  'contactname' => 'Company',
+  'contactcompany' => 'Company',
+  'contactname' => 'Name',
   'contactemail' => 'Your e-mail address*',
   'contacttel' => 'Telephone Number*',
   'contactmessage' => 'Message*',

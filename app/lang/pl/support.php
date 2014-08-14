@@ -1,24 +1,24 @@
 <?php
 
 return array(
-  'title_0' => 'Accès à notre helpdesk: ILLIMITE',
-  'content_0' => 'Nous ne prenons pas seulement soin de vos ordinateurs, nous voulons être véritablement votre partenaire technique. Même pour une simple question nous sommes là! Un petit coup de téléphone ou un simple mail et nous vous répondons.',
+  'title_0' => 'NIELIMITOWANY dostęp do helpdesk',
+  'content_0' => 'My nie chcemy opiekować się twoimi komputerami, my chcemy być twoim prawdziwym partnerem we wszystkich sprawach technicznych, nawet tych banalnych. Dzwonisz lub piszesz e-mail, a my niezwłocznie odpowiadamy na twoje pytanie.',
 
-  'title_1' => 'Espace de stockage gratuit: 30 GB/ORDINATEUR',
-  'content_1' => 'Nous vous offrons le backup GRATUIT de vos données, soit 30 GB/ORDINATEUR (Free CrashPlan License). Un souci en moins, puisqu’en cas de vol ou de destruction de vos données, vous avez toujours une copie de sauvegarde bien gardée!',
+  'title_1' => 'DARMOWE przechowywanie danych: 30 GB / KOMPUTER',
+  'content_1' => 'Oferujemy dostęp do bezpłatnego back-up danych, do 30 GB na komputerze (Free CrashPlan Licence). Jedno zmartwienie mniej, bo jeżeli dane zostały stracone lub zniszczone, zawsze masz bezpieczną kopię zapasową!',
 
-  'title_2' => 'Visites d’un technicien: 2 PAR AN',
-  'content_2' => 'C’est pour nous un minimum pour vous assurer une couverture technique infaillible. De la sorte, nous connaissons vos installations et votre réseau comme personne et nous pouvons vous garantir de solides performances.',
+  'title_2' => 'Wizyty technika: DWA RAZY W ROKU',
+  'content_2' => 'Uważamy, że to minimum zapewniające niezawodną obsługę techniczną. Dzięki znakomitej znajomości urządzeń i sieci jesteśmy w stanie zagwarantować optymalną wydajność pracy.',
 
-  'title_3' => 'Kerio Connect: GRATUIT',
-  'content_3' => 'Chacun de vos ordinateurs reçoit un accès Kerio sur notre serveur. Cela signifie que tous vos mails, vos calendriers et vos contacts sont stockés et partagés par notre logiciel Kerio sur tous vos devices, que ce soient des ordinateurs ou des smartphones.',
+  'title_3' => 'Kerio Connect: ZA DARMO',
+  'content_3' => 'Każdy z komputer dostaje na naszym serwerze dostęp do Kerio. Oznacza to, że wszystkie twoje e-maile, kalendarze i kontakty są przechowywane oraz udostępniane przez oprogramowanie Kerio na wszystkich urządzeniach, nizależnie czy są to komputery, czy smartfony.',
 
-  'title_4' => 'Autres services: TARIFS AVANTAGEUX',
-  'content_4' => 'Si d’autres services s’avèrent nécessaires (réinstaller un ordinateur, ajouter un nouveau programme, …), vous bénéficiez de prix forfaitaires réduits sur ceux-ci.',
+  'title_4' => 'PROMOCYJNE STAWKI na inne nasze usługi',
+  'content_4' => 'Jeśli potrzebujesz innych usług (reinstalacji komputera, dodania nowego programu, itp.) możesz liczyć na obniżone stawki.',
 
-  'title_5' => 'Assistance urgente: PRIORITAIRE ',
-  'content_5' => 'Votre contrat d’assistance vous garantit d’être servi en premier! Si un problème urgent vous empêche de travailler, nous arrivons chez vous en priorité.',
+  'title_5' => 'SZYBKIE wsparcie awaryjne',
+  'content_5' => 'Umowa wsparcia gwarantuje, że uzyskasz pomoc jako pierwszy! Jeśli nagły problem uniemożliwia twoją pracę, my pomożemy niezwłocznie.',
 
-  'title_6' => 'A partir du 6ème ordinateur: Tarif DEGRESSIF',
-  'content_6' => '',
+  'title_6' => 'REDUKCJA CENY od 6 komputerów w pakiecie',
+  'content_6' => ''
 );

@@ -8,7 +8,7 @@ return array(
   'content_1' => 'Don’t make things hard by trying to program everything yourself.  We’ll come and set up your future employees’ tools efficiently (mailboxes, apps, access restrictions in line with your company policy, etc.).',
 
   'title_2' => 'Are you  working on a project with external colleagues?',
-  'content_2' => 'your corporate data (via Apple Profile Manager, Air-Watch, Mobile Iron or whichever platform is required for the project).',
+  'content_2' => 'Your corporate data (via Apple Profile Manager, Air-Watch, Mobile Iron or whichever platform is required for the project).',
 
   'title_3' => 'Do you want to know if your technology is still up to scratch?',
   'content_3' => 'We’ll come and carry out an audit of your IT infrastructure and recommend which medium- and long-term strategy you need to boost performance.',

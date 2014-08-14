@@ -2,14 +2,14 @@
 
 return array(
   'title_0' => 'Nespresso',
-  'content_0' => 'Platte-forme promotionnelle complète avec applications iPad, sites web, middleware et intégration avec les systèmes existants du client.',
+  'content_0' => 'Promotional platform with iPad applications, websites, middleware and integrated it all with the clients existing systems.',
 
   'title_1' => 'eHealth Nordic',
-  'content_1' => 'Applications iPad pour le secteur pharmaceutique. Nous avons facilité le travail des commerciaux visitant leurs clients… un projet mondial.',
+  'content_1' => 'iPad applications for the Healthcare market. The applications helped sales teams to be more efficient while visiting general practitioners … worldwide.',
 
   'title_2' => 'Story Me',
-  'content_2' => 'Différentes applications front-end comme par exemple des sites web ou des applications iOS. Un exemple que nous aimons beaucoup: www.storyme.be',
+  'content_2' => 'Several web and mobile front-ends. Here’s a nice example we love to share: www.storyme.be',
 
   'title_3' => 'Intégrations',
-  'content_3' => 'Nous adorons intégrer plusieurs technologies et systèmes les uns avec les autres. C’est d’ailleurs très complémentaire avec nos services de support: vous faire gagner du temps.'
+  'content_3' => 'The one we love but our customer’s biggest nightmare: integration. We’re great at integrating different technologies and systems. We’ll make everything talk the same language.'
 );
