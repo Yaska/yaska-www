@@ -4,7 +4,7 @@ return array(
   'title_0' => 'NIELIMITOWANY dostęp do helpdesk',
   'content_0' => 'My nie chcemy opiekować się twoimi komputerami, my chcemy być twoim prawdziwym partnerem we wszystkich sprawach technicznych, nawet tych banalnych. Dzwonisz lub piszesz e-mail, a my niezwłocznie odpowiadamy na twoje pytanie.',
 
-  'title_1' => 'DARMOWE przechowywanie danych: 30 GB / KOMPUTER',
+  'title_1' => 'DARMOWE przechowywanie danych: 50 GB / KOMPUTER',
   'content_1' => 'Oferujemy dostęp do bezpłatnego back-up danych, do 30 GB na komputerze (Free CrashPlan Licence). Jedno zmartwienie mniej, bo jeżeli dane zostały stracone lub zniszczone, zawsze masz bezpieczną kopię zapasową!',
 
   'title_2' => 'Wizyty technika: DWA RAZY W ROKU',

@@ -10,7 +10,7 @@ return array(
   'menucontact' => 'Kontakt',
 
   'herotitle' => 'In Mac we trust',
-  'herosubtitle' => 'In Mac we trust. For your business above all.',
+  'herosubtitle' => 'For your business above all.',
   'herointro' => 'Dzień dobry, tu Yaska.',
   'herotext' => 'Naszym zdaniem technologie Apple mogą wpłynąć na rozwój twojego biznesu w takim samym stopniu, jak zrewolucjonizowały nasze codzienne życie.',
   'herobutton' => 'Czy chcesz wiedzieć jak?',
