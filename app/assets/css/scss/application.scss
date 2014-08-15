@@ -426,14 +426,19 @@ body {
         @include media($mintablet) {
           @include span-columns(5 of 10);
           @include omega(2n);
-          @include outer-container;
           @include pad(10px 20px);
+          &:nth-child(2n-1) {
+            padding-left: 0;
+          }
+          &:nth-child(2n) {
+            padding-right: 0;
+          }
         }
         @include span-columns(10);
         @include pad(10px 0px);
         input, textarea {
           -webkit-appearance: none;
-          @include span-columns(10);
+          @include fill-parent();
           background-color: $lightgrey;
           border: 1px solid $darkgrey;
           border-radius: 3px;
@@ -442,21 +447,23 @@ body {
       }
       .textfield {
         @include media($mintablet) {
-          @include pad(10px 40px 10px 20px);
+          @include pad(10px 0px 10px 0px);
         }
         @include span-columns(10);
+        @include omega();
         margin-bottom: 20px;
         //@include shift(1);
         //@include pad(10px 30px 10px 20px);
         textarea {
           -webkit-appearance: none;
-          @include span-columns(10);
+          //@include span-columns(10);
+          @include fill-parent();
           background-color: $lightgrey;
           border: 1px solid $darkgrey;
           border-radius: 3px;
           font-size: 1em;
           height: 80px;
-          max-width: 701px;
+          max-width: 761px;
           //@include transition-property(height);
           //@include transition-duration(0.1s);
           //@include transition-timing-function(linear);
@@ -468,7 +475,7 @@ body {
       }
       .centerrow {
         @include media($mintablet) {
-          @include pad(0 40px);
+          @include pad(0 0px);
         }
         @include span-columns(10);
         @include omega();

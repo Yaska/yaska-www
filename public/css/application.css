@@ -1151,10 +1151,6 @@ body {
         display: block;
         margin-right: 2.5641%;
         width: 48.71795%;
-        *zoom: 1;
-        max-width: 60em;
-        margin-left: auto;
-        margin-right: auto;
         padding: 10px 20px; }
         .contact #contactForm .insideContainer .inputDiv:last-child {
           margin-right: 0; }
@@ -1162,50 +1158,40 @@ body {
           margin-right: 0; }
         .contact #contactForm .insideContainer .inputDiv:nth-child(2n+1) {
           clear: left; }
-        .contact #contactForm .insideContainer .inputDiv:before, .contact #contactForm .insideContainer .inputDiv:after {
-          content: " ";
-          display: table; }
-        .contact #contactForm .insideContainer .inputDiv:after {
-          clear: both; } }
+        .contact #contactForm .insideContainer .inputDiv:nth-child(2n-1) {
+          padding-left: 0; }
+        .contact #contactForm .insideContainer .inputDiv:nth-child(2n) {
+          padding-right: 0; } }
     .contact #contactForm .insideContainer .inputDiv:last-child {
       margin-right: 0; }
     .contact #contactForm .insideContainer .inputDiv input, .contact #contactForm .insideContainer .inputDiv textarea {
       -webkit-appearance: none;
-      float: left;
-      display: block;
-      margin-right: 2.5641%;
       width: 100%;
       background-color: #FAFBFB;
       border: 1px solid #DFE2E7;
       border-radius: 3px;
       font-size: 1em; }
-      .contact #contactForm .insideContainer .inputDiv input:last-child, .contact #contactForm .insideContainer .inputDiv textarea:last-child {
-        margin-right: 0; }
   .contact #contactForm .insideContainer .textfield {
     float: left;
     display: block;
     margin-right: 2.5641%;
     width: 100%;
+    margin-right: 0;
     margin-bottom: 20px; }
     @media screen and (min-width: 768px)  {
       .contact #contactForm .insideContainer .textfield {
-        padding: 10px 40px 10px 20px; } }
+        padding: 10px 0px 10px 0px; } }
     .contact #contactForm .insideContainer .textfield:last-child {
       margin-right: 0; }
     .contact #contactForm .insideContainer .textfield textarea {
       -webkit-appearance: none;
-      float: left;
-      display: block;
-      margin-right: 2.5641%;
       width: 100%;
       background-color: #FAFBFB;
       border: 1px solid #DFE2E7;
       border-radius: 3px;
       font-size: 1em;
       height: 80px;
-      max-width: 701px; }
-      .contact #contactForm .insideContainer .textfield textarea:last-child {
-        margin-right: 0; }
+      max-width: 761px; }
   .contact #contactForm .insideContainer .centerrow {
     float: left;
     display: block;
@@ -1214,7 +1200,7 @@ body {
     margin-right: 0; }
     @media screen and (min-width: 768px)  {
       .contact #contactForm .insideContainer .centerrow {
-        padding: 0 40px; } }
+        padding: 0 0px; } }
     .contact #contactForm .insideContainer .centerrow:last-child {
       margin-right: 0; }
     .contact #contactForm .insideContainer .centerrow #submit {
