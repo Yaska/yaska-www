@@ -11,12 +11,12 @@ var neat = require('node-neat').includePaths;
 gulp.task('bourbon', function() {
   gulp.src('./app/assets/css/scss/**/*.scss')
     .pipe(sass({
-      includePaths: ['styles'].concat(neat)
-      //errLogToConsole: true
+      includePaths: ['styles'].concat(neat),
+      //errLogToConsole: true,
+      onError: function(err) {
+        return notify().write(err);
+      }
     }))
-    .on('error', function(e) {
-      //console.log(e.err.stack);
-    })
     .pipe(gulp.dest('./public/css/'))
     .pipe(livereload(server));
 });

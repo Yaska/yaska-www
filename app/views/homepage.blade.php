@@ -158,22 +158,22 @@
   </div>
   <div class="casecontainer">
     <div class="case">
-      <img src="images/png/c_nespresso3.png" alt="nespresso">
+      <img src="{{ asset('images/png/nespresso.jpg') }}" alt="nespresso">
       <h4>{{ Lang::get('cases.title_0'); }}</h4>
       <p class="blockcontent">{{ Lang::get('cases.content_0'); }}</p>
     </div>
     <div class="case">
-      <img src="images/png/c_eklira.png" alt="eklira">
+      <img src="{{ asset('images/png/ehealth.jpg') }}" alt="eklira">
       <h4>{{ Lang::get('cases.title_1'); }}</h4>
       <p class="blockcontent">{{ Lang::get('cases.content_1'); }}</p>
     </div>
     <div class="case">
-      <img src="images/png/c_storyme.png" alt="théâtre les tanneurs">
+      <img src="{{ asset('images/png/storyme.jpg') }}" alt="Storyme">
       <h4>{{ Lang::get('cases.title_2'); }}</h4>
       <p class="blockcontent">{{ Lang::get('cases.content_2'); }}</p>
     </div>
     <div class="case">
-      <img src="images/png/c_you.png" alt="you">
+      <img src="{{ asset('images/png/c_you.png') }}" alt="you">
       <h4>{{ Lang::get('cases.title_3'); }}</h4>
       <p class="blockcontent">{{ Lang::get('cases.content_3'); }}</p>
     </div>

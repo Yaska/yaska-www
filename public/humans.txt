@@ -2,28 +2,36 @@
 Yaska.eu
 
 /* TEAM */
-Arthur Lambillotte - Graphic Design
-Site: http://www.artlambi.be
+Arthur Lambillotte - Design
+Sites: http://www.artlambi.be
 http://www.integralstudios.be
 Twitter: @artlambi
 Location: Ghent, Belgium
 
 Pierre Van der Eecken - Development
-Site: http://www.pierrev.de
+Sites: http://www.pierrev.de
 http://www.integralstudios.be
 Twitter: @pierrevde
 Location: Ghent, Belgium
 
+David Deren - Development
+Site: http://www.fuzzydrone.com
+Twitter: @da_deef
+Location: Ghent, Belgium
+
+/* COPYWRITING */
+Denis Dubrulle - Federate
+Monika Ostrowska - Yaska
+
 /* THANKS */
 Julien Van der Straeten - Yaska
 Alexis Verbeke - Yaska
-Monika Ostrowska - Yaska
-Denis Dubrulle - Federate
 
 /* SITE */
 Last update: 2014/08/15
 Standards: HTML5, CSS3
 Components: Normalize, jQuery, Bourbon, Neat
+
 
         Dev                     Tec
                   __                |\-/\     __

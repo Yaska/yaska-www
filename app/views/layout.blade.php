@@ -13,6 +13,7 @@
     <link rel="alternate" href="http://www.yaska.eu/" hreflang="x-default" />
     <link href="{{ asset('bower_components/normalize.css/normalize.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/application.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="author" href="humans.txt" />
     <!--<script type='text/javascript'>
     (function (d, t) {
       var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
