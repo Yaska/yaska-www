@@ -107,10 +107,10 @@ return array(
   'openingbelgium' => 'Opening hours:',
   'hoursbelgium' => 'from monday till friday: 9h - 17h',
 
-  'yaskapoland' => 'Yaska Pologne',
+  'yaskapoland' => 'Yaska Poland',
   'streetpoland' => 'Ul. Postepu 21',
   'citypoland' => '02-676 Warszawa',
-  'telpoland' => '+48 22 43 00 340',
+  'telpoland' => '+48 22 307 26 51',
   'openingpoland' => 'Opening hours:',
   'hourspoland' => 'from monday till friday: 9h - 17h',
 

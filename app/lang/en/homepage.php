@@ -10,17 +10,17 @@ return array(
   'menucontact' => 'Contact',
 
   'herotitle' => 'In Mac we trust',
-  'herosubtitle' => 'In Mac we trust. For your business above all.',
+  'herosubtitle' => 'For your business above all.',
   'herointro' => 'Hello, we’re Yaska.',
   'herotext' => 'We think that Mac technologies can improve your business in the same way as they’ve revolutionised our daily lives.',
-  'herobutton' => 'Find out how.',
+  'herobutton' => 'Find out how',
 
   'servicetitle' => 'In Mac we trust…',
   'servicetext' => 'Yaska is your ‘one stop shop’ for all Mac and iOS services that your business needs.',
   'servicetext2' => 'Are you on Mac? Then you’re in the right place!',
   'servicebutton' => 'Find out more',
 
-  'servicecodingintro' => '… to simplify work.',
+  'servicecodingintro' => '… to simplify work',
   'servicecodingtitle' => 'Yaska Coding',
   'servicecodingtext' => 'Optimise your business with our solutions and automated workflows.',
 
@@ -32,13 +32,13 @@ return array(
   'servicehostingintro' => '… to protect what matters',
   'servicehostingtitle' => 'Yaska Hosting',
   'servicehostingtext' => 'With our Support Pack, you don’t have to worry about anything, neither IT nor your budget. Support or maintenance, everything’s included in our fixed monthly price of',
-  'servicehostingbold' => '49 €/month (excl. VAT)!',
+  'servicehostingbold' => '99 €/month!',
 
   'supporttitle' => 'Yaska Support',
   'supportsubtitle' => 'Your peace of mind for 49 €/month.',
   'supporttext' => 'With our Support Pack, you don’t have to worry about anything, neither IT nor your budget. Support or maintenance, everything’s included in our fixed monthly price of €49/month (excl. VAT)!',
 
-  'supportbutton' => 'Find out more!',
+  'supportbutton' => 'Find out more',
 
   'supportsubtitle2' => 'Do you have more specific needs?',
   'supportsubtitle2b' => 'Yaska will devise customised solutions',
@@ -52,7 +52,7 @@ return array(
 
   'casestitle' => 'Here are a few concrete examples to prove it:',
 
-  'casebutton' => 'Find out more!',
+  'casebutton' => 'Find out more',
 
   'hostingtitle' => 'Yaska Hosting',
   'hostingsubtitle' => 'We offer to host your servers in our dedicated rack for 99 €/month excl. VAT.',
@@ -68,11 +68,11 @@ return array(
   'teamtitle' => 'In Mac we trust',
   'teamsubtitle' => 'At Yaksa, every member of the team is a ‘Mac Environmentalist’, a committed defender of the Mac environment. Our mission: to help you to get the very best out of Mac and iOS technology.',
 
-  'positionceo' => 'Business developer and founder',
-  'positioncfo' => 'Administration and Accounting',
+  'positionceo' => 'Business Developer and Founder',
+  'positioncfo' => 'Administration and Accounting Manager',
   'positionconsultancy' => 'Apple Certified Technical Coordinator (ACTC)',
-  'positionpoland' => 'Director Poland and Project Management',
-  'positionsales' => 'Sales',
+  'positionpoland' => 'Director Poland and Project Manager',
+  'positionsales' => 'Sales specialist',
   'positiongraphic' => 'Graphic Design and User Interfaces',
   'positiondev' => 'Web Developer',
   'positionbackend' => 'Back-end Developer',
@@ -107,10 +107,10 @@ return array(
   'openingbelgium' => 'Opening hours:',
   'hoursbelgium' => 'from monday till friday: 9h - 17h',
 
-  'yaskapoland' => 'Yaska Pologne',
+  'yaskapoland' => 'Yaska Poland',
   'streetpoland' => 'Ul. Postepu 21',
   'citypoland' => '02-676 Warszawa',
-  'telpoland' => '+48 22 43 00 340',
+  'telpoland' => '+48 22 307 26 51',
   'openingpoland' => 'Opening hours:',
   'hourspoland' => 'from monday till friday: 9h - 17h',
 

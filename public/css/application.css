@@ -838,7 +838,8 @@ body {
             margin-right: 0; } }
       .services .servicescontainer .serviceblock .bolder {
         color: #123E4D;
-        font-weight: 400; }
+        font-weight: 400;
+        min-height: 3em; }
       .services .servicescontainer .serviceblock .servicetitle {
         text-transform: uppercase;
         margin-top: 0; }

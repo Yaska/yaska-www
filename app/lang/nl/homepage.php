@@ -105,14 +105,14 @@ return array(
   'citybelgium' => '9000 Gent',
   'telbelgium' => '+32 9 379 07 88',
   'openingbelgium' => 'Openings uren:',
-  'hoursbelgium' => 'du lundi au vendredi: 9h - 17h',
+  'hoursbelgium' => 'van maandag tot vrijdag: 9h - 17h',
 
   'yaskapoland' => 'Yaska Poland',
   'streetpoland' => 'Ul. Postepu 21',
   'citypoland' => '02-676 Warszawa',
-  'telpoland' => '+48 22 43 00 340',
+  'telpoland' => '+48 22 307 26 51',
   'openingpoland' => 'Openings uren:',
-  'hourspoland' => 'du lundi au vendredi: 9h - 17h',
+  'hourspoland' => 'van maandag tot vrijdag: 9h - 17h',
 
   'visithomepage' => 'Visit homepage',
   'contactus' => 'Contact us'
