@@ -1,7 +1,7 @@
 <?php
 
 return array(
-  'hostingcheck7' => 'Rack jest instalowany w naszym ultra bezpiecznym centrum danych (okablowanie strukturalne, wtyczki, itd.)',
-  'hostingcheck8' => 'Połączenie Internetowe od zaufanego dostawcy',
-  'hostingcheck9' => 'Zapora WATCHGUARD (www.watchguard.com)'
+  'qualitycheck1' => 'Rack jest instalowany w naszym ultra bezpiecznym centrum danych (okablowanie strukturalne, wtyczki, itd.)',
+  'qualitycheck2' => 'Połączenie Internetowe od zaufanego dostawcy',
+  'qualitycheck3' => 'Zapora WATCHGUARD (www.watchguard.com)'
 );

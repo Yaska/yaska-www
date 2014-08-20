@@ -76,7 +76,7 @@ class HomeController extends BaseController {
     )
     ->where('group', 'qualitycheck')
     ->count();
-    //dd($hostingitems);
+    //dd($qualityitems);
 
 		return View::make('homepage')->with(compact(array('supportitems', 'moresupportitems', 'factitems', 'hostingitems', 'qualityitems')));
 	}

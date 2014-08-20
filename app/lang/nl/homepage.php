@@ -32,10 +32,10 @@ return array(
   'servicehostingintro' => '… om te beschermen wat belangrijk is.',
   'servicehostingtitle' => 'Yaska Hosting',
   'servicehostingtext' => 'Host uw data in alle veiligheid op onze Mac Mini’s voor',
-  'servicehostingbold' => '99 €/mois.',
+  'servicehostingbold' => '99 €/maand.',
 
   'supporttitle' => 'Yaska Support',
-  'supportsubtitle' => 'Uw gemoedsrust voor 49 €/mois.',
+  'supportsubtitle' => 'Uw gemoedsrust voor 49 €/maand.',
   'supporttext' => 'Met onze formule Support Pack hoeft u zich geen zorgen meer te maken: niet over uw IT-infrastructuur, niet over uw budget. Bijstand of onderhoud, alles is inbegrepen in onze vaste maandelijkse prijs van 49 € excl. btw/maand!',
 
   'supportbutton' => 'Ik ben geïnteresseerd!',
@@ -55,7 +55,7 @@ return array(
   'casebutton' => 'Ik ben geïnteresseerd!',
 
   'hostingtitle' => 'Yaska Hosting',
-  'hostingsubtitle' => 'Wij hosten uw Mac Mini voor 99€/mois.',
+  'hostingsubtitle' => 'Wij hosten uw Mac Mini voor 99€/maand.',
   'hostingtext' => 'Wij bieden de hosting van uw servers aan in ons daartoe bestemde rack voor 99 EUR excl. btw/maand. Ideaal om uw eigen gegevens in alle veiligheid op te slaan: Profile Manager, Mail, Web, File Sharing of wat dan ook (op voorwaarde dat de Belgische wetgeving wordt nageleefd!). Loop dus niet het minste risico en kom naar ons!',
   'hostingbodytitle1' => 'Het YASKA HOSTING-pakket omvat:',
 

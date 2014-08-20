@@ -1,7 +1,7 @@
 <?php
 
 return array(
-  'hostingcheck7' => 'Rack installé dans un datacenter dernier cri',
-  'hostingcheck8' => 'Connexion internet via COGENT (www.cogentco.com)',
-  'hostingcheck9' => 'Firewall WATCHGUARD (www.watchguard.com)'
+  'qualitycheck1' => 'Rack installé dans un datacenter dernier cri',
+  'qualitycheck2' => 'Connexion internet via COGENT (www.cogentco.com)',
+  'qualitycheck3' => 'Firewall WATCHGUARD (www.watchguard.com)'
 );

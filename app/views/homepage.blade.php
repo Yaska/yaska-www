@@ -198,7 +198,7 @@
     <h3 class="pullLeft">{{ Lang::get('homepage.hostingbodytitle1'); }}</h3>
   </div>
   <div class="checkcontainer">
-    @for ($i = 0; $i < $hostingitems; $i++)
+    @for ($i = 0; $i <= $hostingitems; $i++)
       @if (Lang::has('hostingcheck.hostingcheck'.$i))
       <div class="check">
         <img src="images/png/check.png" alt="check mark icon">
@@ -209,11 +209,11 @@
   </div>
   <h3 class="pullLeft">{{ Lang::get('homepage.hostingbodytitle2'); }}</h3>
   <div class="checkcontainer last">
-    @for ($i = 0; $i < $qualityitems; $i++)
-      @if (Lang::has('hostingcheck.hostingcheck'.$i))
+    @for ($i = 0; $i <= $qualityitems; $i++)
+      @if (Lang::has('qualitycheck.qualitycheck'.$i))
       <div class="check">
         <img src="images/png/check.png" alt="check mark icon">
-        <p class="blockcontent">{{ Lang::get('hostingcheck.hostingcheck'.$i); }}</p>
+        <p class="blockcontent">{{ Lang::get('qualitycheck.qualitycheck'.$i); }}</p>
       </div>
       @endif
     @endfor
@@ -343,7 +343,7 @@
   <div class="factscontainer">
     <h3 class="pullLeft">{{ Lang::get('homepage.factstitle'); }}</h3>
     <ul>
-      @for ($i = 0; $i < $factitems; $i++)
+      @for ($i = 0; $i <= $factitems; $i++)
         @if (Lang::has('facts.fact'.$i))
         <li>
           <p>{{ Lang::get('facts.fact'.$i); }}</p>
