@@ -21,10 +21,16 @@ class SessionsController extends \BaseController {
 	{
 		//dd(Input::all());
 		$input = Input::only('username', 'password');
+		/*if (Auth::validate($input))
+		{
+		    dd(true);
+		}*/
+
+		//dd(Auth::attempt($input));
 
 		if (Auth::attempt($input, Input::get('remember_me'))) {
 			//return Redirect::route('homepage');
-			return Redirect::intended('homepage');
+			return Redirect::intended('/');
 		}
 
 		return Redirect::back()->withInput()->withFlashMessage('invalid');
