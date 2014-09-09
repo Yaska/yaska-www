@@ -14,14 +14,14 @@
     <link href="{{ asset('bower_components/normalize.css/normalize.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/application.css') }}" rel="stylesheet" type="text/css" />
     <link rel="author" href="humans.txt" />
-    <!--<script type='text/javascript'>
+    <script type='text/javascript'>
     (function (d, t) {
       var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
       bh.type = 'text/javascript';
       bh.src = '//www.bugherd.com/sidebarv2.js?apikey=gjiuytiwimptjyspw0nk5q';
       s.parentNode.insertBefore(bh, s);
       })(document, 'script');
-    </script>-->
+    </script>
   </head>
   <body
     @if(Auth::check())
@@ -170,13 +170,13 @@
     <script src="{{ asset('bower_components/flexslider/jquery.flexslider.js') }}"></script>
     <script src="{{ asset('bower_components/konami-js/konami.js') }}"></script>
     <script src="{{ asset('js/scripts.js') }}"></script>
-    <script> 
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ 
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), 
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) 
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
-      ga('create', 'UA-15326372-1', 'auto'); 
-      ga('send', 'pageview'); 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-15326372-1', 'auto');
+      ga('send', 'pageview');
     </script>
   </body>
 </html>
