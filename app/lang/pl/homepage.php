@@ -8,6 +8,7 @@ return array(
   'menucases' => 'Cases',
   'menuteam' => 'Zespół',
   'menucontact' => 'Kontakt',
+  'menujobs' => 'Oferta pracy',
 
   'herotitle' => 'In Mac we trust',
   'herosubtitle' => 'For your business above all.',
@@ -99,6 +100,8 @@ return array(
   'contacttel' => 'Numer telefonu*',
   'contactmessage' => 'Wiadomość*',
   'contactbutton' => 'Wyślij!',
+
+  'jobstitle' => 'Oferta pracy',
 
   'yaskabelgium' => 'Yaska Belgium HQ',
   'streetbelgium' => 'Dendermondsesteenweg 40',

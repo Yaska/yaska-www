@@ -3,11 +3,12 @@
 return array(
 
   'test' => 'Hallo',
-  
+
   'menuservice' => 'Services',
   'menucases' => 'Cases',
   'menuteam' => 'Team',
   'menucontact' => 'Contact',
+  'menujobs' => 'Jobs',
 
   'herotitle' => 'In Mac we trust',
   'herosubtitle' => 'Vooral voor uw zaak.',
@@ -99,6 +100,8 @@ return array(
   'contacttel' => 'Uw telefoon nummer',
   'contactmessage' => 'Bericht',
   'contactbutton' => 'Verstuur!',
+
+  'jobstitle' => 'Jobs',
 
   'yaskabelgium' => 'Yaska Belgium HQ',
   'streetbelgium' => 'Dendermondsesteenweg 40',

@@ -47,7 +47,6 @@
               {{ Form::close() }}
             </li>
             <!-- <li class="logout">
-
             </li> -->
             @endif
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
@@ -81,6 +80,9 @@
               </li>
               <li>
                 <a href="{{ route('homepage') }}#contact">{{ Lang::get('homepage.menucontact'); }}</a>
+              </li>
+              <li>
+                <a href="{{ route('homepage') }}#jobs">{{ Lang::get('homepage.menujobs'); }}</a>
               </li>
               @if(Auth::check())
               <li>

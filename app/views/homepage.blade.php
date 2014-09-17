@@ -391,6 +391,10 @@
     </div>
   </div>
 </div>
+<div class="block jobs" id="jobs">
+  <h2>{{ Lang::get('homepage.jobstitle'); }}</h2>
+  <iframe src="http://app.talentsquare.com/employer/ac1d4bbe-9cde-4c3f-905a-46064bfe5132/iframe/?per_page=4" id="employer_iframe" height="800px" frameborder="0"></iframe>
+</div>
 <div class="block about" id="about">
   <div class="addresscontainer">
     <div class="centerrow">
