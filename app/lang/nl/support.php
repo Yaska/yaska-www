@@ -5,7 +5,7 @@ return array(
   'content_0' => 'Wij staan niet alleen in voor uw computers, wij willen echt uw technische partner zijn. Zelfs met een eenvoudige vraag (van het type “hoe zet ik een handtekening onderaan mijn e-mails?”) kunt u bij ons terecht! Een telefoontje of gewoon een e-mail en wij geven u antwoord.',
 
   'title_1' => 'GRATIS opslagruimte: 50 GB/COMPUTER',
-  'content_1' => 'Wij zorgen gratis voor de back-up van uw gegevens, tot 30 GB/computer (Free CrashPlan License). Een zorg minder, want bij diefstal of verlies van uw gegevens hebt u nog altijd een reservekopie die zorgvuldig is bijgehouden!',
+  'content_1' => 'Wij zorgen gratis voor de back-up van uw gegevens, tot 50 GB/computer (Free CrashPlan License). Een zorg minder, want bij diefstal of verlies van uw gegevens hebt u nog altijd een reservekopie die zorgvuldig is bijgehouden!',
 
   'title_2' => 'Bezoek van een technicus: 2 PER JAAR',
   'content_2' => 'Dat is voor ons een minimum om u een perfecte technische dienstverlening aan te bieden. Zo kennen we uw installaties en netwerk als geen ander en kunnen we u degelijke prestaties verzekeren.',

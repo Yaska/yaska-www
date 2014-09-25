@@ -5,7 +5,7 @@ return array(
   'content_0' => 'My nie chcemy opiekować się twoimi komputerami, my chcemy być twoim prawdziwym partnerem we wszystkich sprawach technicznych, nawet tych banalnych. Dzwonisz lub piszesz e-mail, a my niezwłocznie odpowiadamy na twoje pytanie.',
 
   'title_1' => 'DARMOWE przechowywanie danych: 50 GB / KOMPUTER',
-  'content_1' => 'Oferujemy dostęp do bezpłatnego back-up danych, do 30 GB na komputerze (Free CrashPlan Licence). Jedno zmartwienie mniej, bo jeżeli dane zostały stracone lub zniszczone, zawsze masz bezpieczną kopię zapasową!',
+  'content_1' => 'Oferujemy dostęp do bezpłatnego back-up danych, do 50 GB na komputerze (Free CrashPlan Licence). Jedno zmartwienie mniej, bo jeżeli dane zostały stracone lub zniszczone, zawsze masz bezpieczną kopię zapasową!',
 
   'title_2' => 'Wizyty technika: DWA RAZY W ROKU',
   'content_2' => 'Uważamy, że to minimum zapewniające niezawodną obsługę techniczną. Dzięki znakomitej znajomości urządzeń i sieci jesteśmy w stanie zagwarantować optymalną wydajność pracy.',
